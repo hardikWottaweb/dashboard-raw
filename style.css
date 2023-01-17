@@ -426,3 +426,27 @@ a#dropdownMenuLink.dropdown-toggle::after{
 .main-body{
     margin-left: 88px;
 }
+
+@media(max-width: 800px){
+    .sidebar.close{
+        width: 60px;
+    }
+    .nav-link a{
+        margin-left: -15px;
+    }
+    .sun-moon{
+        display: none;
+    }
+    .switch{
+        margin-left: 40%;
+    }
+    .main-body{
+        margin-left: 60px;
+    }
+
+    .sidebar header .image img{
+        width: 30px;
+        margin-left: -25px;
+        border-radius: 6px;
+    }
+}
