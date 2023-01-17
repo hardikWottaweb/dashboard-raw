@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"  href="cards.css" />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CDNS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Dashboard</title>
+  </head>
+  <body class="main-body">
+    <!-- Sidebar with logo -->
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="/img/voiped_logo.png" alt="" />
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">Voiped</span>
+            <span class="profession"></span>
+          </div>
+        </div>
+
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <!-- <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li> -->
+
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="text nav-text">Revenue</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-bell icon"></i>
+                <span class="text nav-text">Notifications</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-pie-chart-alt icon"></i>
+                <span class="text nav-text">Analytics</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">Likes</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">Wallets</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+          <li class="mode">
+            <div class="sun-moon">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark mode</span>
+
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header">
+      <!-- settings icon -->
+
+      <div class="dropdown mx-2">
+        <a
+          class="dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <div class="user-img">
+            <button class="icon-btn">
+              <i class="fa-solid fa-gear"></i></button>
+          </div>
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li class="logout">
+            <a class="dropdown-item" href="#"><i class="fa-solid fa-lock"></i> Change Password</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- User -->
+      <div class="dropdown">
+        <a
+          class="dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <div class="user-img">
+            <img src="/img/user.jpg" width="50px" />
+          </div>
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item my-3" href="#">USER NAME</a></li>
+          <li class="logout">
+            <a class="dropdown-item" href="#"
+              ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Top cards -->
+
+    <section class="cards">
+      <div class="card-box main-card">
+        <div class="card-content">
+          <h4>Selling Price</h4>
+          <div class="price-text"><i class="fa-solid fa-euro-sign p-2"></i>  0.00/<div ><p>month</p></div>
+        </div>
+        </div>
+        <div class="card-img">
+          <img src="/img/circle.png">
+        </div>
+        <div class="big-icon">
+          <i class="fa-solid fa-euro-sign p-2"></i>
+        </div>
+      </div>
+
+
+      <div class="card-box-2 main-card">
+        <div class="card-content">
+          <h4>Selling Price</h4>
+          <div class="price-text"><i class="fa-solid fa-euro-sign p-2"></i>  0.00/<div ><p>month</p></div>
+        </div>
+        </div>
+        <div class="card-img">
+          <img src="/img/circle.png">
+        </div>
+        <div class="big-icon">
+          <i class="fa-solid fa-euro-sign p-2"></i>
+        </div>
+      </div>
+
+
+      <div class="card-box-3 main-card">
+        <div class="card-content">
+          <h4>Selling Price</h4>
+          <div class="price-text"><i class="fa-solid fa-euro-sign p-2"></i>  0.00/<div ><p>month</p></div>
+        </div>
+        </div>
+        <div class="card-img">
+          <img src="/img/circle.png">
+        </div>
+        <div class="big-icon">
+          <i class="fa-solid fa-euro-sign p-2"></i>
+        </div>
+      </div>
+
+
+
+      <div class="card-box-4 main-card">
+        <div class="card-content">
+          <h4>Selling Price</h4>
+          <div class="price-text"><i class="fa-solid fa-euro-sign p-2"></i>  0.00/<div ><p>month</p></div>
+        </div>
+        </div>
+        <div class="card-img">
+          <img src="/img/circle.png">
+        </div>
+        <div class="big-icon">
+          <i class="fa-solid fa-chart-simple p-2"></i>
+        </div>
+      </div>
+
+
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
