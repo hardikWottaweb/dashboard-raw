@@ -45,6 +45,12 @@ body.dark{
 
 /* Header */
 
+
+.current{
+    background: var(--primary-color);
+    color: #000;
+}
+
 .header{
     background: var(--sidebar-color);
     padding: 20px;
@@ -415,10 +421,6 @@ a#dropdownMenuLink.dropdown-toggle::after{
   
 /* drop two */
 
-.side-links{
-    display: flex;
-    flex-direction: column;
-}
 
 .my-dropdown{
     margin-left: 150px;
@@ -426,4 +428,56 @@ a#dropdownMenuLink.dropdown-toggle::after{
     z-index: 1000;
     padding: 20px;
     border: 1px solid black;
+}
+
+.list-item{
+    display: flex;
+}
+
+
+/* accordion */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    margin-top: 40px;
+    margin-left: 10px;
+    padding: 20px;
+    background-color: white;
+    display: none;
+    z-index: 1000;
+    border: 1px solid #000;
+    box-shadow: 2px 3px 3px rgba(0,0,0,0.3);
+  }
+
+
+  
+#chart {
+    width: 900px;
+    margin: 40px 0;
+}
+    
+@media(max-width:1100px){
+    #chart{
+        width: 90%;
+        margin: auto ;
+    }
+}
+
+@media(max-width:780px){
+    #chart{
+        width: 90%;
+    }
 }
