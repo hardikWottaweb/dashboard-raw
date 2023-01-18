@@ -240,7 +240,6 @@ body.dark .sidebar li a:hover .text{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-y: scroll;
 }
 .menu-bar::-webkit-scrollbar{
     display: none;
@@ -400,30 +399,31 @@ a#dropdownMenuLink.dropdown-toggle::after{
     margin-left: 88px;
 }
 
-.bar-dash-chart{
-    margin: 0 auto;
+
+
+/* sidebar dropdown */
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+/* drop two */
+
+.side-links{
+    display: flex;
+    flex-direction: column;
 }
 
-/* @media(max-width: 800px){
-    .sidebar.close{
-        width: 60px;
-    }
-    .nav-link a{
-        margin-left: -15px;
-    }
-    .sun-moon{
-        display: none;
-    }
-    .switch{
-        margin-left: 40%;
-    }
-    .main-body{
-        margin-left: 60px;
-    }
-
-    .sidebar header .image img{
-        width: 50px;
-        margin-left: -25px;
-        border-radius: 6px;
-    }
-} */
+.my-dropdown{
+    margin-left: 150px;
+    margin-top: 50px;
+    z-index: 1000;
+    padding: 20px;
+    border: 1px solid black;
+}

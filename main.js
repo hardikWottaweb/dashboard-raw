@@ -28,4 +28,3 @@ if(body.classList.contains("dark")){
 63.00
 
 
-// Bar Graph script
