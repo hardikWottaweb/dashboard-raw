@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Coding by CodingLab | www.codinglabweb.com -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,7 +7,8 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet"  href="cards.css" />
+    <link rel="stylesheet" href="cards.css" />
+    <link rel="stylesheet" href="charts.css" />
 
     <!-- font awesome cdn -->
     <link
@@ -33,6 +33,9 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Charts Js files -->
+    <script src="charts.js"></script>
 
     <title>Dashboard</title>
   </head>
@@ -136,12 +139,15 @@
         >
           <div class="user-img">
             <button class="icon-btn">
-              <i class="fa-solid fa-gear"></i></button>
+              <i class="fa-solid fa-gear"></i>
+            </button>
           </div>
         </a>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
           <li class="logout">
-            <a class="dropdown-item" href="#"><i class="fa-solid fa-lock"></i> Change Password</a>
+            <a class="dropdown-item" href="#"
+              ><i class="fa-solid fa-lock"></i> Change Password</a
+            >
           </li>
         </ul>
       </div>
@@ -175,68 +181,80 @@
     <!-- Top cards -->
 
     <section class="cards">
-      <div class="card-box main-card">
-        <div class="card-content">
-          <h4>Selling Price</h4>
-          <div class="price-text"><i class="fa-solid fa-euro-sign p-2"></i>  0.00/<div ><p>month</p></div>
-        </div>
-        </div>
-        <div class="card-img">
-          <img src="/img/circle.png">
-        </div>
-        <div class="big-icon">
-          <i class="fa-solid fa-euro-sign p-2"></i>
-        </div>
-      </div>
 
+      <!-- card-1 -->
+      <div class="card-box-1 main-card">
+        <div class="card-content-1">
+          <div class="card-1-head">
+            <h2>All Orders</h2>
+            <p>FROM LAST <button class="num-btn">7</button> Days</p>
+          </div>
+          <div class="card-1-body">
+            <div class="card-1-box">
+              <h1 class="num1">0</h1>
+              <p>New Numbers</p>
+            </div>
+            <div class="card-1-box">
+              <h1 class="num2">0</h1>
+              <p>Deleted Numbers</p>
+            </div>
+          </div>
+          </div>
+        </div>
 
-      <div class="card-box-2 main-card">
-        <div class="card-content">
-          <h4>Selling Price</h4>
-          <div class="price-text"><i class="fa-solid fa-euro-sign p-2"></i>  0.00/<div ><p>month</p></div>
+        <!-- card 2 -->
+        <div class="card-box-2 main-card bg-2">
+          <div class="card-content">
+            <h4>Selling Price</h4>
+            <div class="price-text">
+              <i class="fa-solid fa-euro-sign"></i> <p class="price">0.00/</p>
+              <div><p class="mt-3">month</p></div>
+            </div>
+          </div>
+          <div class="big-icon">
+            <i class="fa-solid fa-euro-sign"></i>
+          </div>
         </div>
+  
+        <!-- card 3 -->
+        <div class="card-box-2 main-card bg-3">
+          <div class="card-content">
+            <h4>Selling Price</h4>
+            <div class="price-text">
+              <i class="fa-solid fa-euro-sign"></i> <p class="price">0.00/</p>
+              <div><p class="mt-3">month</p></div>
+            </div>
+          </div>
+          <div class="big-icon">
+            <i class="fa-solid fa-euro-sign"></i>
+          </div>
         </div>
-        <div class="card-img">
-          <img src="/img/circle.png">
+  
+        <!-- card 4 -->
+        <div class="card-box-2 main-card bg-4">
+          <div class="card-content">
+            <h4>Selling Price</h4>
+            <div class="price-text">
+              <i class="fa-solid fa-euro-sign"></i> <p class="price">0.00/</p>
+              <div><p class="mt-3">month</p></div>
+            </div>
+          </div>
+          <div class="big-icon">
+            <i class="fa-solid fa-chart-bar"></i>          </div>
         </div>
-        <div class="big-icon">
-          <i class="fa-solid fa-euro-sign p-2"></i>
-        </div>
-      </div>
-
-
-      <div class="card-box-3 main-card">
-        <div class="card-content">
-          <h4>Selling Price</h4>
-          <div class="price-text"><i class="fa-solid fa-euro-sign p-2"></i>  0.00/<div ><p>month</p></div>
-        </div>
-        </div>
-        <div class="card-img">
-          <img src="/img/circle.png">
-        </div>
-        <div class="big-icon">
-          <i class="fa-solid fa-euro-sign p-2"></i>
-        </div>
-      </div>
-
-
-
-      <div class="card-box-4 main-card">
-        <div class="card-content">
-          <h4>Selling Price</h4>
-          <div class="price-text"><i class="fa-solid fa-euro-sign p-2"></i>  0.00/<div ><p>month</p></div>
-        </div>
-        </div>
-        <div class="card-img">
-          <img src="/img/circle.png">
-        </div>
-        <div class="big-icon">
-          <i class="fa-solid fa-chart-simple p-2"></i>
-        </div>
-      </div>
-
-
+  
+            
     </section>
+
+    <!-- Dashboard Charts section -->
+
+    <div class="dash-charts">
+      <div class="bar-dash-chart">
+
+      </div>
+      <div class="pie-dash-chart">
+      </div>
+    </div>
 
     <script src="main.js"></script>
   </body>

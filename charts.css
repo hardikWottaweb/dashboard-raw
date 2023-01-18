@@ -1,0 +1,18 @@
+
+/* Bar Dash Chart */
+
+.dash-charts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media(max-width: 900px){
+    .dash-charts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

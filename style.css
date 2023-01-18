@@ -395,11 +395,16 @@ a#dropdownMenuLink.dropdown-toggle::after{
 
 
 
+
 .main-body{
     margin-left: 88px;
 }
 
-@media(max-width: 800px){
+.bar-dash-chart{
+    margin: 0 auto;
+}
+
+/* @media(max-width: 800px){
     .sidebar.close{
         width: 60px;
     }
@@ -421,4 +426,4 @@ a#dropdownMenuLink.dropdown-toggle::after{
         margin-left: -25px;
         border-radius: 6px;
     }
-}
+} */
