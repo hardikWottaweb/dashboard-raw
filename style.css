@@ -468,6 +468,8 @@ a#dropdownMenuLink.dropdown-toggle::after{
     width: 900px;
     margin: 40px 0;
 }
+
+
     
 @media(max-width:1100px){
     #chart{
