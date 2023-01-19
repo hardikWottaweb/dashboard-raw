@@ -42,6 +42,16 @@ body.dark{
 
 /* Header */
 
+.default-body{
+    margin-left: 88px;
+}
+
+.bodytoggle{
+    margin-left: 250px;
+}
+
+
+
 /* Dropdowns */
 
 .drop-items{
@@ -73,6 +83,42 @@ body.dark{
 
 /* Dropdown ends here */
 
+/* Nested hover dropdowns */
+
+.drop-items{
+    position: relative;
+  }
+  
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 120px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  
+  
+  /* Show the dropdown menu on hover */
+  .drop-items:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+  
+
+/* Nested HOver dropdown ends here */
+
 .header{
     background: var(--sidebar-color);
     padding: 20px;
@@ -101,7 +147,7 @@ body.dark{
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
-    z-index: 100;  
+    z-index: 100;
 }
 .sidebar.close{
     width: 88px;
@@ -422,10 +468,6 @@ a#dropdownMenuLink.dropdown-toggle::after{
 
 
 
-
-.main-body{
-    margin-left: 88px;
-}
 
 
 
