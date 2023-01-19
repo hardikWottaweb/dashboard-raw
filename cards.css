@@ -113,6 +113,10 @@
     font-size: 40px;
 }
 
+select{
+    outline: none;
+}
+
 @media(max-width: 1800px){
     .cards{
         display: grid;
@@ -166,5 +170,4 @@
         flex-direction: column;
     }
 
-    
 }

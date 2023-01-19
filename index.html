@@ -66,11 +66,19 @@
               </a>
             </li>
             <li>
-              <a href="#">
-                <i class="fa-solid fa-volume-high icon"></i>
-                <span class="text nav-text">Voice</span>
-              </a>
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-volume-high icon"></i>
+              <span class="text nav-text">Voice</span></a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li class="drop-items">
+                  <a class="item" href="#"><i class="fa-solid fa-home"></i> Link </a>
+                  <a class="item" href="#"><i class="fa-solid fa-gear"></i> Link </a>
+                  <a class="item" href="#"><i class="fa-solid fa-lock"></i> Link </a>
+                  <a class="item" href="#"><i class="fa-solid fa-lock"></i> Link </a>
+                </li>
+              </ul>        
             </li>
+            
           </ul>
         </div>
 
@@ -151,7 +159,11 @@
         <div class="card-content-1">
           <div class="card-1-head">
             <h2>All Orders</h2>
-            <p>FROM LAST <button class="num-btn">7</button> Days</p>
+            <p>FROM LAST <select class="num-btn">
+              <option value="24 hrs">24 hrs</option>
+              <option value="7 Days">7 Days</option>
+              <option value="30 Days">30 Days</option>
+            </select> Days</p>
           </div>
           <div class="card-1-body">
             <div class="card-1-box">
@@ -184,7 +196,7 @@
       <!-- card 3 -->
       <div class="card-box-2 main-card bg-3">
         <div class="card-content">
-          <h4>Selling Price</h4>
+          <h4>Buying Price</h4>
           <div class="price-text">
             <i class="fa-solid fa-euro-sign"></i>
             <p class="price">0.00/</p>
@@ -199,7 +211,7 @@
       <!-- card 4 -->
       <div class="card-box-2 main-card bg-4">
         <div class="card-content">
-          <h4>Selling Price</h4>
+          <h4>Margin</h4>
           <div class="price-text">
             <i class="fa-solid fa-euro-sign"></i>
             <p class="price">0.00/</p>
@@ -222,6 +234,7 @@
       </div>
 
       <div class="pie-chart-1">
+        <h1 class="test-color"> Hello this is a test</h1>
       </div>
     </div>
 
