@@ -58,7 +58,7 @@ jQuery(document).ready(function($){
     $(targetBox).toggle(300); // Toggle the current state of this one
   });
    
-  $('.box').hide(300)
+  $('.box').hide(200)
 
 });
 
