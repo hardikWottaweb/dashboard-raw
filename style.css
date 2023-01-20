@@ -76,6 +76,14 @@ body.dark{
     color: var(--text-color);
 }
 
+.item:hover{
+    color: #fff;
+}
+
+.accordion{
+    color: var(--text-color);
+}
+
 
 .dropdown-item{
     color: var(--text-color) !important;
@@ -93,9 +101,10 @@ body.dark{
 /* Main dropdowns */
 
 summary{
-    padding: 20px;
+    padding: 0 10px;
     margin: 10px;
     min-width: 200px;
+    color: var(--text-color);
 }
 
 details[open] {

@@ -63,6 +63,9 @@
       <div class="menu-bar">
         <div class="menu">
           <ul class="menu-links">
+
+            <!-- SINGLE NESTING -->
+
             <li>
               <a href="#">
                 <i class="fa-solid fa-home icon"></i>
@@ -70,6 +73,8 @@
               </a>
             </li>
             
+            <!-- DOUBLE NESTING -->
+
             <li>
               <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa-solid fa-volume-high icon"></i>
@@ -90,14 +95,17 @@
               </ul> 
             </li>
 
+
+            <!-- TRIPLE NESTING -->
+
             <li>
               <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-volume-high icon"></i>
-              <span class="text nav-text">Voice</span></a>
+                <i class="fa-solid fa-chart-bar icon"></i>
+                <span class="text nav-text">Graphs</span></a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <div class="third-links">
                     <details>
-                      <summary class="item"><i class="fa-solid fa-home"></i> NESTED 1</summary>
+                      <summary class="item-container"><i class="fa-solid fa-home"></i> NESTED 1</summary>
                       <div class="links">
                         <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 1</span></a></li>
                         <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 2</span></a></li>
@@ -105,7 +113,7 @@
                       </div>
                     </details>
                     <details>
-                      <summary class="item"><i class="fa-solid fa-home"></i> NESTED 2</summary>
+                      <summary class="item-container"><i class="fa-solid fa-home"></i> NESTED 1</summary>
                       <div class="links">
                         <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 4</span></a></li>
                         <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 5</span></a></li>
@@ -113,18 +121,52 @@
                       </div>
                     </details>
                     <details>
-                      <summary class="item"><i class="fa-solid fa-home"></i> NESTED 3</summary>
+                      <summary class="item-container"><i class="fa-solid fa-home"></i> NESTED 1</summary>
                       <div class="links">
                         <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 7</span></a></li>
                         <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 8</span></a></li>
                         <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 9</span></a></li>
                       </div>
                     </details>
-
                   </div>
               </ul> 
             </li>
 
+            <li>
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-users icon"></i>
+              <span class="text nav-text"> Users</span></a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <div class="third-links">
+                    <details>
+                      <summary class="item-container"><i class="fa-solid fa-home"></i> NESTED 1</summary>
+                      <div class="links">
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 1</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 2</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 3</span></a></li>
+                      </div>
+                    </details>
+                    <details>
+                      <summary class="item-container"><i class="fa-solid fa-home"></i> NESTED 1</summary>
+                      <div class="links">
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 4</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 5</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 6</span></a></li>
+                      </div>
+                    </details>
+                    <details>
+                      <summary class="item-container"><i class="fa-solid fa-home"></i> NESTED 1</summary>
+                      <div class="links">
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 7</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 8</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 9</span></a></li>
+                      </div>
+                    </details>
+                  </div>
+              </ul> 
+            </li>
+
+            <!-- Triple nesting ends here -->
         
           </ul>
         </div>
@@ -190,7 +232,7 @@
         <ul class="dropdown-menu py-4" aria-labelledby="dropdownMenuLink">
           <li><a class="dropdown-item" href="#">USER NAME</a></li>
           <li class="logout">
-            <a class="dropdown-item" href="#"
+            <a class="dropdown-item my-3" href="#"
               ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
             >
           </li>
@@ -289,11 +331,6 @@
     <!-- Nav dropdowns -->
 
     <script src="main.js"></script>
-
-    <script>
-
-
-    </script>
 
   </body>
 </html>
