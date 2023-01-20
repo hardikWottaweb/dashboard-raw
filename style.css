@@ -152,7 +152,9 @@ summary{
     text-align: left;
 }
 
-
+.links{
+    margin-top: -50px;
+}
 
 .nav-icon {
     min-width: 10px;
@@ -162,12 +164,15 @@ summary{
 
 .third-link{
     position: absolute;
-    padding: 0 50px;
+    padding: 0 30px;
     right: 10;
     /* Adjust these values accordingly */
 }
 
-
+.third-heading{
+    position: absolute;
+    left: 30px;
+}
 
 /* Nested hover dropdowns */
 
