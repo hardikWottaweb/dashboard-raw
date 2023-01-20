@@ -40,7 +40,7 @@ body.dark{
     --text-color: #ccc;
 }
 
-/* Header */
+/* body toggling */
 
 .default-body{
     margin-left: 88px;
@@ -51,6 +51,37 @@ body.dark{
 }
 
 
+/* Header */
+
+.header-item{
+    color: var(--text-color);
+    padding: 20px;
+}
+
+.header-item a{
+    text-decoration: none !important;
+}
+
+#pass{
+    display: flex !important;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#pass:hover{
+    text-decoration: underline;
+}
+
+#pass a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#pass i{
+    color: var(--text-color);
+    font-size: 30px;
+}
 
 /* Dropdowns */
 
@@ -67,7 +98,7 @@ body.dark{
 
 .dropdown-menu{
     background: var(--body-color) !important;
-    margin-left: 50px !important;
+    margin-left: 80px !important;
 }
 
 .item{
@@ -93,7 +124,6 @@ body.dark{
 .dropdown-item:hover{
     background: none;
 }
-
 
 
 /* Dropdown ends here */
@@ -488,6 +518,7 @@ body.dark .home .text{
 
 .logout a{
     color: var(--primary-color);
+    text-decoration: none;
 }
 
 /* dropdown toggle */
