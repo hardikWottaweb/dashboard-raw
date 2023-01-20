@@ -113,6 +113,15 @@
     font-size: 40px;
 }
 
+.big-icon-1{
+    float: right;
+}
+
+.big-icon-1 i{
+    font-size: 40px;
+    margin-top: -100%;
+}
+
 select{
     outline: none;
 }
