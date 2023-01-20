@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="cards.css" />
     <link rel="stylesheet" href="charts.css" />
 
+    
+
     <!-- font awesome cdn -->
     <link
       rel="stylesheet"
@@ -33,6 +35,8 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <!-- Charts Js files -->
     <script src="charts.js"></script>
@@ -72,17 +76,56 @@
               <span class="text nav-text">Voice</span></a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <li class="drop-items">
-                  <a class="item" href="#"><i class="fa-solid fa-home"></i> Link </a>
-                  <a class="item" href="#"><i class="fa-solid fa-gear"></i> Link </a>
-                  <a class="item" href="#"><i class="fa-solid fa-lock"></i> Link </a>
-                  <a class="item" href="#"><i class="fa-solid fa-lock"></i> Link </a>
+                  <a class="item" href="#"><i class="fa-solid fa-home"></i>voice link 2</a>
                 </li>
-              </ul>     
+                <li class="drop-items">
+                  <a class="item" href="#"><i class="fa-solid fa-home"></i>voice link 2</a>
+                </li>
+                <li class="drop-items">
+                  <a class="item" href="#"><i class="fa-solid fa-home"></i>voice link 2</a>
+                </li>
+                <li class="drop-items">
+                  <a class="item" href="#"><i class="fa-solid fa-home"></i>voice link 2</a>
+                </li>    
+              </ul> 
             </li>
 
+            <li>
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-volume-high icon"></i>
+              <span class="text nav-text">Voice</span></a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <div class="third-links">
+                    <details>
+                      <summary class="item">NESTED</summary>
+                      <div class="links">
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 2</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 2</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 2</span></a></li>
+                      </div>
+                    </details>
+                    <details>
+                      <summary class="item">NESTED</summary>
+                      <div class="links">
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 2</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 2</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 2</span></a></li>
+                      </div>
+                    </details>
+                    <details>
+                      <summary class="item">NESTED</summary>
+                      <div class="links">
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 2</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 2</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 2</span></a></li>
+                      </div>
+                    </details>
+
+                  </div>
+              </ul> 
+            </li>
 
         
-            
           </ul>
         </div>
 
@@ -144,8 +187,8 @@
           </div>
         </a>
 
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <li><a class="item my-3" href="#">USER NAME</a></li>
+        <ul class="dropdown-menu py-4" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" href="#">USER NAME</a></li>
           <li class="logout">
             <a class="dropdown-item" href="#"
               ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
@@ -242,6 +285,15 @@
       </div>
     </div>
 
+
+    <!-- Nav dropdowns -->
+
     <script src="main.js"></script>
+
+    <script>
+
+
+    </script>
+
   </body>
 </html>

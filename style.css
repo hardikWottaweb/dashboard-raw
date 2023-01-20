@@ -54,10 +54,11 @@ body.dark{
 
 /* Dropdowns */
 
+
+
 .drop-items{
     display: flex;
     flex-direction: column;
-    min-height: 200px;
 }
 
 .drop-items i{
@@ -75,13 +76,43 @@ body.dark{
     color: var(--text-color);
 }
 
-.item:hover{
-    color: #fff;
+
+.dropdown-item{
+    color: var(--text-color) !important;
+}
+
+
+.dropdown-item:hover{
+    background: none;
 }
 
 
 
 /* Dropdown ends here */
+
+/* Main dropdowns */
+
+summary{
+    padding: 20px;
+    margin: 10px;
+    min-width: 200px;
+}
+
+details[open] {
+    max-width: 200px;
+    background: var(--body-color);
+	border-bottom: 1px solid #d4d4d4;
+}
+
+details[open] summary {
+    margin-bottom: 10px;
+    max-width: 200px;
+}  
+
+.third-link{
+    margin-left: 10px;
+}
+
 
 /* Nested hover dropdowns */
 
