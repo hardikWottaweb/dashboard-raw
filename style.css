@@ -142,17 +142,29 @@ summary{
 }
 
 .links{
-    margin-top: -8px;
+    margin-top: -28px;
+    text-align: center;
+    padding: 10px;
 }
 
 summary{
     padding: 10px 0;
+    text-align: left;
 }
 
 
 
+.nav-icon {
+    min-width: 10px;
+    font-size: 15px;
+    padding: 5px 0;
+  }
+
 .third-link{
-    margin-left: 10px;
+    position: absolute;
+    padding: 0 50px;
+    right: 10;
+    /* Adjust these values accordingly */
 }
 
 

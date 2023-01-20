@@ -18,12 +18,6 @@ body.classList.toggle("bodytoggle")
 })
 
 
-// $('.item-container').on("click", function() {
-//   $('.links').hide();
-//   $(this).next('.case-popup').show();
-// });
-
-
 
 // DARK MODE & LIGHT MODE TOGGLE
 
