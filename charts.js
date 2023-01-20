@@ -1,21 +1,6 @@
 // BAR CHART DASHBOARD
 
 
-window.Promise ||
-  document.write(
-    '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
-  )
-window.Promise ||
-  document.write(
-    '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
-  )
-window.Promise ||
-  document.write(
-    '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
-  )
-
-
-
 // Replace Math.random() with a pseudo-random number generator to get reproducible results in e2e tests
 // Based on https://gist.github.com/blixt/f17b47c62508be59987b
 var _seed = 42;
@@ -154,32 +139,71 @@ var options = {
 
 // DOUGHNUT CHART DASHBOARD
 
-// window.onload = function () {
 
-//   var chart = new CanvasJS.Chart("PiechartContainer", {
-//     animationEnabled: true,
-//     title:{
-//       text: "Email Categories",
-//       horizontalAlign: "left"
-//     },
-//     data: [{
-//       type: "doughnut",
-//       startAngle: 60,
-//       //innerRadius: 60,
-//       indexLabelFontSize: 17,
-//       indexLabel: "{label} - #percent%",
-//       toolTipContent: "<b>{label}:</b> {y} (#percent%)",
-//       dataPoints: [
-//         { y: 67, label: "Inbox" },
-//         { y: 28, label: "Archives" },
-//         { y: 10, label: "Labels" },
-//         { y: 7, label: "Drafts"},
-//         { y: 15, label: "Trash"},
-//         { y: 6, label: "Spam"}
-//       ]
-//     }]
-//   });
-//   chart.render();
-  
-//   }
+am5.ready(function() {
 
+// Create root element
+// https://www.amcharts.com/docs/v5/getting-started/#Root_element
+var root = am5.Root.new("chartdiv");
+
+
+// Set themes
+// https://www.amcharts.com/docs/v5/concepts/themes/
+root.setThemes([
+  am5themes_Animated.new(root)
+]);
+
+
+// Create chart
+// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
+var chart = root.container.children.push(am5percent.PieChart.new(root, {
+  layout: root.verticalLayout,
+  innerRadius: am5.percent(50)
+}));
+
+
+// Create series
+// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
+var series = chart.series.push(am5percent.PieSeries.new(root, {
+  valueField: "value",
+  categoryField: "category",
+  alignLabels: false
+}));
+
+series.labels.template.setAll({
+  textType: "circular",
+  centerX: 0,
+  centerY: 0
+});
+
+
+// Set data
+// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
+series.data.setAll([
+  { value: 10, category: "One" },
+  { value: 9, category: "Two" },
+  { value: 6, category: "Three" },
+  { value: 5, category: "Four" },
+  { value: 4, category: "Five" },
+  { value: 3, category: "Six" },
+  { value: 1, category: "Seven" },
+]);
+
+
+// Create legend
+// https://www.amcharts.com/docs/v5/charts/percent-charts/legend-percent-series/
+var legend = chart.children.push(am5.Legend.new(root, {
+  centerX: am5.percent(50),
+  x: am5.percent(50),
+  marginTop: 15,
+  marginBottom: 15,
+}));
+
+legend.data.setAll(series.dataItems);
+
+
+// Play initial series animation
+// https://www.amcharts.com/docs/v5/concepts/animations/#Animation_of_series
+series.appear(1000, 100);
+
+});

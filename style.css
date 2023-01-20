@@ -42,6 +42,16 @@ body.dark{
 
 /* body toggling */
 
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+#barchartdiv {
+    width: 100%;
+    height: 500px;
+  }
+
 .default-body{
     margin-left: 88px;
 }
@@ -152,9 +162,6 @@ summary{
     text-align: left;
 }
 
-.links{
-    margin-top: -50px;
-}
 
 .nav-icon {
     min-width: 10px;
