@@ -6,7 +6,8 @@ toggle = body.querySelector(".toggle"),
 searchBtn = body.querySelector(".search-box"),
 modeSwitch = body.querySelector(".toggle-switch"),
 modeText = body.querySelector(".mode-text");
-nav_link = body.querySelector(".nav-link")
+nav_link = body.querySelector("details")
+
 
 // Sidebar & body toggle
 
@@ -15,6 +16,13 @@ sidebar.classList.toggle("close");
 body.classList.toggle("bodytoggle")
 
 })
+
+
+// $('.item-container').on("click", function() {
+//   $('.links').hide();
+//   $(this).next('.case-popup').show();
+// });
+
 
 
 // DARK MODE & LIGHT MODE TOGGLE
@@ -43,3 +51,20 @@ $('.third-links').on('click', function(event){
 });
 
 // ---------------------------
+
+// NEST auto CLOSING
+
+
+jQuery(document).ready(function($){
+  $('summary').on('click', function(){
+    var targetBox = $(this).attr('target-box'); // Find the target box
+    
+    $('.box').not(targetBox).hide(300); // Hide all other boxes
+    
+    $(targetBox).toggle(300); // Toggle the current state of this one
+  });
+   
+  $('.box').hide(300)
+
+});
+

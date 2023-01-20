@@ -1,7 +1,8 @@
 .cards{
     display: flex;
     align-items: flex-end;
-    justify-content: flex-start;
+    justify-content: center;
+    margin: 0;
 }
 
 /* Card 1 */
@@ -19,6 +20,12 @@
     text-align: center;
     align-items: center;
     gap: 10px;
+    justify-content: space-evenly;
+}
+
+.nums{
+    display: flex;
+    gap: 20px;
 }
 
 .num1{
@@ -36,17 +43,16 @@
 }
 
 .card-1-box{
-    border: 1px solid #fff;
     padding: 15px;
     border-radius: 10px;
 }
 
 .main-card{
     min-width: 23%;
-    min-height: 250px;
+    min-height: 300px;
     margin: 10px;
     max-width: 400px;
-    max-height: 600px;
+    max-height: 300px;
     border-radius: 10px;
 }
 
@@ -113,9 +119,7 @@
     font-size: 40px;
 }
 
-.big-icon-1{
-    float: right;
-}
+
 
 .big-icon-1 i{
     font-size: 40px;
@@ -159,6 +163,8 @@ select{
         max-height: 300px;
     
     }
+ 
+
 }
 
 @media(max-width: 900px){

@@ -137,31 +137,40 @@
                 <i class="fa-solid fa-users icon"></i>
               <span class="text nav-text"> Users</span></a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <div class="third-links">
-                    <details>
-                      <summary class="item-container"><i class="fa-solid fa-home"></i> NESTED 1</summary>
-                      <div class="links">
-                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 1</span></a></li>
-                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 2</span></a></li>
-                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 3</span></a></li>
+                  <div class="third-links" target-box="#box1">
+                    <div class="third-container">
+                      <summary class="item-container toggle" target-box="#box1"><i class="fa-solid fa-home"></i> NESTED 1</summary>
+                      <div class="links box" id="box1">
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> link 4</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> link 5</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> link 6</span></a></li>
                       </div>
-                    </details>
-                    <details>
-                      <summary class="item-container"><i class="fa-solid fa-home"></i> NESTED 1</summary>
-                      <div class="links">
-                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 4</span></a></li>
-                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 5</span></a></li>
-                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 6</span></a></li>
+                    </div>
+                    <div class="third-container">
+                      <summary class="item-container toggle" target-box="#box2"><i class="fa-solid fa-home"></i> NESTED 2</summary>
+                      <div class="links box" id="box2" >
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> link 7</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> link 8</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> link 9</span></a></li>
                       </div>
-                    </details>
-                    <details>
-                      <summary class="item-container"><i class="fa-solid fa-home"></i> NESTED 1</summary>
-                      <div class="links">
+                    </div>
+                    <div class="third-container">
+                      <summary class="item-container toggle" target-box="#box3"><i class="fa-solid fa-home"></i> NESTED 3</summary>
+                      <div class="links box" id="box3" >
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> link 7</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> link 8</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> link 9</span></a></li>
+                      </div>
+                    </div>
+                    <div class="third-container">
+                      <summary class="item-container toggle" target-box="#box4"><i class="fa-solid fa-home"></i> NESTED 4</summary>
+                      <div class="links box" id="box4" >
                         <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 7</span></a></li>
                         <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 8</span></a></li>
                         <li><a class="item" href="#"><i class="fa-solid fa-home"></i> <span class="third-link"> voice link 9</span></a></li>
                       </div>
-                    </details>
+                    </div>
+                    
                   </div>
               </ul> 
             </li>
@@ -254,19 +263,23 @@
             </select> Days</p>
           </div>
           <div class="card-1-body">
-            <div class="card-1-box">
-              <h1 class="num1">0</h1>
-              <p>New Numbers</p>
+            <div class="nums">
+              <div class="card-1-box">
+                <h1 class="num1">0</h1>
+                <p>New Numbers</p>
+              </div>
+              <div class="card-1-box">
+                <h1 class="num2">0</h1>
+                <p>Deleted Numbers</p>
+              </div>
+  
             </div>
-            <div class="card-1-box">
-              <h1 class="num2">0</h1>
-              <p>Deleted Numbers</p>
-            </div>
+            <div class="big-icon-1">
+              <i class="fa-solid fa-clipboard-list"></i>        
+          </div>
           </div>
         </div>
-        <div class="big-icon-1">
-            <i class="fa-solid fa-clipboard-list"></i>        
-        </div>
+
       </div>
 
       <!-- card 2 -->
@@ -325,8 +338,12 @@
       </div>
 
       <div class="pie-chart-1">
-        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>    
+
+
+
+
+        <!-- <div id="PiechartContainer" style="height: 370px; width: 100%;"></div>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>     -->
         </div>
     </div>
 
