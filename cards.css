@@ -185,4 +185,9 @@ select{
         flex-direction: column;
     }
 
+    .card-1-body{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
