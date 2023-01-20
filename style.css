@@ -618,6 +618,10 @@ a#dropdownMenuLink.dropdown-toggle::after{
     color: var(--text-color);
 }
 
+#chart{
+    width: 70% !important;
+}
+
 @media(max-width: 1200px){
     .bar-chart{
         display: flex;
