@@ -627,4 +627,7 @@ a#dropdownMenuLink.dropdown-toggle::after{
         display: flex;
         flex-direction: column;
     }
+    #chart{
+        width: 100% !important;
+    }
 }
