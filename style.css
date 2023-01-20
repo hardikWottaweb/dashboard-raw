@@ -619,7 +619,7 @@ a#dropdownMenuLink.dropdown-toggle::after{
 }
 
 #chart{
-    width: 70% !important;
+    width: 85% !important;
 }
 
 @media(max-width: 1200px){
