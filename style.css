@@ -162,6 +162,9 @@ summary{
     text-align: left;
 }
 
+.links{
+    margin-top: -50px;
+}
 
 .nav-icon {
     min-width: 10px;
