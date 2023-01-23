@@ -232,7 +232,7 @@
       </div>
 
       <!-- User -->
-      <div class="dropdown">
+      <!-- <div class="dropdown">
         <a
           class="dropdown-toggle"
           href="#"
@@ -247,12 +247,27 @@
         </a>
 
         <ul class="dropdown-menu py-4" aria-labelledby="dropdownMenuLink">
-          <li><a class="header-item" href="#"> <span class="header-link">User Name</span></a></li>
+          <li><a class="header-item p-2" href="#"> <span class="header-link">User Name</span></a></li>
           <li class="logout">
             <a class="header-item my-3" href="#"
               ><i class="fa-solid fa-right-from-bracket"></i> <span class="header-link">Logout</span></a
             >
           </li>
+        </ul>
+      </div> -->
+
+      <!-- img dropdown -->
+
+      <div class="img-container">
+        <div class="img-dropdown">
+          <img src="/img/user.jpg" width="50px"/>
+        </div>
+      </div>
+
+      <div class="img-content">
+        <ul>
+          <li><a href="#">User Name</a></li>
+          <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
         </ul>
       </div>
     </header>
@@ -261,7 +276,7 @@
 
     <section class="cards">
       <!-- card-1 -->
-      <div class="card-box-1 main-card">
+      <div class="card-box-1 main-card" title="Orders Container Tooltip" class="visible">
         <div class="card-content-1">
           <div class="card-1-head">
             <h2>All Orders</h2>

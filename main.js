@@ -6,7 +6,9 @@ toggle = body.querySelector(".toggle"),
 searchBtn = body.querySelector(".search-box"),
 modeSwitch = body.querySelector(".toggle-switch"),
 modeText = body.querySelector(".mode-text");
-nav_link = body.querySelector("details")
+nav_link = body.querySelector("details");
+my_drop = document.querySelector('.img-container')
+img_content = document.querySelector('.img-content')
 
 
 // Sidebar & body toggle
@@ -17,6 +19,9 @@ body.classList.toggle("bodytoggle")
 
 })
 
+my_drop.addEventListener('click', () => {
+  img_content.classList.toggle("view")
+})
 
 
 // DARK MODE & LIGHT MODE TOGGLE

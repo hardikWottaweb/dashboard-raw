@@ -76,10 +76,6 @@
     transition: 0.3s ease-in;
 }
 
-.card-box-2:hover{
-    color: rgb(230, 230, 230);
-    transition: 0.3s ease-in;
-}
 
 .bg-2{
     background: rgb(137,198,248);

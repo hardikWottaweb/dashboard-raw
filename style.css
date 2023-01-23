@@ -139,6 +139,14 @@ body.dark{
     background: none;
 }
 
+/* TOOLTIPS */
+.visible {
+    height: 3em;
+    width: 10em;
+    background: yellow;
+  }
+  
+
 
 /* Dropdown ends here */
 
@@ -626,9 +634,65 @@ summary{
     padding: 0 10px !important;
 }
 
-.am5-html-container{
-    color: var(--text-color);
+
+/* img dropdown */
+
+.img-dropdown{
+    border: 1px solid #333;
+    border-radius: 50%;
 }
+
+.img-dropdown img{
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.img-content{
+    display: none;
+    z-index: 100;
+    position: absolute;
+    background: var(--sidebar-color);
+    top: 100px;
+    width: 160px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
+
+.img-content li{
+    list-style: none;
+    padding: 20px 10px;
+}
+
+
+
+.img-content li a{
+    text-decoration: none;
+    text-align: left;
+    color: var(--text-color);
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+.img-content ul li a:hover{
+    background: var(--primary-color);
+    color: #fff !important;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+
+}
+
+.img-content ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+.view{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 
 @media(max-width: 1200px){
     .bar-chart{
