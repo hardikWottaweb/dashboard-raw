@@ -656,7 +656,7 @@ summary{
     width: 160px;
     height: 150px;
     border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 5px var(--text-color);
 }
 
 .img-content li{
@@ -672,6 +672,7 @@ summary{
     color: var(--text-color);
     font-size: 15px;
     padding: 10px 20px;
+    font-weight: bold;
 }
 
 .img-content ul li a:hover{
