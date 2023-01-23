@@ -1,12 +1,31 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <!-- Bootstrap CDNS -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-  />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cards.css" />
+    <link rel="stylesheet" href="charts.css" />
+
+    
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CDNS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,11 +37,701 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet"  href="style.css">
-<script src="charts.js"></script>
-</head>
-<body>
 
-	
-</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Charts Js files -->
+    <script src="charts.js"></script>
+
+    <title>Dashboard</title>
+  </head>
+  <body class="main-body default-body">
+    <!-- Sidebar with logo -->
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="/img/voiped_logo.png" alt="" />
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">Voiped</span>
+            <span class="profession"></span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+
+            <!-- SINGLE NESTING -->
+
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-home icon"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            
+            <!-- DOUBLE NESTING -->
+
+            <li>
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-volume-high icon"></i>
+              <span class="text nav-text">Voice</span></a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li class="drop-items">
+                  <a class="item" href="#"><i class="fa-solid fa-home"></i>voice link 2</a>
+                </li>
+                <li class="drop-items">
+                  <a class="item" href="#"><i class="fa-solid fa-home"></i>voice link 2</a>
+                </li>
+                <li class="drop-items">
+                  <a class="item" href="#"><i class="fa-solid fa-home"></i>voice link 2</a>
+                </li>
+                <li class="drop-items">
+                  <a class="item" href="#"><i class="fa-solid fa-home"></i>voice link 2</a>
+                </li>    
+              </ul> 
+            </li>
+
+
+            <!-- TRIPLE NESTING -->
+
+            <li>
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-chart-bar icon"></i>
+              <span class="text nav-text"> Charts</span></a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <div class="third-links" target-box="#box1">
+                    <div class="third-container pt-2">
+                      <summary class="item-container toggle" target-box="#box1"><i class="fa-solid fa-home nav-icon"></i><span class='third-heading'>Charts</span><i class="fa-solid fa-caret-down third-icon"></i></summary>
+                      <div class="links box" id="box1">
+                        <li><a class="item" href="charts.html"><i class="fa-solid fa-gear nav-icon"></i> <span class="third-link"> charts sheet</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-gear nav-icon"></i> <span class="third-link"> link 5</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-gear nav-icon"></i> <span class="third-link"> link 6</span></a></li>
+                      </div>
+                    </div>
+                    <div class="third-container">
+                      <summary class="item-container toggle" target-box="#box2"><i class="fa-solid fa-gear"></i></i><span class='third-heading'>Graphs</span><i class="fa-solid fa-caret-down third-icon"></i></summary>
+                      <div class="links box" id="box2" >
+                        <li><a class="item" href="#"><i class="fa-solid fa-users nav-icon"></i> <span class="third-link"> link 7</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-lock nav-icon"></i> <span class="third-link"> link 8</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-gear nav-icon"></i> <span class="third-link"> link 9</span></a></li>
+                      </div>
+                    </div>
+                    <div class="third-container">
+                      <summary class="item-container toggle" target-box="#box3"><i class="fa-solid fa-lock"></i> <span class='third-heading'>lock</span><i class="fa-solid fa-caret-down third-icon"></i></summary>
+                      <div class="links box" id="box3" >
+                        <li><a class="item" href="#"><i class="fa-solid fa-users nav-icon"></i> <span class="third-link"> link 7</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-gear nav-icon"></i> <span class="third-link"> link 8</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-lock nav-icon"></i> <span class="third-link"> link 9</span></a></li>
+                      </div>
+                    </div>
+                    <div class="third-container">
+                      <summary class="item-container toggle" target-box="#box4"><i class="fa-solid fa-volume-high"></i><span class='third-heading'> Graphs</span><i class="fa-solid fa-caret-down third-icon"></i></summary>
+                      <div class="links box" id="box4" >
+                        <li><a class="item" href="#"><i class="fa-solid fa-lock nav-icon"></i> <span class="third-link"> voice link 7</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-user nav-icon"></i> <span class="third-link"> voice link 8</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-gear nav-icon"></i> <span class="third-link"> voice link 9</span></a></li>
+                      </div>
+                    </div>
+                  </div>
+              </ul> 
+            </li>
+
+
+
+            <li>
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-users icon"></i>
+              <span class="text nav-text"> Users</span></a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <div class="third-links" target-box="#box1">
+                    <div class="third-container pt-2">
+                      <summary class="item-container toggle" target-box="#box5"><i class="fa-solid fa-home"></i><span class='third-heading mx-1'>Users</span><i class="fa-solid fa-caret-down third-icon"></i></summary>
+                      <div class="links box" id="box5">
+                        <li><a class="item" href="#"><i class="fa-solid fa-users"></i> <span class="third-link"> link 4</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-lock"></i> <span class="third-link"> link 5</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-gear"></i> <span class="third-link"> link 6</span></a></li>
+                      </div>
+                    </div>
+                    <div class="third-container">
+                      <summary class="item-container toggle" target-box="#box6"><i class="fa-solid fa-home"></i><span class='third-heading'>Graphs</span><i class="fa-solid fa-caret-down third-icon"></i></summary>
+                      <div class="links box" id="box6" >
+                        <li><a class="item" href="#"><i class="fa-solid fa-users"></i> <span class="third-link"> link 7</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-lock"></i> <span class="third-link"> link 8</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-gear"></i> <span class="third-link"> link 9</span></a></li>
+                      </div>
+                    </div>
+                    <div class="third-container">
+                      <summary class="item-container toggle" target-box="#box7"><i class="fa-solid fa-home"></i><span class='third-heading'>Dashboard</span><i class="fa-solid fa-caret-down third-icon"></i></summary>
+                      <div class="links box" id="box7" >
+                        <li><a class="item" href="#"><i class="fa-solid fa-users"></i> <span class="third-link"> link 7</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-gear"></i> <span class="third-link"> link 8</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-lock"></i> <span class="third-link"> link 9</span></a></li>
+                      </div>
+                    </div>
+                    <div class="third-container">
+                      <summary class="item-container toggle" target-box="#box8"><i class="fa-solid fa-home"></i> <span class='third-heading'>Voice</span><i class="fa-solid fa-caret-down third-icon"></i></summary>
+                      <div class="links box" id="box8" >
+                        <li><a class="item" href="#"><i class="fa-solid fa-lock"></i> <span class="third-link"> link 7</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-user"></i> <span class="third-link"> link 8</span></a></li>
+                        <li><a class="item" href="#"><i class="fa-solid fa-gear"></i> <span class="third-link"> link 9</span></a></li>
+                      </div>
+                    </div>
+                    
+                  </div>
+              </ul> 
+            </li>
+
+            <!-- Triple nesting ends here -->
+        
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+          <li class="mode">
+            <div class="sun-moon">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark mode</span>
+
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header">
+      <!-- settings icon -->
+
+      <div class="dropdown mx-2">
+        <a
+          class="dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <div class="user-img">
+            <button class="icon-btn">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+          </div>
+        </a>
+        <ul class="dropdown-menu p-3" aria-labelledby="dropdownMenuLink">
+          <div id="pass">
+            <i class="fa-solid fa-lock icon"></i>
+            <a href="#">Change Password</a>
+          </div>
+        </ul>
+      </div>
+
+      <!-- User -->
+      <!-- img dropdown -->
+
+      <div class="img-container">
+        <div class="img-dropdown">
+          <button class=" icon-btn">
+            <i class="fa-solid fa-user"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="img-content">
+        <ul>
+          <li><a href="#">User Name</a></li>
+          <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- CHARTS -->
+
+    <style>
+      #chartdiv {
+        width: 100%;
+        height: 500px;
+      }
+      #chartdiv2 {
+        width: 100%;
+        height: 500px;
+      }
+      </style>
+      
+      <!-- Resources -->
+      <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+      
+      <!-- Chart code -->
+      <script>
+      am5.ready(function() {
+      
+      // Create root element
+      // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+      var root = am5.Root.new("chartdiv");
+      
+      // Set themes
+      // https://www.amcharts.com/docs/v5/concepts/themes/
+      root.setThemes([
+        am5themes_Animated.new(root)
+      ]);
+      
+      // Create chart
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/
+      var chart = root.container.children.push(am5xy.XYChart.new(root, {
+        panX: true,
+        panY: true,
+        wheelX: "panX",
+        wheelY: "zoomX",
+        layout: root.verticalLayout,
+        pinchZoomX:true
+      }));
+      
+      // Add cursor
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
+      var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {
+        behavior: "none"
+      }));
+      cursor.lineY.set("visible", false);
+      
+      var colorSet = am5.ColorSet.new(root, {});
+      
+      // The data
+      var data = [
+        {
+          year: "2014",
+          value: 23.5,
+          strokeSettings: {
+            stroke: colorSet.getIndex(0)
+          },
+          fillSettings: {
+            fill: colorSet.getIndex(0),
+          },
+          bulletSettings: {
+            fill: colorSet.getIndex(0)
+          }
+        },
+        {
+          year: "2015",
+          value: 26,
+          bulletSettings: {
+            fill: colorSet.getIndex(0)
+          }
+        },
+        {
+          year: "2016",
+          value: 30,
+          bulletSettings: {
+            fill: colorSet.getIndex(0)
+          }
+        },
+        {
+          year: "2017",
+          value: 20,
+          bulletSettings: {
+            fill: colorSet.getIndex(0)
+          }
+        },
+        {
+          year: "2018",
+          value: 30,
+          strokeSettings: {
+            stroke: colorSet.getIndex(3)
+          },
+          fillSettings: {
+            fill: colorSet.getIndex(3),
+          },
+          bulletSettings: {
+            fill: colorSet.getIndex(3)
+          }
+        },
+        {
+          year: "2019",
+          value: 30,
+          bulletSettings: {
+            fill: colorSet.getIndex(3)
+          }
+        },
+        {
+          year: "2020",
+          value: 31,
+          bulletSettings: {
+            fill: colorSet.getIndex(3)
+          }
+        },
+        {
+          year: "2021",
+          value: 34,
+          strokeSettings: {
+            stroke: colorSet.getIndex(6)
+          },
+          fillSettings: {
+            fill: colorSet.getIndex(6),
+          },
+          bulletSettings: {
+            fill: colorSet.getIndex(6)
+          }
+        },
+        {
+          year: "2022",
+          value: 33,
+          bulletSettings: {
+            fill: colorSet.getIndex(6)
+          }
+        },
+        {
+          year: "2023",
+          value: 34,
+          bulletSettings: {
+            fill: colorSet.getIndex(6)
+          }
+        },
+        {
+          year: "2024",
+          value: 36,
+          bulletSettings: {
+            fill: colorSet.getIndex(6)
+          }
+        }
+      ];
+      
+      // Create axes
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+      var xRenderer = am5xy.AxisRendererX.new(root, {});
+      xRenderer.grid.template.set("location", 0.5);
+      xRenderer.labels.template.setAll({
+        location: 0.5,
+        multiLocation: 0.5
+      });
+      
+      var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+        categoryField: "year",
+        renderer: xRenderer,
+        tooltip: am5.Tooltip.new(root, {})
+      }));
+      
+      xAxis.data.setAll(data);
+      
+      var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+        maxPrecision: 0,
+        renderer: am5xy.AxisRendererY.new(root, {})
+      }));
+      
+      var series = chart.series.push(am5xy.LineSeries.new(root, {
+        xAxis: xAxis,
+        yAxis: yAxis,
+        valueYField: "value",
+        categoryXField: "year",
+        tooltip: am5.Tooltip.new(root, {
+          labelText: "{valueY}",
+          dy:-5
+        })
+      }));
+      
+      series.strokes.template.setAll({
+        templateField: "strokeSettings",
+        strokeWidth: 2
+      });
+      
+      series.fills.template.setAll({
+        visible: true,
+        fillOpacity: 0.5,
+        templateField: "fillSettings"
+      });
+      
+      
+      series.bullets.push(function() {
+        return am5.Bullet.new(root, {
+          sprite: am5.Circle.new(root, {
+            templateField: "bulletSettings",
+            radius: 5
+          })
+        });
+      });
+      
+      series.data.setAll(data);
+      series.appear(1000);
+      
+      // Add scrollbar
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/scrollbars/
+      chart.set("scrollbarX", am5.Scrollbar.new(root, {
+        orientation: "horizontal",
+        marginBottom: 20
+      }));
+      
+      // Make stuff animate on load
+      // https://www.amcharts.com/docs/v5/concepts/animations/
+      chart.appear(1000, 100);
+      
+      }); // end am5.ready()
+      </script>
+      
+      <!-- HTML -->
+      <div id="chartdiv"></div>
+
+<!-- CHART 2 -->
+
+<script>
+  am5.ready(function() {
+  
+  // Create root element
+  // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+  var root = am5.Root.new("chartdiv2");
+  
+  // Set themes
+  // https://www.amcharts.com/docs/v5/concepts/themes/
+  root.setThemes([
+    am5themes_Animated.new(root)
+  ]);
+  
+  // Create chart
+  // https://www.amcharts.com/docs/v5/charts/xy-chart/
+  var chart = root.container.children.push(
+    am5xy.XYChart.new(root, {
+      panX: false,
+      panY: false,
+      wheelX: "none",
+      wheelY: "none"
+    })
+  );
+  
+  // Add cursor
+  // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
+  var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
+  cursor.lineY.set("visible", false);
+  
+  // Create axes
+  // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+  var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30 });
+  xRenderer.labels.template.setAll({ text: "{realName}" });
+  
+  var xAxis = chart.xAxes.push(
+    am5xy.CategoryAxis.new(root, {
+      maxDeviation: 0,
+      categoryField: "category",
+      renderer: xRenderer,
+      tooltip: am5.Tooltip.new(root, {
+        labelText: "{realName}"
+      })
+    })
+  );
+  
+  var yAxis = chart.yAxes.push(
+    am5xy.ValueAxis.new(root, {
+      maxDeviation: 0.3,
+      renderer: am5xy.AxisRendererY.new(root, {})
+    })
+  );
+  
+  var yAxis2 = chart.yAxes.push(
+    am5xy.ValueAxis.new(root, {
+      maxDeviation: 0.3,
+      syncWithAxis: yAxis,
+      renderer: am5xy.AxisRendererY.new(root, { opposite: true })
+    })
+  );
+  
+  // Create series
+  // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+  var series = chart.series.push(
+    am5xy.ColumnSeries.new(root, {
+      name: "Series 1",
+      xAxis: xAxis,
+      yAxis: yAxis2,
+      valueYField: "value",
+      sequencedInterpolation: true,
+      categoryXField: "category",
+      tooltip: am5.Tooltip.new(root, {
+        labelText: "{provider} {realName}: {valueY}"
+      })
+    })
+  );
+  
+  series.columns.template.setAll({
+    fillOpacity: 0.9,
+    strokeOpacity: 0
+  });
+  series.columns.template.adapters.add("fill", (fill, target) => {
+    return chart.get("colors").getIndex(series.columns.indexOf(target));
+  });
+  
+  series.columns.template.adapters.add("stroke", (stroke, target) => {
+    return chart.get("colors").getIndex(series.columns.indexOf(target));
+  });
+  
+  var lineSeries = chart.series.push(
+    am5xy.LineSeries.new(root, {
+      name: "Series 2",
+      xAxis: xAxis,
+      yAxis: yAxis,
+      valueYField: "quantity",
+      sequencedInterpolation: true,
+      stroke: chart.get("colors").getIndex(13),
+      fill: chart.get("colors").getIndex(13),
+      categoryXField: "category",
+      tooltip: am5.Tooltip.new(root, {
+        labelText: "{valueY}"
+      })
+    })
+  );
+  
+  lineSeries.strokes.template.set("strokeWidth", 2);
+  
+  lineSeries.bullets.push(function () {
+    return am5.Bullet.new(root, {
+      locationY: 1,
+      locationX: undefined,
+      sprite: am5.Circle.new(root, {
+        radius: 5,
+        fill: lineSeries.get("fill")
+      })
+    });
+  });
+  
+  // when data validated, adjust location of data item based on count
+  lineSeries.events.on("datavalidated", function () {
+    am5.array.each(lineSeries.dataItems, function (dataItem) {
+      // if count divides by two, location is 0 (on the grid)
+      if (
+        dataItem.dataContext.count / 2 ==
+        Math.round(dataItem.dataContext.count / 2)
+      ) {
+        dataItem.set("locationX", 0);
+      }
+      // otherwise location is 0.5 (middle)
+      else {
+        dataItem.set("locationX", 0.5);
+      }
+    });
+  });
+  
+  var chartData = [];
+  
+  // Set data
+  var data = {
+    "Provider 1": {
+      "item 1": 10,
+      "item 2": 35,
+      "item 3": 5,
+      "item 4": 20,
+      quantity: 430
+    },
+    "Provider 2": {
+      "item 1": 15,
+      "item 3": 21,
+      quantity: 210
+    },
+    "Provider 3": {
+      "item 2": 25,
+      "item 3": 11,
+      "item 4": 17,
+      quantity: 265
+    },
+    "Provider 4": {
+      "item 3": 12,
+      "item 4": 15,
+      quantity: 98
+    }
+  };
+  
+  // process data ant prepare it for the chart
+  for (var providerName in data) {
+    var providerData = data[providerName];
+  
+    // add data of one provider to temp array
+    var tempArray = [];
+    var count = 0;
+    // add items
+    for (var itemName in providerData) {
+      if (itemName != "quantity") {
+        count++;
+        // we generate unique category for each column (providerName + "_" + itemName) and store realName
+        tempArray.push({
+          category: providerName + "_" + itemName,
+          realName: itemName,
+          value: providerData[itemName],
+          provider: providerName
+        });
+      }
+    }
+    // sort temp array
+    tempArray.sort(function (a, b) {
+      if (a.value > b.value) {
+        return 1;
+      } else if (a.value < b.value) {
+        return -1;
+      } else {
+        return 0;
+      }
+    });
+  
+    // add quantity and count to middle data item (line series uses it)
+    var lineSeriesDataIndex = Math.floor(count / 2);
+    tempArray[lineSeriesDataIndex].quantity = providerData.quantity;
+    tempArray[lineSeriesDataIndex].count = count;
+    // push to the final data
+    am5.array.each(tempArray, function (item) {
+      chartData.push(item);
+    });
+  
+    // create range (the additional label at the bottom)
+  
+    var range = xAxis.makeDataItem({});
+    xAxis.createAxisRange(range);
+  
+    range.set("category", tempArray[0].category);
+    range.set("endCategory", tempArray[tempArray.length - 1].category);
+  
+    var label = range.get("label");
+  
+    label.setAll({
+      text: tempArray[0].provider,
+      dy: 30,
+      fontWeight: "bold",
+      tooltipText: tempArray[0].provider
+    });
+  
+    var tick = range.get("tick");
+    tick.setAll({ visible: true, strokeOpacity: 1, length: 50, location: 0 });
+  
+    var grid = range.get("grid");
+    grid.setAll({ strokeOpacity: 1 });
+  }
+  
+  // add range for the last grid
+  var range = xAxis.makeDataItem({});
+  xAxis.createAxisRange(range);
+  range.set("category", chartData[chartData.length - 1].category);
+  var tick = range.get("tick");
+  tick.setAll({ visible: true, strokeOpacity: 1, length: 50, location: 1 });
+  
+  var grid = range.get("grid");
+  grid.setAll({ strokeOpacity: 1, location: 1 });
+  
+  xAxis.data.setAll(chartData);
+  series.data.setAll(chartData);
+  lineSeries.data.setAll(chartData);
+  
+  // Make stuff animate on load
+  // https://www.amcharts.com/docs/v5/concepts/animations/
+  series.appear(1000);
+  chart.appear(1000, 100);
+  
+  }); // end am5.ready()
+  </script>
+  
+  <!-- HTML -->
+  <div id="chartdiv2"></div>
+    <script src="main.js"></script>
+
+  </body>
 </html>

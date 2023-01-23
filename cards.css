@@ -25,9 +25,8 @@
 .card-box-1{
     padding: 15px;
     color: #fff;
-    background: rgb(255,182,150);
-    background: linear-gradient(90deg, rgba(255,182,150,1) 10%, rgba(255,146,150,1) 36%, rgba(254,130,150,1) 100%);
-}
+    background: rgb(247,52,52);
+    background: linear-gradient(90deg, rgba(247,52,52,1) 0%, rgb(236, 121, 121) 61%, rgba(247,163,163,1) 100%);}
 
 .card-1-body{
     display: flex;
@@ -96,18 +95,18 @@
 }
 
 .bg-2{
-    background: rgb(137,198,248);
-    background: linear-gradient(90deg, rgba(137,198,248,1) 0%, rgba(78,166,237,1) 44%, rgba(0,104,186,1) 100%);    
+    background: rgb(247,0,15);
+    background: linear-gradient(90deg, rgb(246, 53, 66) 0%, rgb(255, 103, 113) 61%, rgba(247,163,163,1) 100%);
 }
 
 .bg-3{
-    background: rgb(127,217,209);
-    background: linear-gradient(90deg, rgba(127,217,209,1) 0%, rgba(69,211,192,1) 44%, rgba(4,162,138,1) 100%);    
+    background: rgb(247,0,15);
+    background: linear-gradient(90deg, rgb(246, 53, 66) 0%, rgb(255, 116, 125) 61%, rgba(247,163,163,1) 100%);
 }
 
 .bg-4{
-    background: rgb(217,127,195);
-    background: linear-gradient(90deg, rgba(217,127,195,1) 0%, rgba(104,69,211,1) 61%, rgba(4,100,162,1) 100%);    
+    background: rgb(247,0,15);
+    background: linear-gradient(90deg, rgb(246, 53, 66) 0%, rgb(255, 141, 149) 61%, rgb(220, 154, 154) 100%);
 }
 
 .card-content h4{
