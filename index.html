@@ -148,7 +148,7 @@
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <div class="third-links" target-box="#box1">
                     <div class="third-container">
-                      <summary class="item-container toggle" target-box="#box5"><i class="fa-solid fa-home"></i><span class='third-heading'>Users</span></summary>
+                      <summary class="item-container toggle" target-box="#box5"><i class="fa-solid fa-home"></i><span class='third-heading mx-1'>Users</span></summary>
                       <div class="links box" id="box5">
                         <li><a class="item" href="#"><i class="fa-solid fa-users"></i> <span class="third-link"> link 4</span></a></li>
                         <li><a class="item" href="#"><i class="fa-solid fa-lock"></i> <span class="third-link"> link 5</span></a></li>
@@ -362,11 +362,10 @@
         // https://www.amcharts.com/docs/v5/getting-started/#Root_element
         var root = am5.Root.new("chartdiv");
 
-
         // Set themes
         // https://www.amcharts.com/docs/v5/concepts/themes/
         root.setThemes([
-          am5themes_Animated.new(root)
+          am5themes_Animated.new(root),
         ]);
 
 
@@ -383,7 +382,7 @@
         var series = chart.series.push(am5percent.PieSeries.new(root, {
           valueField: "value",
           categoryField: "category",
-          alignLabels: false
+          alignLabels: true
         }));
 
         series.labels.template.setAll({

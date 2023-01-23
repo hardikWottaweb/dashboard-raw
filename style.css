@@ -617,12 +617,13 @@ summary{
     position: absolute;
     padding: 0 30px;
     right: 10;
-    /* Adjust these values accordingly */
+    
 }
 
 .third-heading{
     position: absolute !important;
     left: 30px !important;
+    padding: 0 10px !important;
 }
 
 @media(max-width: 1200px){

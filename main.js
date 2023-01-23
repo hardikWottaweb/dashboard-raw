@@ -46,7 +46,9 @@ $('.third-links').on('click', function(event){
 
 // ---------------------------
 
-// NEST auto CLOSING
+
+
+// Auto Closing Nested menu
 
 
 jQuery(document).ready(function($){
