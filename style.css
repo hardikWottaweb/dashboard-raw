@@ -44,8 +44,7 @@ body.dark{
 
 .third-icon{
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 15px;
 }
 
 #chartdiv {
@@ -53,10 +52,7 @@ body.dark{
   height: 500px;
 }
 
-#hbchartdiv{
-    width: 100%;
-    height: 500px;
-  }
+
 
 #barchartdiv {
     width: 100%;
