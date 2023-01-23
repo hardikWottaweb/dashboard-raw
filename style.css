@@ -42,6 +42,11 @@ body.dark{
 
 /* body toggling */
 
+.third-icon{
+    position: absolute;
+    right: 0;
+}
+
 #chartdiv {
   width: 100%;
   height: 500px;
