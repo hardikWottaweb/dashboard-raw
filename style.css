@@ -647,6 +647,7 @@ summary{
     background: var(--sidebar-color);
     top: 100px;
     width: 160px;
+    height: 150px;
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
 }
