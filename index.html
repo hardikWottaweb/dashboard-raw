@@ -362,10 +362,20 @@
         // https://www.amcharts.com/docs/v5/getting-started/#Root_element
         var root = am5.Root.new("chartdiv");
 
+
         // Set themes
         // https://www.amcharts.com/docs/v5/concepts/themes/
+        var myTheme = am5.Theme.new(root);
+
+        // Here the color can be changed. :0
+        myTheme.rule("Label").setAll({
+          fill: am5.color("#0298f5"),
+          fontWeight: 700
+        });
+
         root.setThemes([
           am5themes_Animated.new(root),
+          myTheme
         ]);
 
 
@@ -374,6 +384,7 @@
         var chart = root.container.children.push(am5percent.PieChart.new(root, {
           layout: root.verticalLayout,
           innerRadius: am5.percent(50)
+
         }));
 
 
@@ -382,14 +393,15 @@
         var series = chart.series.push(am5percent.PieSeries.new(root, {
           valueField: "value",
           categoryField: "category",
-          alignLabels: true
+          alignLabels: true,
         }));
 
         series.labels.template.setAll({
           textType: "circular",
           centerX: 0,
-          centerY: 0
+          centerY: 0,
         });
+
 
 
         // Set data
@@ -402,9 +414,12 @@
           { value: 4, category: "Five" },
           { value: 3, category: "Six" },
           { value: 1, category: "Seven" },
+          
         ]);
 
-        
+        var myTheme = am5.Theme.new(root);
+
+
 
 
         // Create legend
@@ -419,6 +434,7 @@
         legend.data.setAll(series.dataItems);
 
 
+
         // Play initial series animation
         // https://www.amcharts.com/docs/v5/concepts/animations/#Animation_of_series
         series.appear(1000, 100);
@@ -427,7 +443,7 @@
         </script>
 
         <!-- HTML -->
-        <div id="chartdiv"></div>
+        <div id="chartdiv" ></div>
         </div>
     </div>
 

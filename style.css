@@ -626,6 +626,10 @@ summary{
     padding: 0 10px !important;
 }
 
+.am5-html-container{
+    color: var(--text-color);
+}
+
 @media(max-width: 1200px){
     .bar-chart{
         display: flex;
