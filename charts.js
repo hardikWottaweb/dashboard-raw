@@ -102,13 +102,16 @@ var options = {
   ],
     chart: {
     height: 350,
-    type: 'bar'
+    type: 'bar',
+    
   },
+  
   plotOptions: {
     bar: {
       horizontal: true,
     }
   },
+
   colors: ['var(--primary-color)'],
   dataLabels: {
     formatter: function(val, opt) {
@@ -128,7 +131,7 @@ var options = {
     customLegendItems: ['Actual', 'Expected'],
     markers: {
       fillColors: ['var(--primary-color)', '#775DD0']
-    }
+    },
   }
   };
 
