@@ -42,6 +42,7 @@
 .nums{
     display: flex;
     gap: 10px;
+    margin-top: -150px;
 }
 
 .num1{
@@ -222,6 +223,9 @@ select{
         flex-direction: column;
     }
     
+    .nums{
+        margin-top: 0;
+    }
     
 
 }
