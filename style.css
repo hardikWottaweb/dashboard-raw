@@ -42,17 +42,26 @@ body.dark{
 
 /* body toggling */
 
-
+select{
+    border-radius: 3px;
+}
 
 
 .third-icon{
     position: absolute;
-    right: 15px;
+    right: 0;
+    z-index: -11;
+    padding: 10px 20px ;
+
 }
 
-.rotate-icon{
-    transform: rotate(-90deg);
+/* icon rotate on click */
+
+.rotate{
+    transform: rotate(90deg);
 }
+
+/* ----- */
 
 #chartdiv {
   width: 100%;

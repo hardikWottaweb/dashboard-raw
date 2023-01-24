@@ -10,7 +10,6 @@ nav_link = body.querySelector("details");
 my_drop = document.querySelector('.img-container')
 img_content = document.querySelector('.img-content')
 
-
 // Sidebar & body toggle
 
 toggle.addEventListener("click" , () =>{
@@ -70,4 +69,12 @@ jQuery(document).ready(function($){
 
 });
 
+
+
+// icon rotate
+
+$(".third-icon").click(function(){
+  
+  $(this).toggleClass("rotate") ; 
+ })
 
