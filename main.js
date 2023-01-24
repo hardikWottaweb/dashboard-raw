@@ -66,6 +66,7 @@ jQuery(document).ready(function($){
   });
    
   $('.box').hide(200)
+  
 
 });
 
