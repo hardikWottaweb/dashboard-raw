@@ -100,18 +100,18 @@
 }
 
 .bg-2{
-    background: rgb(240,142,252);
-    background: linear-gradient(90deg, rgba(240,142,252,1) 0%, rgba(238,81,102,1) 82%);
+    background: rgb(255,188,150);
+    background: linear-gradient(90deg, rgba(255,188,150,1) 0%, rgba(252,110,133,1) 100%);
 }
 
 .bg-3{
-    background: rgb(254,9,68);
-    background: linear-gradient(90deg, rgb(255, 80, 120) 0%, rgba(254,174,150,1) 82%);
+    background: rgb(43,147,230);
+    background: linear-gradient(90deg, rgba(43,147,230,1) 18%, rgba(234,110,252,1) 100%);
 }
 
 .bg-4{
-    background: rgb(255,90,38);
-    background: linear-gradient(90deg, rgb(249, 111, 69) 0%, rgb(255, 195, 242) 100%);
+    background: rgb(247,133,225);
+    background: linear-gradient(90deg, rgba(247,133,225,1) 0%, rgba(3,121,215,1) 100%);
 }
 
 .card-content h4{
