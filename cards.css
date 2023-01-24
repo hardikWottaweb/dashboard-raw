@@ -26,7 +26,7 @@
     padding: 15px;
     color: #fff;
     background: rgb(247,55,55);
-    background: linear-gradient(90deg, rgba(247,55,55,1) 26%, rgba(247,108,108,1) 63%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(90deg, rgba(247,55,55,1) 26%, rgb(241, 134, 134) 63%, #f8a6ab 100%);
 }
 
 
@@ -98,17 +98,17 @@
 
 .bg-2{
     background: rgb(247,55,55);
-    background: linear-gradient(90deg, rgba(247,55,55,1) 26%, rgba(247,108,108,1) 63%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(90deg, rgba(247,55,55,1) 26%, rgb(241, 134, 134) 63%, #f8a6ab 100%);
 }
 
 .bg-3{
     background: rgb(247,55,55);
-    background: linear-gradient(90deg, rgba(247,55,55,1) 26%, rgba(247,108,108,1) 63%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(90deg, rgba(247,55,55,1) 26%, rgb(241, 134, 134) 63%, #f8a6ab 100%);
 }
 
 .bg-4{
     background: rgb(247,55,55);
-    background: linear-gradient(90deg, rgba(247,55,55,1) 26%, rgba(247,108,108,1) 63%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(90deg, rgba(247,55,55,1) 26%, rgb(241, 134, 134) 63%, #f8a6ab 100%);
 }
 
 .card-content h4{
@@ -131,7 +131,7 @@
 }
 
 .big-icon i{
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 50px;
     color: var(--body-color);
     opacity: 0.2;
@@ -139,7 +139,7 @@
 
 
 .big-icon-1 i{
-    font-size: 40px;
+    font-size: 50px;
     position: absolute;
     margin-top: -60px;
     margin-left: -15px;
@@ -202,11 +202,11 @@ select{
 
 
     .big-icon i{
-        font-size: 25px;
+        font-size: 40px;
     }
 
     .big-icon-1 i{
-        font-size: 25px;
+        font-size: 40px;
     }
     
 
