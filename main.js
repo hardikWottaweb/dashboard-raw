@@ -9,6 +9,16 @@ modeText = body.querySelector(".mode-text");
 nav_link = body.querySelector("details");
 my_drop = document.querySelector('.img-container')
 img_content = document.querySelector('.img-content')
+loader = document.querySelector('#preloader')
+
+
+// preloader animation
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    loader.style.display = 'none'
+  }, 2000);
+})
 
 // Sidebar & body toggle
 
@@ -73,7 +83,7 @@ jQuery(document).ready(function($){
 
 
 // icon rotate
-
+jQuery(document).ready
 $(".item-container").click(function(){
 
     $(this).children('.third-icon').toggleClass("rotate") ; 

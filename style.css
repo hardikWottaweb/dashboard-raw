@@ -40,6 +40,29 @@ body.dark{
     --text-color: #ccc;
 }
 
+/* Preloader */
+
+#preloader{
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    margin-left: -90px;
+}
+
+.loader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader img{
+    width: 200px;
+    margin-top: 45vh;
+}
+
 /* body toggling */
 
 select{
