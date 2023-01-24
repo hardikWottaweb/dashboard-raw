@@ -36,7 +36,7 @@
     text-align: center;
     align-items: center;
     gap: 10px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .nums{
@@ -140,11 +140,9 @@
 
 .big-icon-1 i{
     font-size: 50px;
-    position: absolute;
-    margin-top: -60px;
-    margin-left: -15px;
     color: var(--body-color);
     opacity: 0.2;
+    margin-bottom: 200px;
 }
 
 select{
@@ -178,7 +176,6 @@ select{
         margin: 10px;
         max-width: 400px;
     }
-
 
  
 
