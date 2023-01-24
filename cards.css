@@ -26,7 +26,7 @@
     padding: 15px;
     color: #fff;
     background: rgb(252,87,94);
-    background: linear-gradient(90deg, rgba(252,87,94,1) 15%, rgba(144,213,236,1) 100%);
+    background: linear-gradient(90deg, rgb(247, 109, 116) 15%, rgba(144,213,236,1) 100%);
 }
 
 
@@ -104,12 +104,12 @@
 
 .bg-3{
     background: rgb(254,9,68);
-    background: linear-gradient(90deg, rgba(254,9,68,1) 0%, rgba(254,174,150,1) 82%);
+    background: linear-gradient(90deg, rgb(255, 80, 120) 0%, rgba(254,174,150,1) 82%);
 }
 
 .bg-4{
     background: rgb(0,227,209);
-    background: linear-gradient(90deg, rgb(1, 209, 192) 16%, rgb(250, 171, 198) 84%);
+    background: linear-gradient(90deg, rgb(57, 146, 187) 16%, rgb(255, 165, 197) 84%);
 }
 
 .card-content h4{
