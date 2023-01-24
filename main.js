@@ -73,8 +73,8 @@ jQuery(document).ready(function($){
 
 // icon rotate
 
-$(".third-icon").click(function(){
+$(".item-container").click(function(){
   
-  $(this).toggleClass("rotate") ; 
+  $(this).children('.third-icon').toggleClass("rotate") ; 
  })
 
