@@ -88,13 +88,15 @@
 }
 
 .card-box-1:hover{
-    color: rgb(230, 230, 230);
-    transition: 0.3s ease-in;
+    transform: rotateY(1deg);
+    transform: rotateZ(1deg);
+    transition: 0.3s ease-in-out;
 }
 
 .card-box-2:hover{
-    color: rgb(230, 230, 230);
-    transition: 0.3s ease-in;
+    transform: rotateY(-1deg);
+    transform: rotateZ(-1deg);
+    transition: 0.3s ease-in-out;
 }
 
 .bg-2{
