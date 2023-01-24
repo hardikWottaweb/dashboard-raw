@@ -112,7 +112,7 @@ var options = {
     }
   },
 
-  colors: ['var(--primary-color)'],
+  colors: ['#cc55ff'],
   dataLabels: {
     formatter: function(val, opt) {
       const goals =
@@ -130,7 +130,7 @@ var options = {
     showForSingleSeries: true,
     customLegendItems: ['Actual', 'Expected'],
     markers: {
-      fillColors: ['var(--primary-color)', '#775DD0']
+      fillColors: ['#00caf0', '#ffcfdf', '#f7323f']
     },
   }
   };
