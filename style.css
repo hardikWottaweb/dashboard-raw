@@ -42,9 +42,16 @@ body.dark{
 
 /* body toggling */
 
+
+
+
 .third-icon{
     position: absolute;
     right: 15px;
+}
+
+.rotate-icon{
+    transform: rotate(-90deg);
 }
 
 #chartdiv {

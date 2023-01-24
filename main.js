@@ -10,6 +10,8 @@ nav_link = body.querySelector("details");
 my_drop = document.querySelector('.img-container')
 img_content = document.querySelector('.img-content')
 
+item_container = document.querySelector('.item-container')
+third_link = document.querySelector('.third-icon')
 
 // Sidebar & body toggle
 
@@ -21,6 +23,9 @@ body.classList.toggle("bodytoggle")
 
 my_drop.addEventListener('click', () => {
   img_content.classList.toggle("view")
+})
+
+item_container.addEventListener('click', () => {
 })
 
 
