@@ -60,6 +60,10 @@ select{
     transform: rotate(90deg);
 }
 
+.rotateOff{
+    transform: rotate(-90deg);
+}
+
 /* ----- */
 
 #chartdiv {
@@ -77,6 +81,10 @@ select{
     height: 500px;
 }
 
+#chartdiv4{
+    width: 100%;
+    height: 500px;
+}
 
 #barchartdiv {
     width: 100%;

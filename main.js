@@ -74,7 +74,7 @@ jQuery(document).ready(function($){
 // icon rotate
 
 $(".item-container").click(function(){
-  
-  $(this).children('.third-icon').toggleClass("rotate") ; 
+
+    $(this).children('.third-icon').toggleClass("rotate") ; 
  })
 
