@@ -200,11 +200,13 @@ select{
 
 
     .big-icon i{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .big-icon-1 i{
-        font-size: 40px;
+        font-size: 30px;
+        margin-top: 30px;
+        margin-right: -35px;
     }
     
 
