@@ -38,8 +38,8 @@ body.dark{
     padding: 15px;
     color: #fff;
     box-shadow: 3px 3px 3px var(--shadow-color);
-    background: rgb(130,73,255);
-    background: linear-gradient(90deg, rgba(130,73,255,1) 10%, rgba(217,100,143,1) 60%, rgba(244,108,108,1) 100%);
+    background: rgb(255,188,150);
+    background: linear-gradient(90deg, rgba(255,188,150,1) 10%, rgba(255,130,150,1) 100%);
 }
 
 
@@ -55,11 +55,12 @@ body.dark{
 .nums{
     display: flex;
     gap: 10px;
-    margin-top: -150px;
+    margin-top: -30px;
 }
 
 .num1{
     color: green;
+    font-size: 15px;
 }
 
 .num-btn{
@@ -69,6 +70,11 @@ body.dark{
 
 .num2{
     color: red;
+    font-size: 15px;
+}
+
+.nums p{
+    font-size: 12px;
 }
 
 .card-1-box{
@@ -76,12 +82,16 @@ body.dark{
     border-radius: 10px;
 }
 
+.card-1-head h2{
+    font-size: 20px;
+}
+
 .main-card{
     min-width: 23%;
-    min-height: 200px;
+    min-height: 120px;
     margin: 10px;
     max-width: 400px;
-    max-height: 200px;
+    max-height: 100px;
     border-radius: 10px;
 }
 
@@ -115,27 +125,27 @@ body.dark{
 }
 
 .bg-2{
-    background: rgb(244,108,108);
-    background: linear-gradient(90deg, rgba(244,108,108,1) 10%, rgba(217,100,143,1) 60%, rgba(130,73,255,1) 100%);
+    background: rgb(209,234,254);
+    background: linear-gradient(90deg, rgb(155, 199, 235) 9%, rgba(34,143,229,1) 100%);
 }
 
 .bg-3{
-    background: rgb(130,73,255);
-    background: linear-gradient(90deg, rgba(130,73,255,1) 10%, rgba(217,100,143,1) 60%, rgba(244,108,108,1) 100%);
+    background: rgb(161,190,230);
+    background: linear-gradient(90deg, rgba(161,190,230,1) 9%, rgb(203, 112, 245) 100%);
 }
 
 .bg-4{
-    background: rgb(244,108,108);
-    background: linear-gradient(90deg, rgba(244,108,108,1) 10%, rgba(217,100,143,1) 60%, rgba(130,73,255,1) 100%);
+    background: rgb(171,255,248);
+    background: linear-gradient(90deg, rgb(139, 207, 202) 9%, rgba(0,172,146,1) 100%);
 }
 
 .card-content h4{
-    font-size: 30px;
+    font-size: 20px;
     line-height: 50px;
 }
 
 .price{
-    font-size: 35px;
+    font-size: 25px;
     padding: 5px;
     
 }
@@ -150,17 +160,20 @@ body.dark{
 }
 
 .big-icon i{
-    font-size: 50px;
+    font-size: 30px;
     margin-top: 50px;
     color: var(--body-color);
     opacity: 0.3;
 }
 
+.big-icon-1{
+    margin-top: -60px;
+}
+
 .big-icon-1 i{
-    font-size: 50px;
+    font-size: 30px;
+    opacity: 0.3;
     color: var(--body-color);
-    opacity: 0.6;
-    margin-bottom: 200px;
 }
 
 select{
@@ -177,9 +190,7 @@ select{
 
 
 
-    .card-1-head h2{
-        font-size: 20px;
-    }
+
 }
 
 @media(max-width: 1600px){
@@ -205,6 +216,10 @@ select{
         flex-direction: column;
     }
 
+    .card-1-head h2{
+        font-size: 15px;
+    }
+
     .main-card{
         min-width: 95%;
         margin: 10px;
@@ -220,18 +235,6 @@ select{
         font-size: 30px;
     }
 
-    .big-icon-1 i{
-        font-size: 30px;
-        margin-top: 30px;
-        margin-right: -35px;
-    }
-    
-
-    .big-icon-1{
-        position: absolute;
-        right: 50px;
-    }
-
 
     .main-card{
         height: 250px;
@@ -242,9 +245,10 @@ select{
         flex-direction: column;
     }
     
-    .nums{
-        margin-top: 0;
-    }
     
+    .big-icon-1{
+        margin-top: -100px;
+        margin-right: -95%;
+    }
 
 }

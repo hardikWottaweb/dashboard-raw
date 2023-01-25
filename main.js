@@ -32,7 +32,7 @@ body.classList.toggle("bodytoggle")
 
 my_drop.addEventListener('click', (event) => {
   img_content.classList.toggle("view")
-  
+
   event.stopImmediatePropagation();
 
   body.addEventListener('click', () => {
@@ -40,6 +40,8 @@ my_drop.addEventListener('click', (event) => {
   })
 
 })
+
+
 
 
 // DARK MODE & LIGHT MODE TOGGLE
