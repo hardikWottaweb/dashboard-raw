@@ -14,21 +14,14 @@
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-
     <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
 
     <!-- Resources -->
 
     <!-- font awesome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
 
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"rel="stylesheet"/>
 
     <!-- Bootstrap CDNS -->
     <link
@@ -204,6 +197,7 @@
           </ul>
         </div>
 
+        <!-- DARK & LIGHT MODE :) -->
         <div class="bottom-content">
           <li class="mode">
             <div class="sun-moon">
@@ -219,6 +213,8 @@
         </div>
       </div>
     </nav>
+
+    <!-- HEADER START HERE :P -->
 
     <header class="header">
       <!-- settings icon -->
@@ -247,7 +243,6 @@
       </div>
 
       <!-- User -->
-      <!-- img dropdown -->
 
       <div class="img-container">
         <div class="img-dropdown">
@@ -359,7 +354,6 @@
         <!-- Chart code -->
         <script>
           am5.ready(function() {
-  
           // Create root element
           // https://www.amcharts.com/docs/v5/getting-started/#Root_element
           var root = am5.Root.new("chartdiv");
@@ -376,7 +370,6 @@
           root.setThemes([
             am5themes_Animated.new(root),
             myTheme
-            
           ]);
           // Create chart
           // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
@@ -405,7 +398,6 @@
           am5.color('#8ff4f2'),
           am5.color('#fbff00')
         ]);
-  
           // Set data
           // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
           series.data.setAll([
@@ -428,18 +420,14 @@
             marginBottom: 15, 
              
           }));
-  
-  
           legend.data.setAll(series.dataItems);
           // Play initial series animation
           // https://www.amcharts.com/docs/v5/concepts/animations/#Animation_of_series
           series.appear(1000, 100);
-          
           }); // end am5.ready()
           </script>
           <!-- HTML -->
           <div id="chartdiv" ></div>
-  
         </div>
       </div>
 
@@ -451,20 +439,16 @@
 
     <div class="chart-2">
       <div class="row">
-
       <div class="col-lg">
         <script>
           am5.ready(function() {
-          
           // Create root element
           // https://www.amcharts.com/docs/v5/getting-started/#Root_element
           var root = am5.Root.new("chartdiv3");
-          
           root._logo.dispose();
           // Set themes
           // https://www.amcharts.com/docs/v5/concepts/themes/
           var myTheme = am5.Theme.new(root);
-  
           // Here the color can be changed. :0
           myTheme.rule("Label").setAll({
             fill: am5.color("#00b1f2"),
@@ -473,9 +457,7 @@
           root.setThemes([
             am5themes_Animated.new(root),
             myTheme
-            
           ]);
-          
           // Create chart
           // https://www.amcharts.com/docs/v5/charts/xy-chart/
           var chart = root.container.children.push(am5xy.XYChart.new(root, {
@@ -486,16 +468,13 @@
             layout: root.verticalLayout,
             pinchZoomX:true
           }));
-          
           // Add cursor
           // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
           var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {
             behavior: "none"
           }));
           cursor.lineY.set("visible", false);
-          
           var colorSet = am5.ColorSet.new(root, {});
-          
           // The data
           var data = [
             {
@@ -594,7 +573,6 @@
               }
             }
           ];
-          
           // Create axes
           // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
           var xRenderer = am5xy.AxisRendererX.new(root, {});
@@ -603,20 +581,16 @@
             location: 0.5,
             multiLocation: 0.5
           });
-          
           var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
             categoryField: "year",
             renderer: xRenderer,
             tooltip: am5.Tooltip.new(root, {})
           }));
-          
           xAxis.data.setAll(data);
-          
           var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
             maxPrecision: 0,
             renderer: am5xy.AxisRendererY.new(root, {})
           }));
-          
           var series = chart.series.push(am5xy.LineSeries.new(root, {
             xAxis: xAxis,
             yAxis: yAxis,
@@ -627,19 +601,15 @@
               dy:-5
             })
           }));
-          
           series.strokes.template.setAll({
             templateField: "strokeSettings",
             strokeWidth: 2
           });
-          
           series.fills.template.setAll({
             visible: true,
             fillOpacity: 0.5,
             templateField: "fillSettings"
           });
-          
-          
           series.bullets.push(function() {
             return am5.Bullet.new(root, {
               sprite: am5.Circle.new(root, {
@@ -648,47 +618,42 @@
               })
             });
           });
-          
           series.data.setAll(data);
           series.appear(1000);
-          
           // Add scrollbar
           // https://www.amcharts.com/docs/v5/charts/xy-chart/scrollbars/
           chart.set("scrollbarX", am5.Scrollbar.new(root, {
             orientation: "horizontal",
             marginBottom: 20
           }));
-          
           // Make stuff animate on load
           // https://www.amcharts.com/docs/v5/concepts/animations/
           chart.appear(1000, 100);
-          
           }); // end am5.ready()
           </script>
-          
           <!-- HTML -->
           <div id="chartdiv3"></div>
       </div>
 
 
+
+
+
+
+
     <!-- Chart 4 -->
 
     <div class="col-lg">
-
-
     <script>
+
       am5.ready(function() {
-      
       // Create root element
       // https://www.amcharts.com/docs/v5/getting-started/#Root_element
       var root = am5.Root.new("chartdiv4");
-      
-      
           root._logo.dispose();
           // Set themes
           // https://www.amcharts.com/docs/v5/concepts/themes/
           var myTheme = am5.Theme.new(root);
-  
           // Here the color can be changed. :0
           myTheme.rule("Label").setAll({
             fill: am5.color("#00b1f2"),
@@ -698,9 +663,7 @@
           root.setThemes([
             am5themes_Animated.new(root),
             myTheme
-            
           ]);
-      
       // Create chart
       // https://www.amcharts.com/docs/v5/charts/xy-chart/
       var chart = root.container.children.push(am5xy.XYChart.new(root, {
@@ -710,9 +673,7 @@
         wheelY: "zoomX",
         layout: root.verticalLayout
       }));
-      
       var colors = chart.get("colors");
-      
       var data = [{
         country: "US",
         visits: 725
@@ -750,17 +711,13 @@
         country: "Canada",
         visits: 41
       }];
-      
       prepareParetoData();
-      
       function prepareParetoData() {
         var total = 0;
-      
         for (var i = 0; i < data.length; i++) {
           var value = data[i].visits;
           total += value;
         }
-      
         var sum = 0;
         for (var i = 0; i < data.length; i++) {
           var value = data[i].visits;
@@ -768,9 +725,6 @@
           data[i].pareto = sum / total * 100;
         }
       }
-      
-      
-      
       // Create axes
       // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
       var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
@@ -779,11 +733,10 @@
           minGridDistance: 30
         })
       }));
-      
       xAxis.get("renderer").labels.template.setAll({
         paddingTop: 20
       });
-      
+
       xAxis.data.setAll(data);
       
       var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
@@ -800,8 +753,7 @@
       
       paretoAxisRenderer.grid.template.set("forceHidden", true);
       paretoAxis.set("numberFormat", "#'%");
-      
-      
+
       // Add series
       // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
       var series = chart.series.push(am5xy.ColumnSeries.new(root, {
@@ -822,7 +774,6 @@
       series.columns.template.adapters.add("fill", function(fill, target) {
         return chart.get("colors").getIndex(series.dataItems.indexOf(target.dataItem));
       })
-      
       
       // pareto series
       var paretoSeries = chart.series.push(am5xy.LineSeries.new(root, {
@@ -852,10 +803,8 @@
       // https://www.amcharts.com/docs/v5/concepts/animations/
       series.appear();
       chart.appear(1000, 100);
-      
       }); // end am5.ready()
       </script>
-      
       <!-- HTML -->
       <div id="chartdiv4"></div>
     <!-- Nav dropdowns -->
@@ -863,6 +812,8 @@
 
   </div>
 </div>
+
+
 
     <script src="main.js"></script>
 

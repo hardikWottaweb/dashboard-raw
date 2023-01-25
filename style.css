@@ -65,6 +65,16 @@ body.dark{
 
 /* body toggling */
 
+.default-body{
+    margin-left: 88px;
+}
+
+.bodytoggle{
+    margin-left: 250px;
+}
+
+
+
 select{
     border-radius: 3px;
 }
@@ -87,7 +97,7 @@ select{
     transform: rotate(-90deg);
 }
 
-/* ----- */
+/* CHART DIV'S */
 
 #charts{
     max-width: 600px !important;
@@ -124,18 +134,8 @@ select{
 
 /* charts ends here */
 
-.default-body{
-    margin-left: 88px;
-}
-
-.bodytoggle{
-    margin-left: 250px;
-}
-
 
 /* Header */
-
-
 
 .header-item{
     color: var(--text-color);
@@ -212,13 +212,12 @@ select{
 }
 
 /* TOOLTIPS */
+
 .visible {
     height: 3em;
     width: 10em;
     background: yellow;
   }
-  
-
 
 /* Dropdown ends here */
 
@@ -607,11 +606,6 @@ a#dropdownMenuLink.dropdown-toggle::after{
     color: var(--text-color);
 }
 
-
-
-
-
-
 /* sidebar dropdown */
 
 /* Dropdown Button */
@@ -622,10 +616,8 @@ a#dropdownMenuLink.dropdown-toggle::after{
     border: none;
     cursor: pointer;
   }
-  
-  
-/* drop two */
 
+/* drop two */
 
 .my-dropdown{
     margin-left: 150px;
@@ -634,11 +626,6 @@ a#dropdownMenuLink.dropdown-toggle::after{
     padding: 20px;
     border: 1px solid black;
 }
-
-
-
-
-
 
 
 /* .current{
@@ -703,8 +690,6 @@ summary{
 
 
 /* img dropdown */
-
-
 
 
 .img-content{

@@ -28,6 +28,8 @@ body.classList.toggle("bodytoggle")
 
 })
 
+// Header profile dropdown
+
 my_drop.addEventListener('click', () => {
   img_content.classList.toggle("view")
 })
@@ -82,7 +84,8 @@ jQuery(document).ready(function($){
 
 
 
-// icon rotate
+// icon rotate on Sidebar links
+
 jQuery(document).ready
 $(".item-container").click(function(){
 
