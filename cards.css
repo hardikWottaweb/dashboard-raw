@@ -5,12 +5,24 @@
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
     --text-color: #707070;
+    --shadow-color: #00000063;
 
     --tran-03: all 0.2s ease;
     --tran-03: all 0.3s ease;
     --tran-04: all 0.3s ease;
     --tran-05: all 0.3s ease;
 }
+
+body.dark{
+    --body-color: #18191a;
+    --sidebar-color: #242526;
+    --primary-color: #F3525A;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #ccc;
+    --shadow-color: rgba(255, 255, 255, 0.452);
+}
+
 
 
 .cards{
@@ -25,6 +37,7 @@
 .card-box-1{
     padding: 15px;
     color: #fff;
+    box-shadow: 3px 3px 3px var(--shadow-color);
     background: rgb(130,73,255);
     background: linear-gradient(90deg, rgba(130,73,255,1) 10%, rgba(217,100,143,1) 60%, rgba(244,108,108,1) 100%);
 }
@@ -85,6 +98,8 @@
     color: #fff;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 3px 3px 5px var(--shadow-color);
+
 }
 
 .card-box-1:hover{
@@ -122,6 +137,7 @@
 .price{
     font-size: 35px;
     padding: 5px;
+    
 }
 
 .price-text{
