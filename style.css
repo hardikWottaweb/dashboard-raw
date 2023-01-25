@@ -733,8 +733,54 @@ summary{
     padding: 0;
 }
 
+/* Settings icon */
+
+.settings-content{
+    display: none;
+    z-index: 100;
+    position: absolute;
+    background: var(--sidebar-color);
+    top: 100px;
+    right: 5%;
+    width: 160px;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px var(--text-color);
+}
+
+.settings-content li{
+    list-style: none;
+    padding-top: 10px;
+}
+
+.settings-content li a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.settings-content li a {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 10px;
+}
+
+.settings-content ul li a:hover{
+    text-decoration: underline;
+}
+
+.img-content ul{
+    margin: 0;
+    padding: 0;
+}
 
 .view{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.view2{
     display: flex;
     align-items: center;
     justify-content: flex-start;

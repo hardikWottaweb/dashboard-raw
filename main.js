@@ -7,8 +7,14 @@ searchBtn = body.querySelector(".search-box"),
 modeSwitch = body.querySelector(".toggle-switch"),
 modeText = body.querySelector(".mode-text");
 nav_link = body.querySelector("details");
+
+
 my_drop = document.querySelector('.img-container')
 img_content = document.querySelector('.img-content')
+
+set_drop = document.querySelector('.settings-container')
+set_content = document.querySelector('.settings-content')
+
 loader = document.querySelector('#preloader')
 
 
@@ -41,7 +47,17 @@ my_drop.addEventListener('click', (event) => {
 
 })
 
+// Header Settings dropdown
 
+set_drop.addEventListener('click', (event) => {
+  set_content.classList.toggle('view2')
+  event.stopImmediatePropagation();
+
+  body.addEventListener('click', () => {
+    set_content.classList.remove('view2')
+  })
+
+})
 
 
 // DARK MODE & LIGHT MODE TOGGLE

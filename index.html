@@ -46,11 +46,11 @@
 
   <body class="main-body default-body">
 
-    <div id="preloader">
+    <!-- <div id="preloader">
       <div class="loader">
         <img src="/img/loader.gif">
       </div>
-    </div>
+    </div> -->
 
     <!-- Sidebar with logo -->
     <nav class="sidebar close">
@@ -219,27 +219,19 @@
     <header class="header">
       <!-- settings icon -->
 
-      <div class="dropdown mx-2">
-        <a
-          class="dropdown-toggle"
-          href="#"
-          role="button"
-          id="dropdownMenuLink"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <div class="user-img">
-            <button class="icon-btn">
-              <i class="fa-solid fa-gear"></i>
-            </button>
-          </div>
-        </a>
-        <ul class="dropdown-menu p-3" aria-labelledby="dropdownMenuLink">
-          <div id="pass">
-            <i class="fa-solid fa-lock icon"></i>
-            <a href="#">Change Password</a>
-          </div>
+      <div class="settings-container mx-2">
+        <div class="settings-dropdown">
+          <button class=" icon-btn">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="settings-content">
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-lock"></i> Change password</a></li>
         </ul>
+      </div>
       </div>
 
       <!-- User -->
