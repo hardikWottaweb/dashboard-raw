@@ -769,3 +769,9 @@ summary{
         margin-top: -30px;
     }
 }
+
+@media(max-width: 450px){
+    .bodytoggle{
+        margin-left: 88px;
+    }
+}
