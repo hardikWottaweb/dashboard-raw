@@ -17,7 +17,7 @@ loader = document.querySelector('#preloader')
 window.addEventListener('load', () => {
   setTimeout(() => {
     loader.style.display = 'none'
-  }, 2000);
+  }, 1000);
 })
 
 // Sidebar & body toggle
@@ -30,10 +30,16 @@ body.classList.toggle("bodytoggle")
 
 // Header profile dropdown
 
-my_drop.addEventListener('click', () => {
+my_drop.addEventListener('click', (event) => {
   img_content.classList.toggle("view")
-})
+  
+  event.stopImmediatePropagation();
 
+  body.addEventListener('click', () => {
+    img_content.classList.remove('view')
+  })
+
+})
 
 
 // DARK MODE & LIGHT MODE TOGGLE
@@ -43,6 +49,7 @@ body.classList.toggle("dark");
 
 if(body.classList.contains("dark")){
   modeText.innerText = "Light mode";
+
 }else{
   modeText.innerText = "Dark mode";
   
@@ -50,6 +57,7 @@ if(body.classList.contains("dark")){
 });
 
 63.00
+
 
 // dropdown toggle auto close off
 
@@ -78,7 +86,6 @@ jQuery(document).ready(function($){
   });
    
   $('.box').hide(200)
-  
 
 });
 
