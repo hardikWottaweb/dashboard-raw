@@ -178,6 +178,7 @@ body.dark{
 
 select{
     outline: none;
+    cursor: pointer;
 }
 
 @media(max-width: 1800px){
