@@ -25,8 +25,8 @@
 .card-box-1{
     padding: 15px;
     color: #fff;
-    background: rgb(36,143,229);
-    background: linear-gradient(90deg, rgba(36,143,229,1) 0%, rgba(234,110,252,1) 100%);
+    background: rgb(130,73,255);
+    background: linear-gradient(90deg, rgba(130,73,255,1) 10%, rgba(217,100,143,1) 60%, rgba(244,108,108,1) 100%);
 }
 
 
@@ -100,18 +100,18 @@
 }
 
 .bg-2{
-    background: rgb(255,139,139);
-    background: linear-gradient(90deg, rgba(234,110,252,1) 0%, rgba(36,143,229,1) 100%);
+    background: rgb(244,108,108);
+    background: linear-gradient(90deg, rgba(244,108,108,1) 10%, rgba(217,100,143,1) 60%, rgba(130,73,255,1) 100%);
 }
 
 .bg-3{
-    background: rgb(43,147,230);
-    background: linear-gradient(90deg, rgba(43,147,230,1) 18%, rgba(234,110,252,1) 100%);
+    background: rgb(130,73,255);
+    background: linear-gradient(90deg, rgba(130,73,255,1) 10%, rgba(217,100,143,1) 60%, rgba(244,108,108,1) 100%);
 }
 
 .bg-4{
-    background: rgb(247,133,225);
-    background: linear-gradient(90deg, rgba(247,133,225,1) 0%, rgba(3,121,215,1) 100%);
+    background: rgb(244,108,108);
+    background: linear-gradient(90deg, rgba(244,108,108,1) 10%, rgba(217,100,143,1) 60%, rgba(130,73,255,1) 100%);
 }
 
 .card-content h4{
