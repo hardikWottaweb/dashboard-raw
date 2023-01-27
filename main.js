@@ -111,9 +111,30 @@ jQuery(document).ready(function($){
 
 // icon rotate on Sidebar links
 
-jQuery(document).ready
-$(".item-container").click(function(){
+// jQuery(document).ready
+// $(".item-container").click(function(){
 
-    $(this).children('.third-icon').toggleClass("rotate") ; 
- })
+
+//     $(this).children('.third-icon').toggleClass("rotate") ; 
+//  })
+
+
+
+//  icon rotate off on toggle
+
+
+jQuery(document).ready(function($){
+  $('summary').on('click', function(){
+
+    var targeticon = $(this).attr('target-icon'); // Find the target icon 
+    
+    $(targeticon).toggleClass('rotate')
+     // rotate all other icons
+
+     $('.third-icon').not(targeticon).removeClass('rotate')
+
+  });
+   
+});
+
 

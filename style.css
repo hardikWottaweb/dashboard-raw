@@ -94,7 +94,7 @@ select{
 }
 
 .rotateOff{
-    transform: rotate(-90deg);
+    transform: rotate(0);
 }
 
 /* CHART DIV'S */
