@@ -698,7 +698,7 @@ summary{
 }
 
 .third-links{
-    margin-top: 30px;
+    margin-top: 30px !important;
 }
 
 /* img dropdown */
