@@ -38,6 +38,7 @@ body.classList.toggle("bodytoggle")
 
 my_drop.addEventListener('click', (event) => {
   img_content.classList.toggle("view")
+  set_content.classList.remove('view2')
 
   event.stopImmediatePropagation();
 
@@ -51,6 +52,7 @@ my_drop.addEventListener('click', (event) => {
 
 set_drop.addEventListener('click', (event) => {
   set_content.classList.toggle('view2')
+  img_content.classList.remove('view')
   event.stopImmediatePropagation();
 
   body.addEventListener('click', () => {
@@ -58,6 +60,8 @@ set_drop.addEventListener('click', (event) => {
   })
 
 })
+
+
 
 
 // DARK MODE & LIGHT MODE TOGGLE
@@ -138,3 +142,4 @@ jQuery(document).ready(function($){
 });
 
 
+// Header dropdowns hide and open one at a time
