@@ -17,7 +17,6 @@ set_content = document.querySelector('.settings-content')
 // Preloader Variable
 loader = document.querySelector('#preloader')
 
-
 // preloader animation
 
 window.addEventListener('load', () => {
@@ -28,7 +27,7 @@ window.addEventListener('load', () => {
 
 // Sidebar & body toggle
 
-toggle.addEventListener("click" , () =>{
+toggle.addEventListener("click" , (e) =>{
 sidebar.classList.toggle("close");
 body.classList.toggle("bodytoggle")
 
@@ -143,3 +142,4 @@ jQuery(document).ready(function($){
 
 
 // Header dropdowns hide and open one at a time
+
