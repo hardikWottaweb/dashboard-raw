@@ -684,6 +684,10 @@ summary{
     
 }
 
+.third-links{
+    margin-top: 20px;
+}
+
 .third-heading{
     position: absolute !important;
     left: 30px !important;
@@ -786,6 +790,11 @@ summary{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.third-container{
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 
