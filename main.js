@@ -1,5 +1,4 @@
 // Variables
-
 const body = document.querySelector('.main-body'),
 sidebar = body.querySelector('nav'),
 toggle = body.querySelector(".toggle"),
@@ -8,13 +7,14 @@ modeSwitch = body.querySelector(".toggle-switch"),
 modeText = body.querySelector(".mode-text");
 nav_link = body.querySelector("details");
 
-
+// Header Dropdown Variables
 my_drop = document.querySelector('.img-container')
 img_content = document.querySelector('.img-content')
 
 set_drop = document.querySelector('.settings-container')
 set_content = document.querySelector('.settings-content')
 
+// Preloader Variable
 loader = document.querySelector('#preloader')
 
 

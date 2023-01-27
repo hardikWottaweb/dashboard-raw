@@ -91,10 +91,12 @@ select{
 
 .rotate{
     transform: rotate(90deg);
+    transition: 0.3s ease-in-out;
 }
 
 .rotateOff{
     transform: rotate(0);
+    transition: 0.3s ease-in-out;
 }
 
 /* CHART DIV'S */
