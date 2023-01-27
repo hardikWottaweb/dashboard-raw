@@ -684,8 +684,11 @@ summary{
     
 }
 
-.third-links{
-    margin-top: 20px;
+
+.dropdown-menu{
+    margin: 0;
+    padding: 0;
+    padding-bottom: -10px;
 }
 
 .third-heading{
@@ -694,6 +697,9 @@ summary{
     padding: 0 10px !important;
 }
 
+.third-links{
+    margin-top: 30px;
+}
 
 /* img dropdown */
 
