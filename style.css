@@ -13,6 +13,8 @@
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
     --text-color: #707070;
+    --shadow-color: #3b3b3b3c;
+
 
     --tran-03: all 0.2s ease;
     --tran-03: all 0.3s ease;
@@ -38,6 +40,7 @@ body.dark{
     --primary-color-light: #3a3b3c;
     --toggle-color: #fff;
     --text-color: #ccc;
+
 }
 
 /* Preloader */
@@ -220,9 +223,10 @@ select{
 }
 
 .dropdown-menu{
-    background: var(--body-color) !important;
+    background: var(--sidebar-color) !important;
     margin-left: 100px !important;
     margin-top: -200px !important;
+    border: 0.5px solid var(--text-color) !important;
 }
 
 .upper{
@@ -923,7 +927,5 @@ summary{
     .item-container{
         padding: 8px 0;
     }
-
-
 
 }
