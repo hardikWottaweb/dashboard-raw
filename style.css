@@ -87,6 +87,35 @@ select{
     padding: 10px 20px ;
 }
 
+.crud-link{
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.crud-content{
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    background: var(--body-color);
+    border: 1px solid #999;
+    margin-right: -180px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.crudopen{
+    display: block;
+}
+
+.crud-content i{
+    padding-right: 10px;
+}
+
+.crud-content a{
+    padding: 10px;
+}
+
+
 /* icon rotate on click */
 
 .rotate{

@@ -5,71 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    
+
+
+
 </head>
+
+<style>
+  .crud-content{
+    display: none;
+    z-index: 100;
+  }
+  .crudopen{
+    display: block;
+  }
+</style>
+
 <body>
-    <li>
+      <!--  QUAD NESTING -->
+
+      <li>
         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="fa-solid fa-users icon"></i>
-        <span class="text nav-text"> Users</span></a>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <i class="fa fa-bullhorn icon"></i>
+        <span class="text nav-text"> Voice</span></a>
+        <ul class="dropdown-menu upper" aria-labelledby="dropdownMenuLink">
             <div class="third-links" target-box="#box1">
               <div class="third-container">
-                <summary class="item-container toggle" target-box="#box5" target-icon="#icon5"><i class="fa-solid fa-home"></i><span class='third-heading mx-1'>Users</span><i class="fa-solid fa-caret-right third-icon" id="icon5"></i></summary>
-                <div class="links box" id="box5">
-                  <li><a class="item" href="#"><i class="fa-solid fa-users"></i> <span class="third-link"> link 4</span></a></li>
-                  <li><a class="item" href="#"><i class="fa-solid fa-lock"></i> <span class="third-link"> link 5</span></a></li>
-                  <li><a class="item" href="#"><i class="fa-solid fa-gear"></i> <span class="third-link"> link 6</span></a></li>
+                <summary class="item-container toggle" ><a href="#" class="first-link"><i class="fa fa-indent nav-icon"></i><span class='third-heading'>All CDRs</span></a></summary>
+              </div>
+              <div class="third-container">
+                <summary class="item-container toggle" ><a href="#" class="first-link"><i class="fa fa-bar-chart nav-icon"></i><span class='third-heading'>Compare Numbers by Day</span></a></summary>
+              </div>
+
+              <div class="third-container">
+                <summary class="item-container toggle" target-box="#box1" target-icon="#icon1"><i class="fa fa-user-md nav-icon"></i><span class='third-heading'>Kolmisoft</span><i class="fa-solid fa-caret-right third-icon" id="icon1"></i></summary>
+                <div class="links box" id="box1">
+                  <li><a class="item" href="charts.html"><i class="fa fa-phone nav-icon"></i> <span class="third-link"> Call Records</span></a></li>
+                  <li><a class="item" href="#"><i class="fa fa-file-text nav-icon"></i> <span class="third-link"> Invoice</span></a></li>
+                  <li><a class="item" href="#"><i class="fa fa-credit-card nav-icon"></i> <span class="third-link"> Faxes</span></a></li>
                 </div>
               </div>
               <div class="third-container">
-                <summary class="item-container toggle" target-box="#box6" target-icon="#icon6"><i class="fa-solid fa-home"></i><span class='third-heading'>Graphs</span><i class="fa-solid fa-caret-right third-icon" id="icon6"></i></summary>
-                <div class="links box" id="box6" >
-                  <li><a class="item" href="#"><i class="fa-solid fa-users"></i> <span class="third-link"> link 7</span></a></li>
-                  <li><a class="item" href="#"><i class="fa-solid fa-lock"></i> <span class="third-link"> link 8</span></a></li>
-                  <li><a class="item" href="#"><i class="fa-solid fa-gear"></i> <span class="third-link"> link 9</span></a></li>
+                <summary class="item-container toggle" target-box="#box2" target-icon="#icon2"><i class="fa-brands fa-css3"></i></i><span class='third-heading'>Voip Now</span><i class="fa-solid fa-caret-right third-icon" id="icon2"></i></summary>
+                <div class="links box" id="box2" >
+                  <li><a class="item" href="#"><i class="fa fa-list nav-icon"></i> <span class="third-link"> Voip CDRs</span></a></li>
+                  <li><a class="item" href="#"><i class="fa fa-fire nav-icon"></i> <span class="third-link"> Extension Rules</span></a></li>
+                  <li><a class="item" href="#"><i class="fa fa-play-circle nav-icon"></i> <span class="third-link"> Call Recordings</span></a></li>
                 </div>
               </div>
               <div class="third-container">
-                <summary class="item-container toggle" target-box="#box7" target-icon="#icon7"><i class="fa-solid fa-home"></i><span class='third-heading'>Dashboard</span><i class="fa-solid fa-caret-right third-icon" id="icon7"></i></summary>
-                <div class="links box" id="box7" >
-                  <li><a class="item" href="#"><i class="fa-solid fa-users"></i> <span class="third-link"> link 7</span></a></li>
-                  <li><a class="item" href="#"><i class="fa-solid fa-gear"></i> <span class="third-link"> link 8</span></a></li>
-                  <li><a class="item" href="#"><i class="fa-solid fa-lock"></i> <span class="third-link"> link 9</span></a></li>
+                <summary class="item-container toggle" target-box="#box3"  target-icon="#icon3"><i class="fa-brands fa-xing"></i> <span class='third-heading'>Metaswitch</span><i class="fa-solid fa-caret-right third-icon" id="icon3"></i></summary>
+                <div class="links box" id="box3" >
+                  <li><a class="item" href="#"><i class="fa fa-phone nav-icon"></i> <span class="third-link"> CDRS</span></a></li>
+                  <li><a class="item" href="#"><i class="fa fa-bar-chart nav-icon"></i> <span class="third-link"> CDRs Stats</span></a></li>
+                  <li><a class="item" href="#"><i class="fa fa-bar-chart fa-lock nav-icon"></i> <span class="third-link"> Error CDRs</span></a></li>
                 </div>
               </div>
               <div class="third-container">
-                <summary class="item-container toggle" target-box="#box8" target-icon="#icon8"><i class="fa-solid fa-home"></i> <span class='third-heading'>Voice</span><i class="fa-solid fa-caret-right third-icon" id="icon8"></i></summary>
-                <div class="links box" id="box8" >
-                  <li><a class="item" href="#"><i class="fa-solid fa-lock"></i> <span class="third-link"> link 7</span></a></li>
-                  <li><a class="item" href="#"><i class="fa-solid fa-user"></i> <span class="third-link"> link 8</span></a></li>
-                  <li><a class="item" href="#"><i class="fa-solid fa-gear"></i> <span class="third-link"> link 9</span></a></li>
+                <summary class="item-container toggle" target-box="#box4"  target-icon="#icon4"><i class="fa fa-gears"></i><span class='third-heading'> Voice Settings</span><i class="fa-solid fa-caret-right third-icon" id="icon4"></i></summary>
+                <div class="links box" id="box4" >
+                  <li><a class="item" href="#"><i class="fa fa-globe nav-icon"></i> <span class="third-link"> Destination Sets</span></a></li>
+                  <li><a class="item" href="#"><i class="fa fa-users nav-icon"></i> <span class="third-link"> Vendors</span></a></li>
+                  <li><a class="item" href="#"><i class="fa fa-compress nav-icon"></i> <span class="third-link"> Vendor Connections</span></a></li>
+                  <li><a class="item" href="#"><i class="fa fa-random nav-icon"></i> <span class="third-link"> Routings</span></a></li>
+                  <li><a class="item" href="#"><i class="fa fa-qrcode nav-icon"></i> <span class="third-link"> DialPlan</span></a></li>
+                  <li class="crud-link"><a class="item" href="#"><i class="fa fa-bookmark nav-icon"></i> <span class="third-link"> CRUD</span></a>
+                    <ul class="crud-content">
+                      <li><a class="item" href="#"><i class="fa fa-bookmark nav-icon"></i> <span class="third-link"> CRUD</span></a>
+                      <li><a class="item" href="#"><i class="fa fa-bookmark nav-icon"></i> <span class="third-link"> CRUD</span></a>
+                      <li><a class="item" href="#"><i class="fa fa-bookmark nav-icon"></i> <span class="third-link"> CRUD</span></a>
+                    </ul>
+                  </li>
                 </div>
               </div>
-              
             </div>
         </ul> 
       </li>
-<li>
-        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="fa-solid fa-volume-high icon"></i>
-        <span class="text nav-text">Voice</span></a>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <li class="drop-items">
-            <a class="item" href="#"><i class="fa-solid fa-home"></i>voice link 2</a>
-          </li>
-          <li class="drop-items">
-            <a class="item" href="#"><i class="fa-solid fa-home"></i>voice link 2</a>
-          </li>
-          <li class="drop-items">
-            <a class="item" href="#"><i class="fa-solid fa-home"></i>voice link 2</a>
-          </li>
-          <li class="drop-items">
-            <a class="item" href="#"><i class="fa-solid fa-home"></i>voice link 2</a>
-          </li>    
-        </ul> 
-      </li>
 
-      <!--  QUAD NESTING -->
+
+
+      <script>
+        document.querySelector('.crud-link').addEventListener('click', () => {
+          document.querySelector('.crud-content').classList.toggle('crudopen')
+        })
+
+
+      </script>
+      
 
 </body>
 </html>

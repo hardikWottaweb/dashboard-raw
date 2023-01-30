@@ -141,5 +141,10 @@ jQuery(document).ready(function($){
 });
 
 
-// Header dropdowns hide and open one at a time
 
+// Crud Links
+
+document.querySelector('.crud-link').addEventListener('click', () => {
+  document.querySelector('.crud-content').classList.toggle('crudopen')
+  console.log('curded')
+})
