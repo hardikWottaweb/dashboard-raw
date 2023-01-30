@@ -881,6 +881,49 @@ summary{
         margin-top: -8px;
     }
 
+    .sidebar .text{
+        font-size: 12px;
+    }
+
+    .menu-links{
+        margin-top: 35px;
+    }
+
+    .sidebar li{
+        height: 25px;
+        margin-top: 15px;
+    }
+
+    .sidebar .mode{
+        height: 50px;
+    }
+
+    .sidebar .icon{
+        font-size: 15px;
+    }
+
+    .third-container{
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .dropdown-menu{
+        margin-left: 50px !important;
+    }
+
+    summary{
+        min-width: 0;
+    }
+
+    .crud-content{
+        margin-top: -150px;
+        margin-right: -140px;
+    }
+
+    .item-container{
+        padding: 8px 0;
+    }
+
 
 
 }
