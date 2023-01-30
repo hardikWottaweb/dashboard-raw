@@ -89,7 +89,7 @@ select{
 
 .crud-link{
     cursor: pointer;
-    z-index: 1000;
+    z-index: 100
 }
 
 .crud-content{
@@ -99,8 +99,10 @@ select{
     background: var(--body-color);
     border: 1px solid #999;
     margin-right: -180px;
+    margin-top: -100px;
     padding: 10px;
     border-radius: 5px;
+    display: none;
 }
 
 .crudopen{
@@ -113,6 +115,10 @@ select{
 
 .crud-content a{
     padding: 10px;
+}
+
+.icon-4{
+    color: var(--text-color);
 }
 
 

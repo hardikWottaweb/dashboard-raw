@@ -17,6 +17,21 @@ set_content = document.querySelector('.settings-content')
 // Preloader Variable
 loader = document.querySelector('#preloader')
 
+// CRUD link variables
+crud_link = document.querySelector('.crud-link')
+crud_content = document.querySelector('.crud-content')
+
+
+// Crud Links
+
+document.querySelector('.crud-link').addEventListener('click', () => {
+  document.querySelector('.crud-content').classList.toggle('crudopen')
+  console.log('curded')
+})
+
+
+
+
 // preloader animation
 
 window.addEventListener('load', () => {
@@ -142,9 +157,4 @@ jQuery(document).ready(function($){
 
 
 
-// Crud Links
 
-document.querySelector('.crud-link').addEventListener('click', () => {
-  document.querySelector('.crud-content').classList.toggle('crudopen')
-  console.log('curded')
-})
