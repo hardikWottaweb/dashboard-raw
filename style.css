@@ -873,11 +873,14 @@ summary{
     }
 }
 
-@media(max-width: 500px){
+@media(max-width: 600px){
     .bodytoggle{
         margin-left: 88px;
     }
     .sidebar .menu{
-        margin-top: -10px;
+        margin-top: -8px;
     }
+
+
+
 }
