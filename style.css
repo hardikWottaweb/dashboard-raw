@@ -223,10 +223,9 @@ select{
 }
 
 .dropdown-menu{
-    background: var(--sidebar-color) !important;
+    background: var(--body-color) !important;
     margin-left: 100px !important;
     margin-top: -200px !important;
-    border: 0.5px solid var(--text-color) !important;
 }
 
 .upper{
