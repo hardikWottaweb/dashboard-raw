@@ -26,7 +26,6 @@ crud_content = document.querySelector('.crud-content')
 
 document.querySelector('.crud-link').addEventListener('click', () => {
   document.querySelector('.crud-content').classList.toggle('crudopen')
-  console.log('curded')
 })
 
 
