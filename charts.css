@@ -60,4 +60,9 @@
         align-items: center;
         justify-content: center;
     }
+
+    #chartdiv2{
+        height: 300px;
+        width: 100%;
+    }
 }
