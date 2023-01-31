@@ -43,7 +43,7 @@ window.addEventListener('load', () => {
 
 toggle.addEventListener("click" , (e) =>{
 sidebar.classList.toggle("close");
-body.classList.toggle("bodytoggle")
+// body.classList.toggle("bodytoggle")
 
 })
 

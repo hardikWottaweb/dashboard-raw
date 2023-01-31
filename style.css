@@ -283,8 +283,8 @@ select{
 
 .header{
     background: var(--sidebar-color);
-    padding: 20px;
     color: var(--primary-color);
+    padding: 5px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -310,6 +310,7 @@ select{
     background: var(--sidebar-color);
     transition: var(--tran-05);
     z-index: 100;
+    box-shadow: 5px 5px 5px var(--body-color);
 }
 .sidebar.close{
     width: 88px;
@@ -740,7 +741,7 @@ summary{
     z-index: 100;
     position: absolute;
     background: var(--sidebar-color);
-    top: 100px;
+    top: 70px;
     width: 160px;
     height: 150px;
     border-radius: 10px;
@@ -783,7 +784,7 @@ summary{
     z-index: 100;
     position: absolute;
     background: var(--sidebar-color);
-    top: 100px;
+    top: 70px;
     right: 5%;
     width: 160px;
     height: 80px;
