@@ -121,6 +121,11 @@ select{
         flex-direction: column !important;
     }
 
+    .mr{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
     .options{
         display: flex;
         flex-direction: column;
