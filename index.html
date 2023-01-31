@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- stylesheets -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="cards.css" />
-    <link rel="stylesheet" href="components.css" />
-    <link rel="stylesheet" href="charts.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/cards.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/charts.css" />
 
     <!-- CHARTS LINKS -->
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
@@ -41,6 +41,7 @@
 
     <!-- Charts Js files -->
     <script src="charts.js"></script>
+    <script src="mainchart.js"></script>
 
     <title>Dashboard</title>
   </head>
@@ -82,28 +83,6 @@
               </a>
             </li>
             
-            <!-- DOUBLE NESTING -->
-
-            <!-- <li>
-              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-volume-high icon"></i>
-              <span class="text nav-text">Voice</span></a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li class="drop-items">
-                  <a class="item" href="#"><i class="fa-solid fa-home"></i>voice link 2</a>
-                </li>
-                <li class="drop-items">
-                  <a class="item" href="#"><i class="fa-solid fa-home"></i>voice link 2</a>
-                </li>
-                <li class="drop-items">
-                  <a class="item" href="#"><i class="fa-solid fa-home"></i>voice link 2</a>
-                </li>
-                <li class="drop-items">
-                  <a class="item" href="#"><i class="fa-solid fa-home"></i>voice link 2</a>
-                </li>    
-              </ul> 
-            </li> -->
-
 
             <!-- TRIPLE NESTING -->
 
@@ -544,27 +523,53 @@
 
     <!-- Charts to be imported later -->
 
+
+
+
+  <!-- Dashboard page charts -->
+
+  <div class="container-box primary-bg">
+    <div class="row p-4">
+        <div class="container-head">
+          <h3>Call Cost Grouped by Customer</h3>
+          <div class=".container text-center">
+            <span class="p-2">Refreshes automatically in 5 mins | </span>
+            <button class="primary-btn"><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
+          </div>
+        </div>
+        <div class="container-message bg-4">
+          <p class="px-1">Currently showing from 10:39 to 10:44</p>
+        </div>
+      <div id="chartdiv2"></div>
+    </div>
+  </div>
+
+
     <!-- ------------- -->
 
 
 <!-- Body components -->
 
-  <div class="container components">
+  <div class="container">
     <div class="row col-12">
-      <div class="container-1 col-md">
+      <div class="container-1 col-md  mr">
         <div class="container-head">
-          <h6>Active Calls By Customer</h6>
+          <h3>Active Calls By Customer</h3>
           <div class=".container m-1 text-center">
             <span class="p-2">Refreshes automatically in 5 mins | </span>
             <button class="primary-btn"><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
           </div>
         </div>
+        <div class="container-message p-1 bg-2">
+          <p class="px-1">Currently showing from 10:39 to 10:44</p>
+        </div>
+
         <div class="container-body">
           <p>Couldn't complete your requrest. Please try to refresh again</p>
         </div>
       </div>
 
-      <div class="container-1 col-md">
+      <div class="container-1 col-md ">
         <div class="container-head ">
           <h3>Errors</h3>
           <div class="options">
@@ -590,7 +595,12 @@
             <button class="primary-btn"><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
           </div>
         </div>
+        <div class="container-message p-1 bg-3">
+          <p class="px-2">Currently showing from 10:39 to 10:44</p>
+        </div>
+
         <div class="container-body p-3">
+          <div id="chartdiv" ></div>
         </div>
       </div>
     </div>

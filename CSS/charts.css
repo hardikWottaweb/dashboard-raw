@@ -1,0 +1,63 @@
+
+/* Bar Dash Chart */
+
+.dash-charts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+#chartdiv2 {
+    width: 100%;
+    height: 600px;
+    margin: 10px 0;
+}
+
+/* CHART DIV'S */
+
+#charts{
+    max-width: 600px !important;
+}
+
+.container{
+    min-width: 100%;
+}
+
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+#chartdiv1{
+    width: 100%;
+    height: 500px;
+}
+
+#chartdiv3{
+    width: 100%;
+    height: 500px;
+}
+
+#chartdiv4{
+    width: 100%;
+    height: 500px;
+}
+
+#barchartdiv {
+    width: 100%;
+    height: 500px;
+}
+
+/* charts ends here */
+
+
+@media(max-width: 900px){
+    .dash-charts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

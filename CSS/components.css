@@ -43,19 +43,20 @@ body.dark{
 
 }
 
-
-.components{
-    display: flex;
-    align-items: center;
-    margin: 30px;
+.mr{
+    margin-right: 10px;
 }
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .container-1{
     background: var(--sidebar-color);
     min-height: 400px;
     color: var(--text-color);
-    margin: 10px;
 }
 
 .container-head{
@@ -64,17 +65,25 @@ body.dark{
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    border-bottom: 1px solid #888;
     width: 100%;
 }
 
-.container-body{
-    padding: 20px;
+.container-message p{
+    margin-top: 15px;
+    color: #fff;
 }
 
 select{
     border: 1px solid #9999;
 }
+
+/* for dashboard graph */
+
+.container-box{
+    margin: 10px;
+}
+
+/* buttons */
 
 .primary-btn{
     padding: 5px 10px;
@@ -91,6 +100,13 @@ select{
 .primary-btn:hover > i{
     transform: rotate(90deg);
     transition: 0.2s ease-in-out;
+}
+
+/* bg */
+
+.primary-bg{
+    background: var(--sidebar-color);
+    color: var(--text-color);
 }
 
 

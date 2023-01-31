@@ -1213,6 +1213,104 @@
 
 
 
+
+
+<!-- PIE CHART -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg mt-5">
+      <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+      <div id="chart" class="m-3" style="max-width: 900px !important;"></div>
+      <script src="charts.js"></script>
+
+    </div>
+    <div class="col-lg">
+    <!-- doughnut chart -->
+    <!-- Chart code -->
+    <script>
+      am5.ready(function() {
+      // Create root element
+      // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+      var root = am5.Root.new("chartdiv");
+      root._logo.dispose();
+      // Set themes
+      // https://www.amcharts.com/docs/v5/concepts/themes/
+      var myTheme = am5.Theme.new(root);
+
+      // Here the color can be changed. :0
+      myTheme.rule("Label").setAll({
+        fill: am5.color("#00b1f2"),
+        fontWeight: 400
+      });
+      root.setThemes([
+        am5themes_Animated.new(root),
+        myTheme
+      ]);
+      // Create chart
+      // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
+      var chart = root.container.children.push(am5percent.PieChart.new(root, {
+        layout: root.verticalLayout,
+        innerRadius: am5.percent(50)
+      }));
+      // Create series
+      // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
+      var series = chart.series.push(am5percent.PieSeries.new(root, {
+        valueField: "value",
+        categoryField: "category",
+        alignLabels: true,
+      }));
+      series.labels.template.setAll({
+        textType: "circular",
+        centerX: 0,
+        centerY: 0, 
+      });
+      series.get("colors").set("colors", [
+      am5.color('#F66A6A'),
+      am5.color('#F72626'),
+      am5.color('#e42edc'),
+      am5.color('#fa6827'),
+      am5.color('#8f8ff4'),
+      am5.color('#8ff4f2'),
+      am5.color('#fbff00')
+    ]);
+      // Set data
+      // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
+      series.data.setAll([
+        { value: 10, category: "One" },
+        { value: 9, category: "Two" },
+        { value: 6, category: "Three" },
+        { value: 5, category: "Four" },
+        { value: 4, category: "Five" },
+        { value: 3, category: "Six" },
+        { value: 1, category: "Seven" },
+      ]);
+      var myTheme = am5.Theme.new(root);
+      
+      // Create legend
+      // https://www.amcharts.com/docs/v5/charts/percent-charts/legend-percent-series/
+      var legend = chart.children.push(am5.Legend.new(root, {
+        centerX: am5.percent(50),
+        x: am5.percent(50),
+        marginTop: 15,
+        marginBottom: 15, 
+         
+      }));
+      legend.data.setAll(series.dataItems);
+      // Play initial series animation
+      // https://www.amcharts.com/docs/v5/concepts/animations/#Animation_of_series
+      series.appear(1000, 100);
+      }); // end am5.ready()
+      </script>
+      <!-- HTML -->
+      <div id="chartdiv" ></div>
+    </div>
+  </div>
+
+
+
+
+
     <script src="main.js"></script>
 
   </body>
