@@ -852,6 +852,11 @@ summary{
 }
 
 @media(max-width: 600px){
+
+    body{
+        overflow-x: hidden !important;
+    }
+
     .bodytoggle{
         margin-left: 88px;
     }

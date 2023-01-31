@@ -150,25 +150,22 @@ am5.ready(function() {
     var data = {
       "Provider 1": {
         "item 1": 10,
-        "item 2": 35,
-        "item 3": 5,
-        "item 4": 20,
         quantity: 430
       },
       "Provider 2": {
-        "item 1": 15,
-        "item 3": 21,
+        "item 2": 15,
         quantity: 210
       },
       "Provider 3": {
-        "item 2": 25,
-        "item 3": 11,
-        "item 4": 17,
+        "item 3": 25,
         quantity: 265
       },
       "Provider 4": {
-        "item 3": 12,
-        "item 4": 15,
+        "item 4": 12,
+        quantity: 98
+      },
+      "Provider 5": {
+        "item 5": 12,
         quantity: 98
       }
     };
