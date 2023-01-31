@@ -85,6 +85,15 @@ select{
     padding: 10px;
 }
 
+
+/* TOOLTIPS */
+
+.visible {
+    height: 3em;
+    width: 10em;
+    background: yellow;
+  }
+
 /* for dashboard graph */
 
 .container-box{

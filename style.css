@@ -284,11 +284,12 @@ select{
 .header{
     background: var(--sidebar-color);
     color: var(--primary-color);
-    padding: 5px;
+    padding: 8px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
+    width: 100%;
 }
 
 .header-content{
@@ -571,22 +572,13 @@ body.dark .home .text{
 
 /* USER SIDEBAR */
 
-.user-id{
-    font-size: 15px;
-}
-
-.user-img img{
-    border-radius: 50%;
-    border: 1px solid var(--body-color);
-    margin: 0 10px;
-}
 
 .icon-btn{
     border: none;
     background: var(--primary-color);
-    color: var(--body-color);
-    padding: 12px 20px;
-    border-radius: 10px;
+    color: var(--sidebar-color);
+    padding: 8px 15px;
+    border-radius: 8px;
 }
 
 .icon-btn i{
