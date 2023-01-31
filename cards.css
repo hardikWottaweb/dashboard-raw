@@ -207,6 +207,9 @@ select{
         max-width: 400px;
     }
 
+    .card-1-box p{
+        font-size: 10px;
+    }
  
 
 }
