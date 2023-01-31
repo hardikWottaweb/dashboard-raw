@@ -112,7 +112,7 @@ body.dark{
 
 }
 
-.card-box-1:hover{
+/* .card-box-1:hover{
     transform: rotateY(1deg);
     transform: rotateZ(1deg);
     transition: 0.3s ease-in-out;
@@ -122,7 +122,7 @@ body.dark{
     transform: rotateY(-1deg);
     transform: rotateZ(-1deg);
     transition: 0.3s ease-in-out;
-}
+} */
 
 .bg-2{
     background: rgb(209,234,254);

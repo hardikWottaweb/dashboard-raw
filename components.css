@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #F3525A;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+    --shadow-color: #3b3b3b3c;
+
+
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--body-color) !important;
+    transition: var(--tran-05);
+}
+
+::selection{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+body.dark{
+    --body-color: #18191a;
+    --sidebar-color: #242526;
+    --primary-color: #F3525A;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #ccc;
+
+}
+
+
+.components{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+
+.container-1{
+    background: var(--sidebar-color);
+    min-height: 400px;
+    color: var(--text-color);
+    margin: 10px;
+}
+
+.container-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #888;
+    width: 100%;
+}
+
+.container-body{
+    padding: 20px;
+}
+
+select{
+    border: 1px solid #9999;
+}
+
+.primary-btn{
+    padding: 5px 10px;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.primary-btn:hover{
+    background-color: #d14950;
+}
+
+.primary-btn:hover > i{
+    transform: rotate(90deg);
+    transition: 0.2s ease-in-out;
+}
+
+
+@media(max-width: 1200px){
+    .container-head{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .options{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+@media(max-width: 786px){
+    
+}
