@@ -26,6 +26,7 @@ body{
     min-height: 100vh;
     background-color: var(--body-color) !important;
     transition: var(--tran-05);
+    overflow-x: hidden !important;
 }
 
 ::selection{
