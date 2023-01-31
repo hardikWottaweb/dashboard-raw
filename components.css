@@ -77,6 +77,14 @@ select{
     border: 1px solid #9999;
 }
 
+.container-footer{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+}
+
 /* for dashboard graph */
 
 .container-box{
