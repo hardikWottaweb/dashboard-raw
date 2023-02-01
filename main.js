@@ -31,6 +31,7 @@ document.querySelector('.crud-link').addEventListener('click', () => {
 
 
 
+
 // preloader animation
 
 window.addEventListener('load', () => {

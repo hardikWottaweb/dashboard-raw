@@ -206,7 +206,7 @@ select{
     margin-top: -60px !important;
 }
 
-#data-{
+#data{
     margin-top: -200px !important;
 }
 
@@ -219,11 +219,6 @@ select{
 .item:hover{
     color: #fff;
 }
-
-.accordion{
-    color: var(--text-color);
-}
-
 
 .dropdown-item{
     color: var(--text-color) !important;
@@ -644,6 +639,7 @@ a#dropdownMenuLink.dropdown-toggle::after{
 }
 
 
+
 /* .current{
     background: var(--primary-color) !important;
     color: var(--primary-color-light) !important;
@@ -665,6 +661,7 @@ a#dropdownMenuLink.dropdown-toggle::after{
 summary{
     padding: 10px 10px;
     margin: 10px;
+    margin-bottom: -10px;
     min-width: 200px;
     color: var(--text-color);
     border-bottom: 1px solid var(--text-color);
@@ -822,7 +819,10 @@ summary{
     justify-content: flex-start;
 }
 
-
+.third-container{
+    padding: 5px 0;
+    margin: 10px;
+}
 
 
 
