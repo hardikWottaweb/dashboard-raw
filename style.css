@@ -82,12 +82,7 @@ select{
 }
 
 
-.third-icon{
-    position: absolute;
-    right: 0;
-    z-index: -11;
-    padding: 10px 20px ;
-}
+
 
 /* 4th Nesting */
 
@@ -658,13 +653,22 @@ a#dropdownMenuLink.dropdown-toggle::after{
 
 /* Main dropdowns */
 
+.third-container{
+    margin-top: 10px !important;
+}
+
+.third-icon{
+    position: absolute;
+    right: 0;
+    z-index: -11;
+    padding: 2px 20px ;
+}
+
 summary{
-    padding: 10px 10px;
-    margin: 10px;
-    margin-bottom: -10px;
-    min-width: 200px;
+    padding: 0 10px !important;
+    min-width: 220px;
     color: var(--text-color);
-    border-bottom: 1px solid var(--text-color);
+    margin: 20px 0;
 }
 
 .first-link{
@@ -679,21 +683,11 @@ summary{
     color: var(--primary-color);
 }
 
-
 .links{
     margin-top: -28px;
     text-align: center;
-    padding: 10px;
+    padding: 15px 10px;
 }
-
-
-
-summary{
-    padding: 10px 0 ;
-    text-align: left;
-}
-
-
 
 .nav-icon {
     min-width: 10px;
@@ -703,13 +697,9 @@ summary{
 
 .third-link{
     position: absolute;
-    padding: 0 30px;
+    padding: 10px 30px;
     right: 10;
 }
-
-
-
-
 
 .third-heading{
     position: absolute !important;
@@ -717,9 +707,12 @@ summary{
     padding: 0 10px !important;
 }
 
-
 .item{
     text-align: left;
+}
+
+.third-links{
+    margin-bottom: -15px;
 }
 
 /* img dropdown */
@@ -819,10 +812,8 @@ summary{
     justify-content: flex-start;
 }
 
-.third-container{
-    padding: 5px 0;
-    margin: 10px;
-}
+/* Fixes */
+
 
 
 
