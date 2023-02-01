@@ -655,6 +655,8 @@ a#dropdownMenuLink.dropdown-toggle::after{
 
 .third-container{
     margin-top: 10px !important;
+    min-width: 220px;
+
 }
 
 .third-icon{
@@ -665,10 +667,11 @@ a#dropdownMenuLink.dropdown-toggle::after{
 }
 
 summary{
-    padding: 0 10px !important;
-    min-width: 220px;
+    padding:  10px !important;
     color: var(--text-color);
-    margin: 20px 0;
+    margin: 10px 0;
+    border-bottom: 1px solid #999;
+    min-width: 200px;
 }
 
 .first-link{
@@ -684,9 +687,9 @@ summary{
 }
 
 .links{
-    margin-top: -28px;
+    margin-top: -20px;
     text-align: center;
-    padding: 15px 10px;
+    padding: 10px 10px;
 }
 
 .nav-icon {
@@ -872,6 +875,7 @@ summary{
     .third-container{
         font-size: 10px;
         margin: 0;
+        min-width: 100px;
     }
 
     .dropdown-menu{
