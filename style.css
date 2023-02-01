@@ -669,10 +669,12 @@ a#dropdownMenuLink.dropdown-toggle::after{
 summary{
     padding:  10px !important;
     color: var(--text-color);
-    margin: 10px 0;
+    margin: 10px 10px;
+    min-width: 220px;
     border-bottom: 1px solid #999;
-    min-width: 200px;
 }
+
+
 
 .first-link{
     color: var(--text-color);
@@ -687,7 +689,7 @@ summary{
 }
 
 .links{
-    margin-top: -20px;
+    margin-top: -30px;
     text-align: center;
     padding: 10px 10px;
 }
@@ -715,7 +717,7 @@ summary{
 }
 
 .third-links{
-    margin-bottom: -15px;
+    margin-bottom: -10px;
 }
 
 /* img dropdown */

@@ -85,7 +85,6 @@ select{
     padding: 10px;
 }
 
-
 /* TOOLTIPS */
 
 .visible {
@@ -101,6 +100,7 @@ select{
 }
 
 /* buttons */
+
 
 .primary-btn{
     padding: 5px 10px;
@@ -118,6 +118,7 @@ select{
     transform: rotate(90deg);
     transition: 0.2s ease-in-out;
 }
+
 
 /* bg */
 
