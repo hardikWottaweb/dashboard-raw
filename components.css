@@ -51,12 +51,15 @@ body.dark{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .container-1{
     background: var(--sidebar-color);
     min-height: 400px;
     color: var(--text-color);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+
 }
 
 .container-head{
@@ -97,6 +100,7 @@ select{
 
 .container-box{
     margin: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }
 /* Tooltip */
 
