@@ -75,7 +75,11 @@ set_drop.addEventListener('click', (event) => {
 
 })
 
+// Tooltips
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
 
 // DARK MODE & LIGHT MODE TOGGLE

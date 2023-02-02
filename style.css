@@ -301,7 +301,7 @@ select{
     background: var(--sidebar-color);
     transition: var(--tran-05);
     z-index: 100;
-    box-shadow: 5px 5px 5px var(--body-color);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }
 .sidebar.close{
     width: 88px;
@@ -697,7 +697,7 @@ summary{
 .nav-icon {
     min-width: 10px;
     font-size: 15px;
-    padding: 5px 0;
+    padding: 5px 0 !important;
   }
 
 .third-link{
@@ -710,6 +710,7 @@ summary{
     position: absolute !important;
     left: 30px !important;
     padding: 0 10px !important;
+    margin-left: 10px;
 }
 
 .item{
