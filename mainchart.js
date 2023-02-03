@@ -23,6 +23,7 @@ am5.ready(function() {
       myTheme
     ]);
     
+    
     // Create chart
     // https://www.amcharts.com/docs/v5/charts/xy-chart/
     var chart = root.container.children.push(
@@ -86,10 +87,12 @@ am5.ready(function() {
       })
     );
     
+    
     series.columns.template.setAll({
       fillOpacity: 0.9,
       strokeOpacity: 0
     });
+    
     series.columns.template.adapters.add("fill", (fill, target) => {
       return chart.get("colors").getIndex(series.columns.indexOf(target));
     });
@@ -296,15 +299,15 @@ am5.ready(function() {
     centerX: 0,
     centerY: 0, 
   });
-  series.get("colors").set("colors", [
-  am5.color('#F66A6A'),
-  am5.color('#F72626'),
-  am5.color('#e42edc'),
-  am5.color('#fa6827'),
-  am5.color('#8f8ff4'),
-  am5.color('#8ff4f2'),
-  am5.color('#fbff00')
-]);
+//   series.get("colors").set("colors", [
+//   am5.color('#F66A6A'),
+//   am5.color('#F72626'),
+//   am5.color('#e42edc'),
+//   am5.color('#fa6827'),
+//   am5.color('#8f8ff4'),
+//   am5.color('#8ff4f2'),
+//   am5.color('#fbff00')
+// ]);
   // Set data
   // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
   series.data.setAll([

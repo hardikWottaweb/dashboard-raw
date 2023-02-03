@@ -52,7 +52,6 @@ sidebar.classList.toggle("close");
 
 my_drop.addEventListener('click', (event) => {
   img_content.classList.toggle("view")
-  set_content.classList.remove('view2')
 
   event.stopImmediatePropagation();
 
@@ -64,16 +63,6 @@ my_drop.addEventListener('click', (event) => {
 
 // Header Settings dropdown
 
-set_drop.addEventListener('click', (event) => {
-  set_content.classList.toggle('view2')
-  img_content.classList.remove('view')
-  event.stopImmediatePropagation();
-
-  body.addEventListener('click', () => {
-    set_content.classList.remove('view2')
-  })
-
-})
 
 // Tooltips
 
