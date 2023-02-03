@@ -669,7 +669,6 @@ a#dropdownMenuLink.dropdown-toggle::after {
 /* Main dropdowns */
 
 .third-container {
-    margin-top: 10px !important;
     min-width: 250px;
 }
 
@@ -683,7 +682,7 @@ a#dropdownMenuLink.dropdown-toggle::after {
 summary {
     padding: 10px !important;
     color: var(--text-color);
-    margin: 10px 10px;
+    margin: 10px;
     min-width: 220px;
     border-bottom: 1px solid #999;
 }
@@ -703,7 +702,7 @@ summary {
     }
 
 .links {
-    margin-top: -30px;
+    margin-top: -25px;
     text-align: center;
     padding: 10px 10px;
 }
@@ -720,6 +719,10 @@ summary {
     right: 10;
 }
 
+.third-links{
+    margin-top: -12px;
+}
+
 .third-heading {
     position: absolute !important;
     left: 30px !important;
@@ -731,9 +734,7 @@ summary {
     text-align: left;
 }
 
-.third-links {
-    margin-bottom: -10px;
-}
+
 
 /* img dropdown */
 
