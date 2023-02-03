@@ -21,7 +21,6 @@ loader = document.querySelector('#preloader')
 crud_link = document.querySelector('.crud-link')
 crud_content = document.querySelector('.crud-content')
 
-refresh = document.querySelectorAll('.refresh')
 
 
 // Crud Links
@@ -163,8 +162,8 @@ $('.refresh').on('click', function(){
     position: "right", // `left`, `center` or `right`
     stopOnFocus: true, // Prevents dismissing of toast on hover
     style: {
-      background:' rgb(243,82,90)',
-      background: 'linear-gradient(90deg, rgba(243,82,90,1) 0%, rgba(242,207,207,1) 100%)'    },
+      background: 'rgb(243,82,90)',
+      background: 'linear-gradient(90deg, rgba(243,82,90,1) 55%, rgba(242,207,207,1) 100%)'},
     onClick: function(){} // Callback after click
   }).showToast();
 })
