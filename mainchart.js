@@ -12,7 +12,8 @@ am5.ready(function() {
     // Here the color can be changed. :0
     myTheme.rule("Label").setAll({
       fill: am5.color("#00b1f2"),
-      fontWeight: 400
+      fontWeight: 300,
+      fontSize: '15px',
     });
 
     
@@ -20,6 +21,7 @@ am5.ready(function() {
     // https://www.amcharts.com/docs/v5/concepts/themes/
     root.setThemes([
       am5themes_Animated.new(root),
+      am5themes_Responsive.new(root),
       myTheme
     ]);
     
@@ -262,7 +264,6 @@ am5.ready(function() {
 // DASHBOARD doughtnuts PIE CHART
 
 
-
   am5.ready(function() {
   // Create root element
   // https://www.amcharts.com/docs/v5/getting-started/#Root_element
@@ -279,6 +280,7 @@ am5.ready(function() {
   });
   root.setThemes([
     am5themes_Animated.new(root),
+    am5themes_Responsive.new(root),
     myTheme
   ]);
   // Create chart
