@@ -163,8 +163,8 @@ $('.refresh').on('click', function(){
     position: "right", // `left`, `center` or `right`
     stopOnFocus: true, // Prevents dismissing of toast on hover
     style: {
-      background: "linear-gradient(90deg, rgba(255,188,150,1) 10%, rgba(255,130,150,1) 100%)",
-    },
+      background:' rgb(243,82,90)',
+      background: 'linear-gradient(90deg, rgba(243,82,90,1) 0%, rgba(242,207,207,1) 100%)'    },
     onClick: function(){} // Callback after click
   }).showToast();
 })
