@@ -21,6 +21,8 @@ loader = document.querySelector('#preloader')
 crud_link = document.querySelector('.crud-link')
 crud_content = document.querySelector('.crud-content')
 
+refresh = document.querySelectorAll('.refresh')
+
 
 // Crud Links
 
@@ -101,7 +103,6 @@ $('.third-links').on('click', function(event){
 // ---------------------------
 
 
-
 // Auto Closing Nested menu
 
 
@@ -149,5 +150,21 @@ jQuery(document).ready(function($){
 });
 
 
+// Toastify 
 
-
+$('.refresh').on('click', function(){
+  Toastify({
+    text: "Refreshing :)",
+    duration: 2000,
+    destination: "",
+    newWindow: true,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "right", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "linear-gradient(90deg, rgba(255,188,150,1) 10%, rgba(255,130,150,1) 100%)",
+    },
+    onClick: function(){} // Callback after click
+  }).showToast();
+})
