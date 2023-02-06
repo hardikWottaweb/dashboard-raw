@@ -195,10 +195,9 @@ select{
 
 }
 
-.right{
-    position: absolute;
-    right: 20px;
-    margin-top: -25px;
+.container-heading{
+    display: flex;
+    justify-content: space-between;
 }
 
 .toggle-btn{
