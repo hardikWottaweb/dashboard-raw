@@ -149,6 +149,8 @@ jQuery(document).ready(function($){
 
 // Toastify 
 
+// refresh toastify
+
 $('.refresh').on('click', function(){
   Toastify({
     text: "Refreshing :)",
@@ -165,6 +167,66 @@ $('.refresh').on('click', function(){
     onClick: function(){} // Callback after click
   }).showToast();
 })
+
+
+// search toastify
+
+$('.search').on('click', function(){
+  Toastify({
+    text: "Searching :)",
+    duration: 2000,
+    destination: "",
+    newWindow: true,
+    close: true,
+    gravity: "bottom", // `top` or `bottom`
+    position: "right", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: 'linear-gradient(90deg, rgb(139, 207, 202) 9%, rgba(0,172,146,1) 100%)'},
+    onClick: function(){} // Callback after click
+  }).showToast();
+})
+
+// Download toastify
+
+$('.download').on('click', function(){
+  Toastify({
+    text: "Downloading :)",
+    duration: 2000,
+    destination: "",
+    newWindow: true,
+    close: true,
+    gravity: "bottom", // `top` or `bottom`
+    position: "right", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: 'linear-gradient(90deg, rgb(155, 199, 235) 9%, rgba(34,143,229,1) 100%'},
+    onClick: function(){} // Callback after click
+  }).showToast();
+})
+
+
+// Send toastify
+
+$('.send').on('click', function(){
+  Toastify({
+    text: "Sending :)",
+    duration: 2000,
+    destination: "",
+    newWindow: true,
+    close: true,
+    gravity: "bottom", // `top` or `bottom`
+    position: "right", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: 'linear-gradient(90deg, rgba(161,190,230,1) 9%, rgb(203, 112, 245) 100%)'},
+    onClick: function(){} // Callback after click
+  }).showToast();
+})
+
+
+
+// toastify ends here
 
 // All CDRs Table toggle
 
