@@ -59,6 +59,8 @@ body.dark{
     display: block;
     transition: 1s ease-in;
 }
+
+
 /* ----- */
 
 .mr{
@@ -153,7 +155,9 @@ select{
     border-radius: 5px;
 }
 
-
+.container-heading{
+    color: var(--text-color);
+}
 
 /* Filter container from CDRS */
 
@@ -308,8 +312,8 @@ select{
     }
 
     .filter{
-        display: flex;
-        flex-direction: column !important;
+        display: grid;
+        grid-template-columns: 50% 50%;
         gap: 20px;
     }
 
@@ -323,6 +327,11 @@ select{
     }
 
     .content-1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filter{
         display: flex;
         flex-direction: column;
     }

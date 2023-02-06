@@ -175,7 +175,3 @@ document.querySelector('.toggle-btn').addEventListener('click', () => {
 
 // Date range picker
 
-$(document).on('ready', function () {
-  // initialization of daterangepicker
-  $('.js-daterangepicker').daterangepicker();
-});
