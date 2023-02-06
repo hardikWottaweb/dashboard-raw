@@ -430,202 +430,145 @@
       </div>
     </header>
 
-    <!-- Top cards -->
+    <!-- CDR body -->
 
-    <section class="cards">
-      <!-- card-1 -->
-      <div class="card-box-1 main-card" title="Orders Container Tooltip" class="visible">
-        <div class="card-content-1">
-          <div class="card-1-head">
-            <h2>All Orders</h2>
-            <p>FROM LAST <input id="card-input" value="7" type="number" /> Days</p>
-          </div>
-          <div class="card-1-body">
-            <div class="nums">
-              <div class="card-1-box">
-                <h1 class="num1">0</h1>
-                <p>New Numbers</p>
-              </div>
-              <div class="card-1-box">
-                <h1 class="num2">0</h1>
-                <p>Deleted Numbers</p>
-              </div>
-  
-            </div>
-            <div class="big-icon-1">
-              <i class="fa-solid fa-clipboard-list"></i>        
-          </div>
-          </div>
-        </div>
+    <div class="container heading-container">
+      <div class="heading-content">
+        <i class="fa-solid fa-home"></i>
+        <h3> All CDRs Details</h3>  
       </div>
-
-      <!-- card 2 -->
-      <div class="card-box-2 main-card bg-2">
-        <div class="card-content">
-          <h4>Selling Price</h4>
-          <div class="price-text">
-            <i class="fa-solid fa-euro-sign"></i>
-            <p class="price">0.00/</p>
-            <div><p class="mt-3">month</p></div>
-          </div>
-        </div>
-        <div class="big-icon">
-          <i class="fa-solid fa-euro-sign"></i>
-        </div>
-      </div>
-
-      <!-- card 3 -->
-      <div class="card-box-2 main-card bg-3">
-        <div class="card-content">
-          <h4>Buying Price</h4>
-          <div class="price-text">
-            <i class="fa-solid fa-euro-sign"></i>
-            <p class="price">0.00/</p>
-            <div><p class="mt-3">month</p></div>
-          </div>
-        </div>
-        <div class="big-icon">
-          <i class="fa-solid fa-euro-sign"></i>
-        </div>
-      </div>
-
-      <!-- card 4 -->
-      <div class="card-box-2 main-card bg-4">
-        <div class="card-content">
-          <h4>Margin</h4>
-          <div class="price-text">
-            <i class="fa-solid fa-euro-sign"></i>
-            <p class="price">0.00/</p>
-            <div><p class="mt-3">month</p></div>
-          </div>
-        </div>
-        <div class="big-icon">
-          <i class="fa-solid fa-chart-bar"></i>
-        </div>
-      </div>
-    </section>
-
-  <!-- Dashboard page charts & Other Components -->
-
-  <div class="container-box primary-bg">
-    <div class="row p-4">
-        <div class="container-head">
-          <h3>Call Cost Grouped by Customer</h3>
-          <div class=".container text-center">
-            <span class="p-2">Refreshes automatically in 5 mins | </span>
-            <button class="primary-btn refresh" ><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
-          </div>
-        </div>
-        <div class="container-message bg-4">
-          <p class="px-1">Currently showing from 10:39 to 10:44</p>
-        </div>
-      <div id="chartdiv2"></div>
     </div>
-  </div>
 
-
-    <!-- ------------- -->
-
-
-<!-- Body components -->
-
-  <div class="container mb-3">
-    <div class="row col-12">
-      <div class="container-1 col-md  mr">
-        <div class="container-head">
-          <h3>Active Calls By Customer</h3>
-          <div class=".container m-1 text-center">
-            <span class="p-2">Refreshes automatically in 5 mins | </span>
-            <button class="primary-btn refresh"><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
-          </div>
-        </div>
-        <div class="container-message p-1 bg-2">
-          <p class="px-1">Currently showing from 10:39 to 10:44</p>
-        </div>
-
-        <div class="container-body">
-          <p class="py-3">Couldn't complete your requrest. Please try to refresh again</p>
+    <!-- <div class="container filter-container">
+      <div class="row col-2">
+        <h4>Select Company</h4>
+        <select>
+          <options value="value 1"></options>
+          <options value="value 2"></options>
+          <options value="value 3"></options>
+        </select>  
+      </div>
+      <div class="row col-2">
+        <h4>Select Company</h4>
+        <select>
+          <options value="value 1"></options>
+          <options value="value 2"></options>
+          <options value="value 3"></options>
+        </select>  
+      </div>
+      <div class="row col-2">
+        <h4>Select Company</h4>
+        <select>
+          <options value="value 1"></options>
+          <options value="value 2"></options>
+          <options value="value 3"></options>
+        </select>  
+      </div>
+      <div class="row col-2">
+        <h4>Select Date</h4>
+        <input type="date" >
+      </div>
+      <div class="row col-2">
+        <div class="buttons">
+          <button type="button" class="primary-btn">Search</button>
+          <button type="button" class="primary-btn">Download CDRs</button>
+          <button type="button" class="primary-btn">Send CDRs</button>  
         </div>
       </div>
+    </div> -->
 
-      <div class="container-1 col-md ">
-        <div class="container-head ">
-          <h3>Errors</h3>
-          <div class="options">
-            <select class="select m-1">
-              <option value="SBC3">SBC3</option>
-              <option value="SBC5">SBC5</option>
-              <option value="SBC7">SBC7</option>
-              <option value="Metaswitch">Metaswitch</option>
-            </select>
-  
-            <select class="select m-1">
-              <option value="NONE">-NONE-</option>
-              <option value="BICS_INBOUND_SBC3">BICS_INBOUND_SBC3</option>
-              <option value="Coolwave">Coolwave</option>
-              <option value="HPS">HPS</option>
-              <option value="Jitender">Jitender</option>
-              <option value="Megacall">Megacall</option>
+
+    <!-- All CDRS page content -->
+
+    <div class="container-2 main-container  m-2">
+      <div class="container-heading nospace bg-2">
+          <h4><i class="fa fa-filter"></i> Filter By:</h4>
+      </div>
+      <div class="container-body mt-5">
+        <div class="container filter">
+          <div class="col-md">
+            <h4>Select Comapny</h4>
+            <select class="size-m">
+              <option value="option 1">option 1</option>
+              <option value="option 2">option 2</option>
+              <option value="option 3">option 3</option>
+              <option value="option 4">option 4</option>
             </select>
           </div>
-
-          <div class="text-center">
-            <span class="p-2 ">Refreshes automatically in 5 mins | </span>
-            <button class="primary-btn refresh"><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
+          <div class="col-md">
+            <h4>CLI</h4>
+            <input type="text" class="size-m" placeholder="CLI">
+          </div>
+          <div class="col-md">
+            <h4>CLD</h4>
+            <input type="text" class="size-m" placeholder="CLD">
+          </div>
+          <div class="col-md">
+            <h4>Select Date</h4>
+            <input type="date" class="size-m" >
           </div>
         </div>
-        <div class="container-message p-1 bg-3">
-          <p class="px-2">Currently showing from 10:39 to 10:44</p>
+        <div class="col-md text-center m-3">
+          <div class="buttons">
+            <button type="button" class=" bg-4 btn-1  m-2">Search</button>
+            <button type="button" class=" bg-2 btn-1  m-2">Download CDRs</button>
+            <button type="button" class=" bg-3 btn-1 m-2">Send CDRs</button>  
+          </div>
         </div>
 
-        <div class="container-body p-3">
-          <div id="chartdiv" ></div>
+      </div>
+    </div>
+
+    <!-- dropdown container-2 -->
+
+    <div class="drop-container m-2">
+      <div class="container-heading p-4">
+          <h>SBC3 CDRS</h3>
+            <div class="right">
+              <span>Total Calls : 0</span>
+              <button class="toggle-btn"><i class="fa fa-plus"></i></button>    
+            </div>
+      </div>
+      <div class="drop-container-body bg-4">
+        <div class="content-1">
+          <h5 class="fs-2">0 <span class="fs-5">Results</span></h5>
+          <h5>1-0 of 0 records (p.1/0)</h5>
+          <select class="size-m">
+            <option value="10">10</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+        <div class="content-table">
+            <table>
+              <tr>
+                <th>CLI</th>
+                <th>CLD</th>
+                <th>Setup Time</th>
+                <th>Duration</th>
+                <th>Customer</th>
+                <th>Account</th>
+              </tr>
+              <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+              </tr>
+              <!-- <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr> -->
+            </table>
         </div>
       </div>
     </div>
-  </div>
-
-    <!-- Dashboard page bar chart 2 -->
-
-    <div class="container-box primary-bg">
-      <div class="row p-4">
-          <div class="container-head">
-            <h3>ASR Report by customer</h3>
-            <div class=".container text-center">
-              <span class="p-2">Refreshes automatically in 5 mins | </span>
-              <button class="primary-btn refresh"><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
-            </div>
-          </div>
-          <div class="container-message bg-4">
-            <p class="px-1">Currently showing from 10:39 to 10:44</p>
-          </div>
-        <div id="chartdiv3"></div>
-      </div>
-    </div>
-  
-  
-      <!-- ------------- -->
-  
-      <div class="container mb-3">
-        <div class="container-1 col-12">
-          <div class="container-head border">
-            <h3>Active Calls</h3>
-            <div class=".container m-1 text-center">
-              <input type="date" name="graph-date" class="px-2 border">
-              <button class="primary-btn refresh"><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
-            </div>
-          </div>
-  
-          <div class="container-body">
-          </div>
-          <div class="container-footer">
-            <div class="link-1">SBC3</div>
-            <div class="link-1">SBC5</div>
-          </div>
-        </div>
-      </div>
-
-
 
     <script src="main.js"></script>
 

@@ -62,8 +62,6 @@ my_drop.addEventListener('click', (event) => {
 
 })
 
-// Header Settings dropdown
-
 
 // Tooltips
 
@@ -167,3 +165,17 @@ $('.refresh').on('click', function(){
     onClick: function(){} // Callback after click
   }).showToast();
 })
+
+// All CDRs Table toggle
+
+document.querySelector('.toggle-btn').addEventListener('click', () => {
+  document.querySelector('.drop-container-body').classList.toggle('open')
+})
+
+
+// Date range picker
+
+$(document).on('ready', function () {
+  // initialization of daterangepicker
+  $('.js-daterangepicker').daterangepicker();
+});
