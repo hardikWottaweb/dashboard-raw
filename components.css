@@ -187,6 +187,7 @@ select{
 
 .filter h4{
     color: var(--text-color);
+    font-size: 15px;
 }
 
 .drop-container{
@@ -240,6 +241,10 @@ select{
     color: var(--text-color);
   }
   
+  th{
+    background: local;
+    color: #333;
+  }
 
 /* bg */
 

@@ -104,7 +104,7 @@
                       <summary class="item-container" ><a href="./Allcdrs.html" class="first-link"><i class="fa fa-indent nav-icon"></i><span class='third-heading'>All CDRs</span></a></summary>
                     </div>
                     <div class="third-container">
-                      <summary class="item-container " ><a href="Comparenums.html" class="first-link"><i class="fa fa-bar-chart nav-icon"></i><span class='third-heading'>Compare Numbers by Day</span></a></summary>
+                      <summary class="item-container " ><a href="/Comparenums.html" class="first-link"><i class="fa fa-bar-chart nav-icon"></i><span class='third-heading'>Compare Numbers by Day</span></a></summary>
                     </div>
 
                     <div class="third-container">
@@ -435,76 +435,25 @@
     <!-- CDR body -->
 
     <div class="container heading-container">
-      <div class="heading-content m-2">
-        <i class="fa fa-indent"></i>
-        <h3> All CDRs Details</h3>  
-      </div>
+        <div class="row m-2">
+            <div class="heading-content">
+                <i class="fa fa-bar-chart "></i>
+                <h3> CDR Grouped by Numbers for date</h3>  
+              </div>  
+              <input type="date" class="size-m m-2">      
+        </div>
     </div>
 
     <!-- All CDRS page content -->
 
-    <div class="container-2 main-container  m-2">
-      <div class="container-heading nospace bg-2">
-          <h4 class="text-light"><i class="fa fa-filter"></i> Filter By:</h4>
-      </div>
-      <div class="container-body mt-5">
-        <div class="container filter">
-          <div class="col-md">
-            <h4>Select Comapny</h4>
-            <select class="size-m">
-              <option value="option 1">option 1</option>
-              <option value="option 2">option 2</option>
-              <option value="option 3">option 3</option>
-              <option value="option 4">option 4</option>
-            </select>
-          </div>
-          <div class="col-md">
-            <h4>CLI</h4>
-            <input type="text" class="size-m" placeholder="CLI">
-          </div>
-          <div class="col-md">
-            <h4>CLD</h4>
-            <input type="text" class="size-m" placeholder="CLD">
-          </div>
-          <div class="col-md">
-            <h4>Select Date</h4>
-            <input type="date" class="size-m" >
-          </div>
-        </div>
-        <div class="col-md text-center m-3">
-          <div class="buttons">
-            <button type="button" class=" search bg-4 btn-1  m-2">Search</button>
-            <button type="button" class=" download bg-2 btn-1  m-2">Download CDRs</button>
-            <button type="button" class=" send bg-3 btn-1 m-2">Send CDRs</button>  
-          </div>
-        </div>
-
-      </div>
-    </div>
 
     <!-- dropdown container-2 -->
 
     <div class="drop-container m-2">
-      <div class="container-heading p-4">
-          <h4>SBC3 CDRS</h4>
-            <div class="right">
-              <span>Total Calls : 0</span>
-              <button class="toggle-btn"><i class="fa fa-plus"></i></button>    
-            </div>
-      </div>
-      <div class="drop-container-body bg-4">
-        <div class="content-1">
-          <h5 class="fs-2">0 <span class="fs-5">Results</span></h5>
-          <h5>1-0 of 0 records (p.1/0)</h5>
-          <select class="size-m">
-            <option value="10">10</option>
-            <option value="50">50</option>
-            <option value="100">100</option>
-          </select>
-        </div>
+      <div class=" bg-1 drop-container bg-4">
         <div class="content-table">
             <table>
-              <tr>
+              <tr class="bg-2">
                 <th>CLI</th>
                 <th>CLD</th>
                 <th>Setup Time</th>

@@ -134,8 +134,8 @@ body.dark{
 } */
 
 .bg-2{
-    background: rgb(209,234,254);
-    background: linear-gradient(90deg, rgb(155, 199, 235) 9%, rgba(34,143,229,1) 100%);
+    background: rgb(209,234,254) !important;
+    background: linear-gradient(90deg, rgb(155, 199, 235) 9%, rgba(34,143,229,1) 100%) !important;
 }
 
 .bg-3{
