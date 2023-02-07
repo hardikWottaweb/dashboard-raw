@@ -19,6 +19,17 @@
     <script src="//cdn.amcharts.com/lib/5/themes/Responsive.js"></script>
 
     <!-- DATE RANGE PICKER -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    
+    <link href="jquery-ui.min.css" rel="stylesheet">
+    <link href="jquery.comiseo.daterangepicker.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="moment.min.js"></script>
+    <script src="jquery.comiseo.daterangepicker.js"></script>
+    <script>
+        $(function() { $("#e1").daterangepicker(); });
+    </script>
 
     <!-- TOASTIFY NOTIFICATION CDNS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
@@ -439,8 +450,8 @@
             <div class="heading-content">
                 <i class="fa fa-bar-chart "></i>
                 <h3> CDR Grouped by Numbers for date</h3>  
-              </div>  
-              <input type="date" class="size-m m-2">      
+              </div> 
+              <input type="date" class="size-m">
         </div>
     </div>
 
@@ -482,10 +493,21 @@
       </div>
     </div>
 
+    
+
     <script src="main.js"></script>
 
     <!-- TOASTIFY CDN SCRIPT -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
+    <!-- DATE RANGE PICKER JS -->
+
+    <script>
+         $("#e2").daterangepicker({
+     datepickerOptions : {
+         numberOfMonths : 2
+     }
+ });
+        </script>
   </body>
 </html>

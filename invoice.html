@@ -434,38 +434,39 @@
 
     <!-- CDR body -->
 
-    <div class="container heading-container">
-      <div class="heading-content m-2">
-        <i class="fa fa-indent"></i>
-        <h3> All CDRs Details</h3>  
-      </div>
-    </div>
 
     <!-- All CDRS page content -->
 
     <div class="container-2 main-container  m-2">
-      <div class="container-heading nospace bg-2">
-          <h4 class="text-light"><i class="fa fa-filter"></i> Filter By:</h4>
-      </div>
       <div class="container-body mt-5">
         <div class="container filter">
           <div class="col-md">
-            <h4>Select Comapny</h4>
+            <h4>USER</h4>
             <select class="size-m">
-              <option value="option 1">option 1</option>
-              <option value="option 2">option 2</option>
-              <option value="option 3">option 3</option>
-              <option value="option 4">option 4</option>
+              <option value="select user">Select User</option>
             </select>
           </div>
           <div class="col-md">
-            <h4>CLI</h4>
-            <input type="text" class="size-m" placeholder="CLI">
+            <h4>SWITCH</h4>
+            <select class="size-m">
+                <option value="SBC1">SBC1</option>
+                <option value="SBC2">SBC2</option>
+                <option value="SBC3">SBC3</option>
+                <option value="SBC5">SBC5</option>
+                <option value="SBC7">SBC7</option>
+              </select>
+            </div>
+          <div class="col-md mt-5">
+            <h4>TARIFF</h4>
+            <select class="size-m">
+                <option value="Select Tarrif">Select Tariff</option>
+                <option value="Local Tariff">Local Tariff</option>
+              </select>
+              <div class="col-sm p-2">
+                <input type="checkbox">Setup = Per min?
+              </div>
           </div>
-          <div class="col-md">
-            <h4>CLD</h4>
-            <input type="text" class="size-m" placeholder="CLD">
-          </div>
+          
           <div class="col-md">
             <h4>Select Date</h4>
             <input type="date" class="size-m" >
@@ -473,9 +474,9 @@
         </div>
         <div class="col-md text-center m-3">
           <div class="buttons">
-            <button type="button" class=" search bg-4 btn-1  m-2">Search</button>
-            <button type="button" class=" download bg-2 btn-1  m-2">Download CDRs</button>
-            <button type="button" class=" send bg-3 btn-1 m-2">Send CDRs</button>  
+            <button type="button" class=" search bg-4 btn-1 px-3 m-2">View</button>
+            <button type="button" class=" download bg-2 btn-1 px-3 m-2">Export</button>
+            <button type="button" class=" send bg-3 btn-1 px-3 m-2">Call Records</button>  
           </div>
         </div>
 
@@ -483,55 +484,6 @@
     </div>
 
     <!-- dropdown container-2 -->
-
-    <div class="drop-container m-2">
-      <div class="container-heading p-4">
-          <h4>SBC3 CDRS</h4>
-            <div class="right">
-              <span>Total Calls : 0</span>
-              <button class="toggle-btn"><i class="fa fa-plus"></i></button>    
-            </div>
-      </div>
-      <div class="drop-container-body bg-4">
-        <div class="content-1">
-          <h5 class="fs-2">0 <span class="fs-5">Results</span></h5>
-          <h5>1-0 of 0 records (p.1/0)</h5>
-          <select class="size-m">
-            <option value="10">10</option>
-            <option value="50">50</option>
-            <option value="100">100</option>
-          </select>
-        </div>
-        <div class="content-table">
-            <table>
-              <tr>
-                <th>CLI</th>
-                <th>CLD</th>
-                <th>Setup Time</th>
-                <th>Duration</th>
-                <th>Customer</th>
-                <th>Account</th>
-              </tr>
-              <tr>
-                <td>test</td>
-                <td>test</td>
-                <td>test</td>
-                <td>test</td>
-                <td>test</td>
-                <td>test</td>
-              </tr>
-              <!-- <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr> -->
-            </table>
-        </div>
-      </div>
-    </div>
 
     <script src="main.js"></script>
 
