@@ -231,9 +231,10 @@ document.querySelector('.toggle-btn').addEventListener('click', () => {
 
   if(document.querySelector('.drop-container-body').classList.contains('open')){
     document.querySelector('.toggle-btn').innerHTML = '-'
-    document.querySelector('.toggle-btn').style.transition = '0.2s ease'
+    document.querySelector('.toggle-btn').style.transition = '0.3s ease'
   } else{
     document.querySelector('.toggle-btn').innerHTML = '+'
+    document.querySelector('.toggle-btn').style.transition = '0.3s ease'
   }
 })
 
