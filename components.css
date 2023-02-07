@@ -51,6 +51,8 @@ body.dark{
   }
 
 
+
+
 /* ENDS HERE */
 
 .nospace{
@@ -69,7 +71,6 @@ body.dark{
 
 .open{
     display: block;
-
 }
 
 
@@ -93,8 +94,6 @@ body.dark{
     box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 
 }
-
-
 
 .container-head{
     display: flex;
@@ -324,6 +323,7 @@ select{
 .text-color{
     color: var(--text-color);
 }
+
 
 
 @media(max-width: 1250px){
