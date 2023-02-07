@@ -178,7 +178,7 @@ select{
 }
 
 .size-m{
-    width: 250px;
+    width: 300px;
     outline: none;
     padding: 10px;
     border-radius: 10px;
@@ -283,8 +283,11 @@ select{
     color: var(--text-color);
 }
 
-/* filter-container */
+/* Text color */
 
+.text-color{
+    color: var(--text-color);
+}
 
 
 @media(max-width: 1200px){
