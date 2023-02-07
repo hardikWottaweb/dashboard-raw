@@ -55,6 +55,14 @@ body.dark{
 
 /* ENDS HERE */
 
+
+/* CONTAINER BG'S */
+
+.first-container{
+    background: var(--sidebar-color);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+
 .nospace{
     margin: -20px !important;
 }
@@ -80,19 +88,14 @@ body.dark{
     margin-right: 10px;
 }
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--sidebar-color);
-}
+
 
 .container-1{
     background: var(--sidebar-color);
     min-height: 400px;
+    margin: 20px !important;
     color: var(--text-color);
     box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
-
 }
 
 .container-head{
