@@ -443,44 +443,74 @@
 
     <!-- All CDRS page content -->
 
-    <div class="container-2 main-container  m-2">
-      <div class="container-heading nospace bg-2">
-          <h4 class="text-light"><i class="fa fa-filter"></i> Filter By:</h4>
+      <!-- <div class="container-heading bg-2">
+        <h4 class="fs-6"><i class="fa fa-filter"></i> Filter by :</h4>
       </div>
-      <div class="container-body mt-5">
-        <div class="container filter">
-          <div class="col-md">
-            <h4>Select Comapny</h4>
-            <select class="size-m">
-              <option value="option 1">option 1</option>
-              <option value="option 2">option 2</option>
-              <option value="option 3">option 3</option>
-              <option value="option 4">option 4</option>
-            </select>
-          </div>
-          <div class="col-md">
-            <h4>CLI</h4>
-            <input type="text" class="size-m" placeholder="CLI">
-          </div>
-          <div class="col-md">
-            <h4>CLD</h4>
-            <input type="text" class="size-m" placeholder="CLD">
-          </div>
-          <div class="col-md">
-            <h4>Select Date</h4>
-            <input type="date" class="size-m" >
-          </div>
+      <div class="container m-2 filter">
+        <div class="col-2">
         </div>
-        <div class="col-md text-center m-3">
+        <div class="col-2">
+          <h4>CLI</h4>
+          <input type="text" placeholder="CLI">
+        </div>
+        <div class="col-2">
+          <h4>CLD</h4>
+          <input type="text" placeholder="CLD">
+        </div>
+        <div class="col-2">
+          <h4>Select Date</h4>
+          <input type="date" >
+        </div>
+        <div class="col-2">
           <div class="buttons">
-            <button type="button" class=" search bg-4 btn-1  m-2">Search</button>
-            <button type="button" class=" download bg-2 btn-1  m-2">Download CDRs</button>
-            <button type="button" class=" send bg-3 btn-1 m-2">Send CDRs</button>  
+            <button type="button" class=" search bg-4 btn-1">Search</button>
+            <button type="button" class=" download bg-2 btn-1">Download CDRs</button>
+            <button type="button" class=" send bg-3 btn-1">Send CDRs</button>  
           </div>
-        </div>
-
+        </div>  
       </div>
     </div>
+ -->
+
+ <!-- All cdr container -->
+
+ <div class="container-2 m-2">
+  <div class="container-heading bg-2 m-0">
+    <h4 class="fs-6"><i class="fa fa-filter"></i> Filter by :</h4>
+  </div>
+  <div class="container-body p-2">
+    <div class="box-container">
+      <div class="main-box">
+        <h4>Select Comapny</h4>
+        <select class="size-m">
+          <option value="option 1">option 1</option>
+          <option value="option 2">option 2</option>
+          <option value="option 3">option 3</option>
+          <option value="option 4">option 4</option>
+        </select>
+      </div>
+        <div class="main-box">
+          <h4>CLI</h4>
+          <input class="size-m" type="text" placeholder="CLI">
+      </div>
+      <div class="main-box">
+        <h4>CLD</h4>
+        <input class="size-m" type="text" placeholder="CLD">
+    </div>
+    <div class="main-box">
+      <h4>Select Date</h4>
+        <input type="date" class="size-m">
+      </div>
+      <div class="main-box">
+        <div class="buttons">
+          <button type="button" class=" search bg-4 btn-1">Search</button>
+          <button type="button" class=" download bg-2 btn-1">Download CDRs</button>
+          <button type="button" class=" send bg-3 btn-1">Send CDRs</button>  
+        </div>
+      </div>
+  </div>
+  </div>
+ </div>
 
     <!-- dropdown container-2 -->
 
@@ -489,7 +519,7 @@
           <h4>SBC3 CDRS</h4>
             <div class="right">
               <span>Total Calls : 0</span>
-              <button class="toggle-btn"><i class="fa fa-plus"></i></button>    
+              <button class="toggle-btn">+</button>    
             </div>
       </div>
       <div class="drop-container-body bg-4">

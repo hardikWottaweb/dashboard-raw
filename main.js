@@ -22,15 +22,11 @@ crud_link = document.querySelector('.crud-link')
 crud_content = document.querySelector('.crud-content')
 
 
-
 // Crud Links
 
 document.querySelector('.crud-link').addEventListener('click', () => {
   document.querySelector('.crud-content').classList.toggle('crudopen')
 })
-
-
-
 
 
 // preloader animation
@@ -232,7 +228,16 @@ $('.send').on('click', function(){
 
 document.querySelector('.toggle-btn').addEventListener('click', () => {
   document.querySelector('.drop-container-body').classList.toggle('open')
+
+  if(document.querySelector('.drop-container-body').classList.contains('open')){
+    document.querySelector('.toggle-btn').innerHTML = '-'
+    document.querySelector('.toggle-btn').style.transition = '0.2s ease'
+  } else{
+    document.querySelector('.toggle-btn').innerHTML = '+'
+  }
 })
+
+
 
 
 // Date range picker

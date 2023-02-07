@@ -71,7 +71,7 @@ body.dark{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    background: var(--sidebar-color);
 }
 
 .container-1{
@@ -81,6 +81,8 @@ body.dark{
     box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 
 }
+
+
 
 .container-head{
     display: flex;
@@ -149,20 +151,43 @@ select{
 
 
 .btn-1{
-    padding: 5px 10px;
     border: none;
     color: #fff;
     border-radius: 5px;
+    padding: 5px 10px !important;
+    font-size: 15px;
 }
 
 .container-heading{
     color: var(--text-color);
 }
 
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.box-container{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 10px;
+}
+
+.main-box h4{
+    font-size: 15px;
+    color: var(--text-color);
+    
+}
+
 /* Filter container from CDRS */
 
 
 .container-2{
+    background: var(--sidebar-color);
     box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }
 
@@ -178,17 +203,13 @@ select{
 }
 
 .size-m{
-    width: 300px;
+    width: 200px;
     outline: none;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #888;
 }
 
-.filter h4{
-    color: var(--text-color);
-    font-size: 15px;
-}
 
 .drop-container{
     background: var(--sidebar-color);
@@ -204,11 +225,13 @@ select{
 
 .toggle-btn{
     border: none;
-    padding: 5px 10px;
     border-radius: 3px;
     background: var(--primary-color);
     color: #fff;
+    padding: 2px 8px;
+    font-size: 15px;
 }
+
 
 .content-1{
     display: flex;
@@ -290,7 +313,7 @@ select{
 }
 
 
-@media(max-width: 1200px){
+@media(max-width: 1250px){
     .container-head{
         display: flex;
         flex-direction: column;
@@ -326,6 +349,13 @@ select{
         gap: 20px;
     }
 
+    .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+
 }
 
 @media(max-width: 786px){
@@ -344,4 +374,6 @@ select{
         display: flex;
         flex-direction: column;
     }
+
+
 }
