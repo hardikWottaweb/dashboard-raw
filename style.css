@@ -42,6 +42,14 @@ body.dark {
     --text-color: #ccc;
 }
 
+/* Webkit fadein animation */
+
+@keyframes fade {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+  }
+
+
 /* Preloader */
 
 #preloader {
@@ -750,6 +758,8 @@ summary {
     padding: 10px 0;
     border-radius: 10px;
     box-shadow: 1px 1px 5px var(--text-color);
+    animation: fade 0.3s linear;
+
 }
 
     .img-content li {

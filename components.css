@@ -43,6 +43,16 @@ body.dark{
 
 }
 
+/* WEBKIT FADEDOWN ANIMATION */
+
+@keyframes fade {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+  }
+
+
+/* ENDS HERE */
+
 .nospace{
     margin: -20px !important;
 }
@@ -53,10 +63,13 @@ body.dark{
 
 .drop-container-body{
     display: none;
+    opacity: 1;
+    animation: fade 0.5s linear;
 }
 
 .open{
     display: block;
+
 }
 
 
