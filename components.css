@@ -339,10 +339,14 @@ select{
 
     .size-m{
         margin: 0;
-        width: 300px;
+        width: 200px;
     }
 
 
+    .head-row{
+        display: flex;
+        flex-direction: column;
+    }
 
     .options{
         display: flex;
