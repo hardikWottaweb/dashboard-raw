@@ -19,14 +19,9 @@
 
 .faq-links{
     list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: right;
 }
 
-.car-faq{
-    max-width: 100px;
-}
+
 .faq-links li a{
     color: var(--primary-color);
     text-decoration: none;
@@ -34,9 +29,7 @@
     font-weight: 600;
 }
 
-table tr:nth-child(1){
-    max-width: 100px;
-}
+
 
 @media(max-width: 900px){
     .faq-2-heading{
