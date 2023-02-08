@@ -1,0 +1,49 @@
+.faq-heading{
+    display: grid;
+    grid-template-columns: 20% 80% !important;
+}
+
+.faq-2-heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.div{
+    border: 1px solid var(--text-color);
+}
+
+.faq-2-heading h4,th{
+    color: var(--text-color);
+}
+
+.faq-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.car-faq{
+    max-width: 100px;
+}
+.faq-links li a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+table tr:nth-child(1){
+    max-width: 100px;
+}
+
+@media(max-width: 900px){
+    .faq-2-heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+

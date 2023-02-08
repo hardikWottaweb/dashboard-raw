@@ -51,8 +51,6 @@ body.dark{
   }
 
 
-
-
 /* ENDS HERE */
 
 /* Date range picker */
@@ -258,7 +256,6 @@ select{
 
 
 .content-table table {
-    font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
   }
