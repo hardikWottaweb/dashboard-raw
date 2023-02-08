@@ -11,23 +11,14 @@
     <link rel="stylesheet" href="components.css" />
     <link rel="stylesheet" href="charts.css" />
 
-    <!-- DATE RANGE PICKER -->
-
-        <!-- DATE RANGE PICKER -->
-    <!-- Include Required Prerequisites -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" /> -->
-    
-
-    
-
     <!-- CHARTS LINKS -->
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
     <script src="//cdn.amcharts.com/lib/5/themes/Responsive.js"></script>
+
+    <!-- DATE RANGE PICKER -->
 
     <!-- TOASTIFY NOTIFICATION CDNS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
@@ -441,220 +432,25 @@
       </div>
     </header>
 
-    <!-- Top cards -->
+    <!-- CDR body -->
 
-    <section class="cards">
-      <!-- card-1 -->
-      <div class="card-box-1 main-card" title="Orders Container Tooltip" class="visible">
-        <div class="card-content-1">
-          <div class="card-1-head">
-            <h2>All Orders</h2>
-            <p>FROM LAST <input id="card-input" value="7" type="number" /> Days</p>
-          </div>
-          <div class="card-1-body">
-            <div class="nums">
-              <div class="card-1-box">
-                <h1 class="num1">0</h1>
-                <p>New Numbers</p>
-              </div>
-              <div class="card-1-box">
-                <h1 class="num2">0</h1>
-                <p>Deleted Numbers</p>
-              </div>
-  
-            </div>
-            <div class="big-icon-1">
-              <i class="fa-solid fa-clipboard-list"></i>        
-          </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- card 2 -->
-      <div class="card-box-2 main-card bg-2">
-        <div class="card-content">
-          <h4>Selling Price</h4>
-          <div class="price-text">
-            <i class="fa-solid fa-euro-sign"></i>
-            <p class="price">0.00/</p>
-            <div><p class="mt-3">month</p></div>
-          </div>
-        </div>
-        <div class="big-icon">
-          <i class="fa-solid fa-euro-sign"></i>
-        </div>
-      </div>
-
-      <!-- card 3 -->
-      <div class="card-box-2 main-card bg-3">
-        <div class="card-content">
-          <h4>Buying Price</h4>
-          <div class="price-text">
-            <i class="fa-solid fa-euro-sign"></i>
-            <p class="price">0.00/</p>
-            <div><p class="mt-3">month</p></div>
-          </div>
-        </div>
-        <div class="big-icon">
-          <i class="fa-solid fa-euro-sign"></i>
-        </div>
-      </div>
-
-      <!-- card 4 -->
-      <div class="card-box-2 main-card bg-4">
-        <div class="card-content">
-          <h4>Margin</h4>
-          <div class="price-text">
-            <i class="fa-solid fa-euro-sign"></i>
-            <p class="price">0.00/</p>
-            <div><p class="mt-3">month</p></div>
-          </div>
-        </div>
-        <div class="big-icon">
-          <i class="fa-solid fa-chart-bar"></i>
-        </div>
-      </div>
-    </section>
-
-  <!-- Dashboard page charts & Other Components -->
-
-  <div class="container-box primary-bg">
-    <div class="row p-4">
-        <div class="container-head">
-          <h3>Call Cost Grouped by Customer</h3>
-          <div class=".container text-center">
-            <span class="p-2">Refreshes automatically in 5 mins | </span>
-            <button class="primary-btn refresh" ><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
-          </div>
-        </div>
-        <div class="container-message bg-4">
-          <p class="px-1">Currently showing from 10:39 to 10:44</p>
-        </div>
-      <div id="chartdiv2"></div>
-    </div>
-  </div>
-
-
-    <!-- ------------- -->
-
-
-<!-- Body components -->
-
-
-
-  <div class="container m-2">
-    <div class="row col-12">
-      <div class="first-container m-2 col-md">
-        <div class="container-head">
-          <h3>Active Calls By Customer</h3>
-          <div class=".container m-1 text-center">
-            <span class="p-2">Refreshes automatically in 5 mins | </span>
-            <button class="primary-btn refresh"><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
-          </div>
-        </div>
-        <div class="container-message p-1 bg-2">
-          <p class="px-1">Currently showing from 10:39 to 10:44</p>
-        </div>
-
-        <div class="container-body">
-          <p class="py-3">Couldn't complete your requrest. Please try to refresh again</p>
-        </div>
-      </div>
-      <div class="first-container m-2 col-md">
-        <div class="container-head ">
-          <h3>Errors</h3>
-          <div class="options">
-            <select class="select">
-              <option value="SBC3">SBC3</option>
-              <option value="SBC5">SBC5</option>
-              <option value="SBC7">SBC7</option>
-              <option value="Metaswitch">Metaswitch</option>
-            </select>
-  
-            <select class="select m-1">
-              <option value="NONE">-NONE-</option>
-              <option value="BICS_INBOUND_SBC3">BICS_INBOUND_SBC3</option>
-              <option value="Coolwave">Coolwave</option>
-              <option value="HPS">HPS</option>
-              <option value="Jitender">Jitender</option>
-              <option value="Megacall">Megacall</option>
-            </select>
-          </div>
-
-          <div class="text-center">
-            <span class="p-2 ">Refreshes automatically in 5 mins | </span>
-            <button class="primary-btn refresh"><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
-          </div>
-        </div>
-        <div class="container-message p-1 bg-3">
-          <p class="px-2">Currently showing from 10:39 to 10:44</p>
-        </div>
-
-        <div class="container-body p-3">
-          <div id="chartdiv" ></div>
-        </div>
-
-
+    <div class="container heading-container">
+      <div class="heading-content m-2">
+        <i class="fa fa-question-circle"></i>
+        <h3> FAQ</h3>  
       </div>
     </div>
-  </div>
 
 
-    <!-- Dashboard page bar chart 2 -->
 
-    <div class="container-box primary-bg">
-      <div class="row p-4">
-          <div class="container-head">
-            <h3>ASR Report by customer</h3>
-            <div class=".container text-center">
-              <span class="p-2">Refreshes automatically in 5 mins | </span>
-              <button class="primary-btn refresh"><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
-            </div>
-          </div>
-          <div class="container-message bg-4">
-            <p class="px-1">Currently showing from 10:39 to 10:44</p>
-          </div>
-        <div id="chartdiv3"></div>
-      </div>
-    </div>
-  
-  
-      <!-- ------------- -->
-  
-      <div class="container mb-3">
-        <div class="container-2 col-12">
-          <div class="container-head border">
-            <h3>Active Calls</h3>
-            <div class=".container m-1 text-center">
-              <input name="daterange" class="size-m" />
-              <button class="primary-btn refresh"><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
-            </div>
-          </div>
-  
-          <div class="container-body">
-          </div>
-          <div class="container-footer">
-            <div class="link-1">SBC3</div>
-            <div class="link-1">SBC5</div>
-          </div>
-        </div>
-      </div>
+    <!-- All CDRS page content -->
 
-      
+    <!-- dropdown container-2 -->
 
     <script src="main.js"></script>
 
     <!-- TOASTIFY CDN SCRIPT -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-
-        <!-- DATE RANGE PICKER JS -->
-
-        <!-- Include Date Range Picker -->
-        <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />    
-        <script src="daterangepicker.js"></script>
-
-
 
   </body>
 </html>

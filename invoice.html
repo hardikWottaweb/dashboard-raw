@@ -20,6 +20,12 @@
 
     <!-- DATE RANGE PICKER -->
 
+        <!-- DATE RANGE PICKER -->
+    <!-- Include Required Prerequisites -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" /> -->
+
     <!-- TOASTIFY NOTIFICATION CDNS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
@@ -446,7 +452,7 @@
     <!-- All CDRS page content -->
 
       <div class="first-container m-2">
-        <div class="box-container">
+        <div class="box-container p-2">
           <div class="main-box">
             <h4>USER</h4>
             <select class="size-m">
@@ -463,7 +469,7 @@
                 <option value="SBC7">SBC7</option>
               </select>
             </div>
-          <div class="main-box mt-5">
+          <div class="main-box">
             <h4>TARIFF</h4>
             <select class="size-m">
                 <option value="Select Tarrif">Select Tariff</option>
@@ -476,7 +482,7 @@
           
           <div class="main-box">
             <h4>Select Date</h4>
-            <input type="date" class="size-m" >
+            <input name="daterange" class="size-m" />
           </div>
 
           <div class="main-box">
@@ -495,6 +501,15 @@
 
     <!-- TOASTIFY CDN SCRIPT -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+        <!-- DATE RANGE PICKER JS -->
+
+        <!-- Include Date Range Picker -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />    
+        <script src="daterangepicker.js"></script>
+
+
 
   </body>
 </html>

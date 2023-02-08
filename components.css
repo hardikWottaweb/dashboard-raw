@@ -55,6 +55,14 @@ body.dark{
 
 /* ENDS HERE */
 
+/* Date range picker */
+
+.daterangepicker{
+    padding: 10px;
+    width: auto;
+    margin: 1px !important;
+}
+
 
 /* CONTAINER BG'S */
 
@@ -63,13 +71,9 @@ body.dark{
     box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }
 
-.nospace{
-    margin: -20px !important;
-}
+
 
 /* toggles */
-
-
 
 .drop-container-body{
     display: none;
@@ -81,14 +85,7 @@ body.dark{
     display: block;
 }
 
-
 /* ----- */
-
-.mr{
-    margin-right: 10px;
-}
-
-
 
 .container-1{
     background: var(--sidebar-color);
@@ -126,18 +123,15 @@ select{
 
 /* TOOLTIPS */
 
-.visible {
-    height: 3em;
-    width: 10em;
-    background: yellow;
-  }
 
 /* for dashboard graph */
 
+/* for full screen containers */
 .container-box{
     margin: 10px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }
+
 /* Tooltip */
 
 
@@ -193,7 +187,6 @@ select{
 .main-box h4{
     font-size: 15px;
     color: var(--text-color);
-    
 }
 
 /* Filter container from CDRS */
@@ -346,7 +339,6 @@ select{
 
     .size-m{
         margin: 0;
-        padding: 5px;
         width: 300px;
     }
 
@@ -369,6 +361,7 @@ select{
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
+        justify-content: space-between;
     }
 
 
@@ -385,11 +378,5 @@ select{
         display: flex;
         flex-direction: column;
     }
-
-    .filter{
-        display: flex;
-        flex-direction: column;
-    }
-
 
 }

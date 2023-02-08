@@ -20,6 +20,13 @@
 
     <!-- DATE RANGE PICKER -->
 
+        <!-- DATE RANGE PICKER -->
+    <!-- Include Required Prerequisites -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" /> -->
+
+
     <!-- TOASTIFY NOTIFICATION CDNS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
@@ -443,35 +450,6 @@
 
     <!-- All CDRS page content -->
 
-      <!-- <div class="container-heading bg-2">
-        <h4 class="fs-6"><i class="fa fa-filter"></i> Filter by :</h4>
-      </div>
-      <div class="container m-2 filter">
-        <div class="col-2">
-        </div>
-        <div class="col-2">
-          <h4>CLI</h4>
-          <input type="text" placeholder="CLI">
-        </div>
-        <div class="col-2">
-          <h4>CLD</h4>
-          <input type="text" placeholder="CLD">
-        </div>
-        <div class="col-2">
-          <h4>Select Date</h4>
-          <input type="date" >
-        </div>
-        <div class="col-2">
-          <div class="buttons">
-            <button type="button" class=" search bg-4 btn-1">Search</button>
-            <button type="button" class=" download bg-2 btn-1">Download CDRs</button>
-            <button type="button" class=" send bg-3 btn-1">Send CDRs</button>  
-          </div>
-        </div>  
-      </div>
-    </div>
- -->
-
  <!-- All cdr container -->
 
  <div class="container-2 m-2">
@@ -499,8 +477,8 @@
     </div>
     <div class="main-box">
       <h4>Select Date</h4>
-        <input type="date" class="size-m">
-      </div>
+      <input name="daterange" class="size-m" />
+    </div>
       <div class="main-box">
         <div class="buttons">
           <button type="button" class=" search bg-4 btn-1">Search</button>
@@ -567,6 +545,14 @@
 
     <!-- TOASTIFY CDN SCRIPT -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+       
+    <!-- DATE RANGE PICKER JS -->
+
+        <!-- Include Date Range Picker -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />    
+        <script src="daterangepicker.js"></script>
+
 
   </body>
 </html>
