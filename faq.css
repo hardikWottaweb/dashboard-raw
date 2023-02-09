@@ -63,7 +63,7 @@
 .faq-buttons{
     position: absolute;
     right: 80px;
-    z-index: 100
+    z-index: 1;
 }
 
 
