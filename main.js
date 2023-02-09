@@ -116,15 +116,6 @@ jQuery(document).ready(function($){
 
 // icon rotate on Sidebar links
 
-// jQuery(document).ready
-// $(".item-container").click(function(){
-
-
-//     $(this).children('.third-icon').toggleClass("rotate") ; 
-//  })
-
-
-
 //  icon rotate off on toggle
 
 
