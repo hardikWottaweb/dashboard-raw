@@ -59,6 +59,19 @@
 
 /* FAQ ACCORDIONS */
 
+.accordion-button{
+    background: var(--sidebar-color) !important;
+    color: var(--text-color) !important;
+}
+
+.accordion-body{
+    background: var(--sidebar-color) !important;
+    color: var(--text-color) !important;
+}
+
+
+
+
 /* faq content */
 
 .faq-buttons{
