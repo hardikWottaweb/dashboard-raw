@@ -355,11 +355,11 @@ select {
         font-size: 17px;
         font-weight: 500;
         white-space: nowrap;
-        opacity: 1;
+        display: block;
     }
 
     .sidebar.close .text {
-        opacity: 0;
+        display: none;
     }
 
     /* =========================== */
