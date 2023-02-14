@@ -66,21 +66,38 @@ $(function () {
 })
 
 
+
+
 // DARK MODE & LIGHT MODE TOGGLE
 
-modeSwitch.addEventListener("click" , () =>{
-body.classList.toggle("dark");
-
-if(body.classList.contains("dark")){
+// Load saved mode from localStorage
+if (localStorage.getItem("dark") === "true") {
+  body.classList.add("dark");
   modeText.innerText = "Light mode";
-
-}else{
-  modeText.innerText = "Dark mode";
-  
 }
-});
 
+modeSwitch.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  
+  // Save current mode to localStorage
+  localStorage.setItem("dark", body.classList.contains("dark"));
+  
+  // Update mode text based on current mode
+  if (body.classList.contains("dark")) {
+    modeText.innerText = "Light mode";
+  } else {
+    modeText.innerText = "Dark mode";
+  }
+});
 63.00
+
+
+// DARK MODE 2
+
+
+// ENDS HERE
+
+
 
 
 // dropdown toggle auto close off
