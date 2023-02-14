@@ -70,6 +70,28 @@ $(function () {
 
 // DARK MODE & LIGHT MODE TOGGLE
 
+// modeSwitch.addEventListener("click" , () =>{
+// body.classList.toggle("dark");
+
+// window.localStorage.setItem("dark")
+
+// if(body.classList.contains("dark")){
+//   modeText.innerText = "Light mode";
+
+// }else{
+//   modeText.innerText = "Dark mode";
+  
+// }
+// });
+
+// 63.00
+
+
+// DARK MODE 2
+
+
+// ENDS HERE
+
 // Load saved mode from localStorage
 if (localStorage.getItem("dark") === "true") {
   body.classList.add("dark");
@@ -89,16 +111,8 @@ modeSwitch.addEventListener("click", () => {
     modeText.innerText = "Dark mode";
   }
 });
-63.00
 
-
-// DARK MODE 2
-
-
-// ENDS HERE
-
-
-
+// Dark mode ends here
 
 // dropdown toggle auto close off
 
