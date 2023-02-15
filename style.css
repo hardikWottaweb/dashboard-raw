@@ -136,20 +136,6 @@ select {
     transition: 0.3s ease-in-out;
 }
 
-.rotateOff {
-    transform: rotate(0);
-    transition: 0.3s ease-in-out;
-}
-
-/* CHART DIV'S */
-
-
-
-
-
-/* charts ends here */
-
-
 /* Header */
 
 .header-item {
@@ -805,7 +791,11 @@ summary {
     }
 
     .sidebar .menu {
-        margin-top: -10px;
+        margin-top: -5px;
+    }
+
+    .container-x{
+        margin-left: 0;
     }
 }
 

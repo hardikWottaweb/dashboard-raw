@@ -26,6 +26,8 @@ body{
     min-height: 100vh;
     background-color: var(--body-color) !important;
     transition: var(--tran-05);
+    overflow-x: hidden !important;
+
 }
 
 ::selection{
@@ -101,6 +103,10 @@ body.dark{
     justify-content: space-between;
     padding: 20px;
     width: 100%;
+    color: var(--text-color);
+}
+
+.container-body p{
     color: var(--text-color);
 }
 
