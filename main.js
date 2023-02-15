@@ -237,7 +237,7 @@ $('.send').on('click', function(){
 
 // All CDRs Table toggle
 
-$('.toggle-btn').on('click', () => {
+$('.this-toggle').on('click', () => {
   $('.drop-container-body').toggleClass('open')
 
   if($('.drop-container-body').classList.contains('open')){

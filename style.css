@@ -642,8 +642,6 @@ a#dropdownMenuLink.dropdown-toggle::after {
     border: 1px solid black;
 }
 
-
-
 /* .current{
     background: var(--primary-color) !important;
     color: var(--primary-color-light) !important;
@@ -658,8 +656,6 @@ a#dropdownMenuLink.dropdown-toggle::after {
 #chart {
     width: 85% !important;
 }
-
-
 
 /* Main dropdowns */
 
