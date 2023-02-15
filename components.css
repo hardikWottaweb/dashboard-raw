@@ -53,6 +53,7 @@ body.dark{
 
 /* ENDS HERE */
 
+
 /* Date range picker */
 
 .daterangepicker{
@@ -100,6 +101,7 @@ body.dark{
     justify-content: space-between;
     padding: 20px;
     width: 100%;
+    color: var(--text-color);
 }
 
 .container-message p{

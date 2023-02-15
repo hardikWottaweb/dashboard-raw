@@ -114,6 +114,8 @@ modeSwitch.addEventListener("click", () => {
 
 // Dark mode ends here
 
+
+
 // dropdown toggle auto close off
 
 $('.item').on('click', function(event){
