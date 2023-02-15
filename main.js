@@ -250,20 +250,16 @@ $('.send').on('click', function(){
 
 // All CDRs Table toggle
 
-document.querySelector('.toggle-btn').addEventListener('click', () => {
-  document.querySelector('.drop-container-body').classList.toggle('open')
+$('.toggle-btn').on('click', () => {
+  $('.drop-container-body').toggleClass('open')
 
-  if(document.querySelector('.drop-container-body').classList.contains('open')){
-    document.querySelector('.toggle-btn').innerHTML = '-'
-    document.querySelector('.toggle-btn').style.transition = '0.3s ease'
+  if($('.drop-container-body').classList.contains('open')){
+    $('.toggle-btn').innerHTML = '-'
+    $('.toggle-btn').style.transition = '0.3s ease'
   } else{
-    document.querySelector('.toggle-btn').innerHTML = '+'
-    document.querySelector('.toggle-btn').style.transition = '0.3s ease'
+    $('.toggle-btn').innerHTML = '+'
+    $('.toggle-btn').style.transition = '0.3s ease'
   }
 })
 
-
-
-
-// Date range picker
-
+// ends here
