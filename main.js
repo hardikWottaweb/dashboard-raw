@@ -7,25 +7,14 @@ modeSwitch = body.querySelector(".toggle-switch"),
 modeText = body.querySelector(".mode-text");
 nav_link = body.querySelector("details");
 
-// Header Dropdown Variables
-my_drop = document.querySelector('.img-container')
-img_content = document.querySelector('.img-content')
-
-set_drop = document.querySelector('.settings-container')
-set_content = document.querySelector('.settings-content')
-
 // Preloader Variable
 loader = document.querySelector('#preloader')
-
-// CRUD link variables
-crud_link = document.querySelector('.crud-link')
-crud_content = document.querySelector('.crud-content')
 
 
 // Crud Links
 
-document.querySelector('.crud-link').addEventListener('click', () => {
-  document.querySelector('.crud-content').classList.toggle('crudopen')
+$('.crud-link').on('click', () => {
+  $('.crud-content').toggleClass('crudopen')
 })
 
 
@@ -47,8 +36,8 @@ sidebar.classList.toggle("close");
 
 // Header profile dropdown
 
-my_drop.addEventListener('click', (event) => {
-  img_content.classList.toggle("view")
+$('.img-container').on('click', (event) => {
+  $('.img-content').toggleClass("view")
 
   event.stopImmediatePropagation();
 
@@ -72,8 +61,6 @@ $(function () {
 
 // modeSwitch.addEventListener("click" , () =>{
 // body.classList.toggle("dark");
-
-// window.localStorage.setItem("dark")
 
 // if(body.classList.contains("dark")){
 //   modeText.innerText = "Light mode";
