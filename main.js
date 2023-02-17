@@ -10,6 +10,7 @@ nav_link = body.querySelector("details");
 // Preloader Variable
 loader = document.querySelector('#preloader')
 
+img_content = document.querySelector('.img-content')
 
 // Crud Links
 
